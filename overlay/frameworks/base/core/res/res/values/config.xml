@@ -715,4 +715,6 @@
     <bool name="config_useDevInputEventForAudioJack">true</bool>
 
     <bool name="config_wifiDisplaySupportsProtectedBuffers">true</bool>
+
+    <integer name="config_fingerprintMaxTemplatesPerUser">4</integer>
 </resources>
