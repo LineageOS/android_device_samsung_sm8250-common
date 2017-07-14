@@ -206,10 +206,10 @@
         </module>
 
         <!-- Remote Submix Audio HAL -->
-        <xi:include href="r_submix_audio_policy_configuration.xml"/>
+        <xi:include href="/vendor/etc/r_submix_audio_policy_configuration.xml"/>
 
         <!-- Bluetooth Audio HAL -->
-        <xi:include href="bluetooth_audio_policy_configuration_7_0.xml"/>
+        <xi:include href="/vendor/etc/bluetooth_audio_policy_configuration_7_0.xml"/>
 
         <!-- USB Audio HAL -->
         <module name="usb" halVersion="2.0">
@@ -236,8 +236,8 @@
 
     <!-- Volume section -->
 
-    <xi:include href="audio_policy_volumes.xml"/>
-    <xi:include href="default_volume_tables.xml"/>
+    <xi:include href="/vendor/etc/audio_policy_volumes.xml"/>
+    <xi:include href="/vendor/etc/default_volume_tables.xml"/>
 
     <!-- End of Volume section -->
 
