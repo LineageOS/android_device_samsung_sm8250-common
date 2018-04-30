@@ -758,4 +758,7 @@
     </string-array>
     <bool name="config_pinnerCameraApp">true</bool>
     <bool name="config_pinnerHomeApp">true</bool>
+
+    <bool name="config_powerDecoupleAutoSuspendModeFromDisplay">true</bool>
+    <bool name="config_powerDecoupleInteractiveModeFromDisplay">true</bool>
 </resources>
