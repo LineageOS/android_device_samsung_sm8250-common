@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ * SPDX-License-Identifier: Apache-2.0
+ * Copyright (C) 2020 The LineageOS Project
+-->
+<resources>
+    <bool name="doze_display_state_supported">true</bool>
+    <bool name="doze_suspend_display_state_supported">true</bool>
+</resources>
