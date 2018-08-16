@@ -10,6 +10,7 @@
     <integer name="config_screenBrightnessSettingDefault">123</integer>
     <integer name="config_screenBrightnessSettingMaximum">255</integer>
     <bool name="config_automatic_brightness_available">true</bool>
+    <integer name="config_lightSensorWarmupTime">200</integer>
     <integer-array name="config_autoBrightnessLevels">
         <item>1</item>
         <item>2</item>
