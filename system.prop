@@ -4,6 +4,9 @@ vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.line
 # Filesystem
 fs_mgr.overlayfs.prefer_cache_backing_storage=true
 
+# Dalvik
+dalvik.vm.dex2oat64.enabled=true
+
 # Keystore
 ro.security.keystore.keytype=sakv2,gak,sgak
 
