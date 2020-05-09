@@ -38,6 +38,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/skip_mount.cfg:system/etc/init/config/skip_mount.cfg
 
+# Fingerprint
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint@2.1-service.samsung-sm8250
+
 # Properties
 -include $(COMMON_PATH)/vendor_prop.mk
 

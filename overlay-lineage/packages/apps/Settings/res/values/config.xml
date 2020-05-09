@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ * SPDX-License-Identifier: Apache-2.0
+ * Copyright (C) 2020 The LineageOS Project
+-->
+<resources>
+    <integer name="config_fingerprintSensorLocation">1</integer>
+</resources>

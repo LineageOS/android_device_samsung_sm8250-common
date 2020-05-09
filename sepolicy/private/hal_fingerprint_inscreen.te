@@ -1,0 +1,8 @@
+type hal_fingerprint_inscreen_sm8250, domain;
+hal_server_domain(hal_fingerprint_inscreen_sm8250, hal_lineage_fod)
+
+type hal_fingerprint_inscreen_sm8250_exec, exec_type, vendor_file_type, file_type;
+init_daemon_domain(hal_fingerprint_inscreen_sm8250)
+
+allow hal_lineage_fod sysfs_sec_touchscreen:dir { search };
+allow hal_lineage_fod sysfs_sec_touchscreen:file rw_file_perms;

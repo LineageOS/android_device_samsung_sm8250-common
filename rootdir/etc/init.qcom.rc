@@ -17,6 +17,9 @@ on post-fs-data
     restorecon --recursive --force /sec_efs
     restorecon_recursive /carrier
 
+on early-boot
+    mount none /system/lib64/vendor.lineage.biometrics.fingerprint.inscreen@1.0.so /vendor/lib64/vendor.lineage.biometrics.fingerprint.inscreen@1.0.so bind
+
 on boot
     write /sys/fs/f2fs/${dev.mnt.blk.data}/gc_urgent_sleep_time 500
 
