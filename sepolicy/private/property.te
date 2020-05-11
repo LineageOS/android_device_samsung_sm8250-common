@@ -1,0 +1,2 @@
+type vendor_camera_prop, property_type;
+type cache_status_prop, property_type;

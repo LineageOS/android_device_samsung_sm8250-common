@@ -1,0 +1,1 @@
+allow cameraserver vendor_file:dir { open read };

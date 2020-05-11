@@ -1,0 +1,1 @@
+get_prop(hal_perf, exported_camera_prop);

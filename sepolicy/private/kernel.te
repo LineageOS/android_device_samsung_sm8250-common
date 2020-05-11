@@ -1,0 +1,3 @@
+allow kernel sysfs_sec_key:dir { search };
+allow kernel sysfs_sec_key:file { open read };
+allow kernel self:capability kill;

@@ -1,0 +1,1 @@
+get_prop(hal_camera, exported_camera_prop);

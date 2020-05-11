@@ -1,0 +1,2 @@
+allow hal_usb sysfs_battery_supply:dir search;
+allow hal_usb sysfs_battery_supply:file { getattr open read };

@@ -1,1 +1,4 @@
 type sysfs_sec_touchscreen, sysfs_type, fs_type;
+type sysfs_sec_key, sysfs_type, fs_type;
+type sysfs_battery_supply, sysfs_type, fs_type;
+type debugfs_ipc, debugfs_type, fs_type;
