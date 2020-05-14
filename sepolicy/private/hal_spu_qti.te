@@ -1,0 +1,10 @@
+binder_call(hal_spu_client, hal_spu_server)
+
+add_hwservice(hal_spu_server, hal_spu_hwservice)
+allow hal_spu_client hal_spu_hwservice:hwservice_manager find;
+
+type hal_spu_qti, domain;
+hal_server_domain(hal_spu_qti, hal_spu)
+
+type hal_spu_qti_exec, exec_type, vendor_file_type, file_type;
+init_daemon_domain(hal_spu_qti)
