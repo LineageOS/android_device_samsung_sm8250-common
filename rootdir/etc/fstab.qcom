@@ -63,3 +63,6 @@ odm                                                     /odm                   e
 # Samsung ODE
 /dev/block/bootdevice/by-name/keydata	/keydata	ext4	noatime,nosuid,nodev,noauto_da_alloc,discard,journal_checksum,data=ordered,errors=panic	wait,check,fileencryption=ice,nofail
 /dev/block/bootdevice/by-name/keyrefuge	/keyrefuge	ext4	noatime,nosuid,nodev,noauto_da_alloc,discard,journal_checksum,data=ordered,errors=panic	wait,check,fileencryption=ice,nofail
+
+# Boot Image
+/dev/block/bootdevice/by-name/boot                      /boot                  emmc    defaults                                             defaults
