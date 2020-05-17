@@ -1,0 +1,7 @@
+/carrier(/.*)?    u:object_r:carrier_file:s0
+/dqmdbg(/.*)?    u:object_r:dqmdbgblk_file:s0
+/keydata(/.*)?    u:object_r:keydata_data_file:s0
+/keyrefuge(/.*)?    u:object_r:keyrefuge_data_file:s0
+/optics(/.*)?    u:object_r:vendor_file:s0
+/prism(/.*)?    u:object_r:system_file:s0
+/spu(/.*)?    u:object_r:spu_file:s0

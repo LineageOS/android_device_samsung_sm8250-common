@@ -1,0 +1,14 @@
+type carrier_file, fs_type;
+allow carrier_file labeledfs:filesystem associate;
+
+type dqmdbgblk_file, fs_type;
+allow dqmdbgblk_file labeledfs:filesystem associate;
+
+type keydata_data_file, fs_type;
+allow keydata_data_file labeledfs:filesystem associate;
+
+type keyrefuge_data_file, fs_type;
+allow keyrefuge_data_file labeledfs:filesystem associate;
+
+type spu_file, fs_type;
+allow spu_file labeledfs:filesystem associate;
