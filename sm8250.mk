@@ -33,6 +33,10 @@ PRODUCT_PACKAGES += \
     init.recovery.qcom.rc \
     fastbootd
 
+# Skip Mount
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/skip_mount.cfg:system/etc/init/config/skip_mount.cfg
+
 # Properties
 -include $(COMMON_PATH)/vendor_prop.mk
 
