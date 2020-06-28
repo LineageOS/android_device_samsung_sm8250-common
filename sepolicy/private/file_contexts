@@ -4,6 +4,9 @@
 # Inscreen Fingerprint HAL
 /(product|system/product)/vendor_overlay/[0-9]+/bin/hw/vendor\.lineage\.biometrics\.fingerprint\.inscreen@1.0-service\.samsung    u:object_r:hal_fingerprint_inscreen_sm8250_exec:s0
 
+# Power HAL
+/(product|system/product)/vendor_overlay/[0-9]+/bin/hw/android\.hardware\.power@1\.3-service\.samsung-libperfmgr    u:object_r:hal_power_default_exec:s0
+
 # Secure Processing Unit HAL
 /(product|system/product)/vendor_overlay/[0-9]+/bin/hw/vendor\.qti\.spu@1\.0-service    u:object_r:hal_spu_qti_exec:s0
 

@@ -56,6 +56,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/libnfc-nci.conf:system/etc/libnfc-nci.conf
 
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power@1.3-service.samsung-sm8250
+
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PLATFORM_VNDK_VERSION)/etc/powerhint.json
+
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl.samsung-sm8250
