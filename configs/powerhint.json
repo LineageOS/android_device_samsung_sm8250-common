@@ -263,6 +263,15 @@
             "HoldFd": true
         },
         {
+            "Name": "TouchscreenEnable",
+            "Path": "/sys/class/input/input3/enabled",
+            "Values": [
+                "0",
+                "1"
+            ],
+            "ResetOnInit": true
+        },
+        {
             "Name": "PowerHALMainState",
             "Path": "vendor.powerhal.state",
             "Values": [
@@ -629,6 +638,12 @@
             "Node": "GPUMaxFreq",
             "Duration": 0,
             "Value": "587000000"
+        },
+        {
+            "PowerHint": "NOT_INTERACTIVE",
+            "Node": "TouchscreenEnable",
+            "Duration": 0,
+            "Value": "0"
         }
     ]
 }
