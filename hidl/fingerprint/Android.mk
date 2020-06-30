@@ -30,6 +30,14 @@ LOCAL_SHARED_LIBRARIES := \
     libutils \
     android.hardware.biometrics.fingerprint@2.1
 
+ifeq ($(TARGET_SEC_FP_REQUEST_FORCE_CALIBRATE),true)
+    LOCAL_CFLAGS += -DREQUEST_FORCE_CALIBRATE
+endif
+
+ifneq ($(TARGET_SEC_FP_REQUEST_ENROLL_TYPE),)
+    LOCAL_CFLAGS += -DREQUEST_ENROLL_TYPE=$(TARGET_SEC_FP_REQUEST_ENROLL_TYPE)
+endif
+
 include $(BUILD_EXECUTABLE)
 
 include $(CLEAR_VARS)
