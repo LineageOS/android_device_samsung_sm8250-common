@@ -38,6 +38,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/skip_mount.cfg:system/etc/init/config/skip_mount.cfg
 
+# HIDL
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/vendor_override_manifest.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PLATFORM_VNDK_VERSION)/etc/vintf/manifest/vendor_override_manifest.xml
+
 # Audio
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/audio_policy_configuration.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PLATFORM_VNDK_VERSION)/etc/audio_policy_configuration.xml
@@ -70,6 +74,27 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.sensor.proximity.xml:system/etc/permissions/android.hardware.sensor.proximity.xml \
     frameworks/native/data/etc/android.hardware.sensor.hifi_sensors.xml:system/etc/permissions/android.hardware.sensor.hifi_sensors.xml
+
+# Vendor Services - DISABLED
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/etc/disabled/init.vendor.qti.spu@1.0-service.rc:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PLATFORM_VNDK_VERSION)/etc/init/init.vendor.qti.spu@1.0-service.rc \
+    $(COMMON_PATH)/etc/disabled/pa_daemon_qsee.rc:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PLATFORM_VNDK_VERSION)/etc/init/pa_daemon_qsee.rc \
+    $(COMMON_PATH)/etc/disabled/vendor.samsung.hardware.biometrics.face@1.0-service.rc:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PLATFORM_VNDK_VERSION)/etc/init/vendor.samsung.hardware.biometrics.face@1.0-service.rc \
+    $(COMMON_PATH)/etc/disabled/vendor.samsung.hardware.media.converter@1.0-service.rc:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PLATFORM_VNDK_VERSION)/etc/init/vendor.samsung.hardware.media.converter@1.0-service.rc \
+    $(COMMON_PATH)/etc/disabled/vendor.samsung.hardware.miscpower@2.0-service.rc:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PLATFORM_VNDK_VERSION)/etc/init/vendor.samsung.hardware.miscpower@2.0-service.rc \
+    $(COMMON_PATH)/etc/disabled/vendor.samsung.hardware.snap@1.1-service.rc:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PLATFORM_VNDK_VERSION)/etc/init/vendor.samsung.hardware.snap@1.1-service.rc \
+    $(COMMON_PATH)/etc/disabled/vendor.samsung.hardware.soter@3.0-service.rc:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PLATFORM_VNDK_VERSION)/etc/init/vendor.samsung.hardware.soter@3.0-service.rc \
+    $(COMMON_PATH)/etc/disabled/vendor.samsung.hardware.tlc.arcounter@1.0-service.rc:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PLATFORM_VNDK_VERSION)/etc/init/vendor.samsung.hardware.tlc.arcounter@1.0-service.rc \
+    $(COMMON_PATH)/etc/disabled/vendor.samsung.hardware.tlc.atn@1.0-service.rc:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PLATFORM_VNDK_VERSION)/etc/init/vendor.samsung.hardware.tlc.atn@1.0-service.rc \
+    $(COMMON_PATH)/etc/disabled/vendor.samsung.hardware.tlc.ddar@1.0-service.rc:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PLATFORM_VNDK_VERSION)/etc/init/vendor.samsung.hardware.tlc.ddar@1.0-service.rc \
+    $(COMMON_PATH)/etc/disabled/vendor.samsung.hardware.tlc.hdm@1.0-service.rc:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PLATFORM_VNDK_VERSION)/etc/init/vendor.samsung.hardware.tlc.hdm@1.0-service.rc \
+    $(COMMON_PATH)/etc/disabled/vendor.samsung.hardware.tlc.iccc@1.0-service.rc:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PLATFORM_VNDK_VERSION)/etc/init/vendor.samsung.hardware.tlc.iccc@1.0-service.rc \
+    $(COMMON_PATH)/etc/disabled/vendor.samsung.hardware.tlc.payment@1.0-service.rc:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PLATFORM_VNDK_VERSION)/etc/init/vendor.samsung.hardware.tlc.payment@1.0-service.rc \
+    $(COMMON_PATH)/etc/disabled/vendor.samsung.hardware.tlc.tima@1.0-service.rc:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PLATFORM_VNDK_VERSION)/etc/init/vendor.samsung.hardware.tlc.tima@1.0-service.rc \
+    $(COMMON_PATH)/etc/disabled/vendor.samsung.hardware.tlc.ucm@1.0-service.rc:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PLATFORM_VNDK_VERSION)/etc/init/vendor.samsung.hardware.tlc.ucm@1.0-service.rc \
+    $(COMMON_PATH)/etc/disabled/vk_common.rc:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PLATFORM_VNDK_VERSION)/etc/init/vk_common.rc \
+    $(COMMON_PATH)/etc/disabled/vk_qsee.rc:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PLATFORM_VNDK_VERSION)/etc/init/vk_qsee.rc \
+    $(COMMON_PATH)/etc/disabled/wsm-service.rc:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PLATFORM_VNDK_VERSION)/etc/init/wsm-service.rc
 
 # Properties
 -include $(COMMON_PATH)/vendor_prop.mk
