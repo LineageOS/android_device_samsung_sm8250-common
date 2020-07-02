@@ -8,10 +8,6 @@ ro.bluetooth.a2dp_offload.supported=false
 persist.bluetooth.a2dp_offload.disabled=true
 vendor.audio.feature.a2dp_offload.enable=false
 
-log.tag.bauth_FPBAuthService=I
-log.tag.bauth_FPQCBAuthSensorControl=I
-log.tag.bauth_TLC_Communicator=I
-
 dalvik.vm.heapstartsize=32m
 dalvik.vm.heapgrowthlimit=512m
 dalvik.vm.heapsize=768m
