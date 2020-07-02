@@ -1,6 +1,3 @@
-# Secure Processing Unit
-/vendor/bin/hw/vendor.qti.spu@1.0-service:product/vendor_overlay/29/bin/hw/vendor.qti.spu@1.0-service
-
 # AptX
 lib64/libaptX_encoder.so
 lib64/libaptXHD_encoder.so
