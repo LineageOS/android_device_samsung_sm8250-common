@@ -263,6 +263,15 @@
             "HoldFd": true
         },
         {
+            "Name": "FodEnable",
+            "Path": "/sys/class/sec/tsp/cmd",
+            "Values": [
+                "fod_enable,0,0,0",
+                "fod_enable,1,1,0"
+            ],
+            "ResetOnInit": true
+        },
+        {
             "Name": "TouchscreenEnable",
             "Path": "/sys/class/input/input3/enabled",
             "Values": [
@@ -638,6 +647,12 @@
             "Node": "GPUMaxFreq",
             "Duration": 0,
             "Value": "587000000"
+        },
+        {
+            "PowerHint": "NOT_INTERACTIVE",
+            "Node": "FodEnable",
+            "Duration": 0,
+            "Value": "fod_enable,0,0,0"
         },
         {
             "PowerHint": "NOT_INTERACTIVE",
