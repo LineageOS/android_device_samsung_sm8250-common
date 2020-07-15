@@ -54,6 +54,7 @@ BOARD_KERNEL_IMAGE_NAME        := Image
 BOARD_BOOT_HEADER_VERSION      := 2
 BOARD_KERNEL_SEPARATED_DTBO    := true
 BOARD_INCLUDE_DTB_IN_BOOTIMG   := true
+BOARD_RAMDISK_USE_LZ4          := true
 
 BOARD_KERNEL_CMDLINE := \
     androidboot.hardware=qcom \
