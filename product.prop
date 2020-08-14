@@ -1,4 +1,4 @@
-ro.telephony.default_network=22,20
+ro.telephony.default_network=26,9
 
 ro.bionic.cpu_variant=cortex-a55
 dalvik.vm.isa.arm.variant=cortex-a55
