@@ -2,70 +2,39 @@
     <hal format="hidl">
         <name>android.hardware.audio</name>
         <transport>hwbinder</transport>
-        <version>7.0</version>
-        <interface>
-            <name>IDevicesFactory</name>
-            <instance>default</instance>
-        </interface>
+        <fqname>@7.0::IDevicesFactory/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.audio.effect</name>
         <transport>hwbinder</transport>
-        <version>7.0</version>
-        <interface>
-            <name>IEffectsFactory</name>
-            <instance>default</instance>
-        </interface>
+        <fqname>@7.0::IEffectsFactory/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.bluetooth</name>
         <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IBluetoothHci</name>
-            <instance>default</instance>
-        </interface>
+        <fqname>@1.0::IBluetoothHci/default</fqname>
     </hal>
     <hal format="hidl" override="true">
         <name>android.hardware.gatekeeper</name>
         <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IGatekeeper</name>
-            <instance>default</instance>
-        </interface>
+        <fqname>@1.0::IGatekeeper/default</fqname>
     </hal>
     <hal format="hidl" override="true">
         <name>android.hardware.keymaster</name>
         <transport>hwbinder</transport>
-        <version>4.0</version>
-        <interface>
-            <name>IKeymasterDevice</name>
-            <instance>default</instance>
-            <instance>strongbox</instance>
-        </interface>
+        <fqname>@4.0::IKeymasterDevice/default</fqname>
+        <fqname>@4.0::IKeymasterDevice/strongbox</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.media.omx</name>
         <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IOmx</name>
-            <instance>default</instance>
-        </interface>
-        <interface>
-            <name>IOmxStore</name>
-            <instance>default</instance>
-        </interface>
+        <fqname>@1.0::IOmx/default</fqname>
+        <fqname>@1.0::IOmxStore/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.nfc</name>
         <transport>hwbinder</transport>
-        <version>1.2</version>
-        <interface>
-            <name>INfc</name>
-            <instance>default</instance>
-        </interface>
+        <fqname>@1.2::INfc/default</fqname>
     </hal>
     <hal format="hidl" override="true">
         <name>android.hardware.radio</name>
@@ -78,247 +47,132 @@
     <hal format="hidl" override="true">
         <name>android.hardware.radio.config</name>
         <transport>hwbinder</transport>
-        <version>1.1</version>
-        <interface>
-            <name>IRadioConfig</name>
-            <instance>default</instance>
-        </interface>
+        <fqname>@1.1::IRadioConfig/default</fqname>
     </hal>
     <hal format="hidl" override="true">
         <name>android.hardware.secure_element</name>
         <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ISecureElement</name>
-            <instance>eSE1</instance>
-        </interface>
+        <fqname>@1.0::ISecureElement/eSE1</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.soundtrigger</name>
         <transport>hwbinder</transport>
-        <version>2.3</version>
-        <interface>
-            <name>ISoundTriggerHw</name>
-            <instance>default</instance>
-        </interface>
+        <fqname>@2.3::ISoundTriggerHw/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.tetheroffload.config</name>
         <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IOffloadConfig</name>
-            <instance>default</instance>
-        </interface>
+        <fqname>@1.0::IOffloadConfig/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.tetheroffload.control</name>
         <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IOffloadControl</name>
-            <instance>default</instance>
-        </interface>
+        <fqname>@1.0::IOffloadControl/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.lineage.livedisplay</name>
         <transport>hwbinder</transport>
-        <version>2.0</version>
-        <interface>
-            <name>IAdaptiveBacklight</name>
-            <instance>default</instance>
-        </interface>
-        <interface>
-            <name>IDisplayColorCalibration</name>
-            <instance>default</instance>
-        </interface>
-        <interface>
-            <name>IDisplayModes</name>
-            <instance>default</instance>
-        </interface>
-        <interface>
-            <name>ISunlightEnhancement</name>
-            <instance>default</instance>
-        </interface>
+        <fqname>@2.0::IAdaptiveBacklight/default</fqname>
+        <fqname>@2.0::IDisplayColorCalibration/default</fqname>
+        <fqname>@2.0::IDisplayModes/default</fqname>
+        <fqname>@2.0::ISunlightEnhancement/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.lineage.touch</name>
         <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IGloveMode</name>
-            <instance>default</instance>
-        </interface>
-        <interface>
-            <name>IHighTouchPollingRate</name>
-            <instance>default</instance>
-        </interface>
-        <interface>
-            <name>ITouchscreenGesture</name>
-            <instance>default</instance>
-        </interface>
+        <fqname>@1.0::IGloveMode/default</fqname>
+        <fqname>@1.0::IHighTouchPollingRate/default</fqname>
+        <fqname>@1.0::ITouchscreenGesture/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.audiohalext</name>
         <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IAudioHalExt</name>
-            <instance>default</instance>
-        </interface>
+        <fqname>@1.0::IAudioHalExt/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.capabilityconfigstore</name>
         <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ICapabilityConfigStore</name>
-            <instance>default</instance>
-        </interface>
+        <fqname>@1.0::ICapabilityConfigStore/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.dsp</name>
         <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IDspService</name>
-            <instance>dspservice</instance>
-        </interface>
+        <fqname>@1.0::IDspService/dspservice</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.iop</name>
         <transport>hwbinder</transport>
-        <version>2.0</version>
-        <interface>
-            <name>IIop</name>
-            <instance>default</instance>
-        </interface>
         <fqname>@2.0::IIop/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.qseecom</name>
         <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IQSEECom</name>
-            <instance>default</instance>
-        </interface>
+        <fqname>@1.0::IQSEECom/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.qteeconnector</name>
         <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IAppConnector</name>
-            <instance>default</instance>
-        </interface>
-        <interface>
-            <name>IGPAppConnector</name>
-            <instance>default</instance>
-        </interface>
+        <fqname>@1.0::IAppConnector/default</fqname>
+        <fqname>@1.0::IGPAppConnector/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.tui_comm</name>
         <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ITuiComm</name>
-            <instance>default</instance>
-        </interface>
+        <fqname>@1.0::ITuiComm/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.samsung.hardware.audio</name>
         <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ISehDevicesFactory</name>
-            <instance>default</instance>
-        </interface>
+        <fqname>@1.0::ISehDevicesFactory/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.samsung.hardware.bluetooth</name>
         <transport>hwbinder</transport>
-        <version>2.0</version>
-        <interface>
-            <name>ISehBluetooth</name>
-            <instance>default</instance>
-        </interface>
+        <fqname>@2.0::ISehBluetooth/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.samsung.hardware.bluetooth.a2dp</name>
         <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ISehBluetoothAudioOffload</name>
-            <instance>default</instance>
-        </interface>
+        <fqname>@1.0::ISehBluetoothAudioOffload/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.samsung.hardware.bluetooth.a2dpsink</name>
         <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ISehBluetoothA2dpSinkProvidersFactory</name>
-            <instance>default</instance>
-        </interface>
+        <fqname>@1.0::ISehBluetoothA2dpSinkProvidersFactory/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.samsung.hardware.bluetooth.audio</name>
         <transport>hwbinder</transport>
-        <version>2.1</version>
-        <interface>
-            <name>ISehBluetoothAudioProvidersFactory</name>
-            <instance>default</instance>
-        </interface>
+        <fqname>@2.1::ISehBluetoothAudioProvidersFactory/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.samsung.hardware.gnss</name>
         <transport>hwbinder</transport>
-        <version>2.0</version>
-        <interface>
-            <name>ISehGnss</name>
-            <instance>default</instance>
-        </interface>
+        <fqname>@2.0::ISehGnss/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.samsung.hardware.nfc</name>
         <transport>hwbinder</transport>
-        <version>2.0</version>
-        <interface>
-            <name>ISehNfc</name>
-            <instance>default</instance>
-        </interface>
+        <fqname>@2.0::ISehNfc/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.samsung.hardware.radio</name>
         <transport>hwbinder</transport>
-        <version>2.2</version>
-        <interface>
-            <name>ISehRadio</name>
-            <instance>slot1</instance>
-            <instance>slot2</instance>
-        </interface>
+        <fqname>@2.2::ISehRadio/slot1</fqname>
+        <fqname>@2.2::ISehRadio/slot2</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.samsung.hardware.radio.bridge</name>
         <transport>hwbinder</transport>
-        <version>2.0</version>
-        <interface>
-            <name>ISehBridge</name>
-            <instance>slot1</instance>
-            <instance>slot2</instance>
-        </interface>
+        <fqname>@2.0::ISehBridge/slot1</fqname>
+        <fqname>@2.0::ISehBridge/slot2</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.samsung.hardware.radio.channel</name>
         <transport>hwbinder</transport>
-        <version>2.0</version>
-        <interface>
-            <name>ISehChannel</name>
-            <instance>epdgd</instance>
-            <instance>epdgd2</instance>
-            <instance>imsd</instance>
-            <instance>imsd2</instance>
-        </interface>
+        <fqname>@2.0::ISehChannel/epdgd</fqname>
+        <fqname>@2.0::ISehChannel/epdgd2</fqname>
+        <fqname>@2.0::ISehChannel/imsd</fqname>
+        <fqname>@2.0::ISehChannel/imsd2</fqname>
     </hal>
 </manifest>
