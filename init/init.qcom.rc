@@ -30,6 +30,7 @@
 #
 
 import /vendor/etc/init/hw/init.qti.ufs.rc
+import /vendor/etc/init/hw/init.qcom.power.rc
 import /vendor/etc/init/hw/init.qcom.usb.rc
 import /vendor/etc/init/hw/init.qcom.test.rc
 import /vendor/etc/init/hw/init.target.rc
@@ -297,9 +298,6 @@ on post-fs-data
 
 # Create directory for modem_config
     mkdir /data/vendor/modem_config 0570 radio root
-
-# Start Perf HAL
-    setprop vendor.powerhal.init 1
 
 # Mounting of persist is moved to 'on emmc-fs' and 'on fs' sections
 # We chown/chmod /persist again so because mount is run as root + defaults
