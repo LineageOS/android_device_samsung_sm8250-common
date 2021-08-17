@@ -44,6 +44,7 @@ PRODUCT_PACKAGES += \
     fstab.ramplus \
     init.audio.samsung.rc \
     init.fingerprint.rc \
+    init.qcom.power.rc \
     init.qcom.rc \
     init.qcom.recovery.rc \
     init.ramplus.rc \
