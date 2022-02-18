@@ -2,6 +2,9 @@
 allow system_app vendor_sysfs_mdnie:dir search;
 allow system_app vendor_sysfs_mdnie:file { getattr open write };
 
+# S pen
+hal_client_domain(system_app, hal_samsung_spen)
+
 # ZRAM
 allow system_app sysfs_zram:dir search;
 allow system_app sysfs_zram:file { read open getattr };
