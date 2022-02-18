@@ -337,6 +337,15 @@ endif
 PRODUCT_PACKAGES += \
     android.hardware.sensors-service.samsung-multihal
 
+# S pen
+ifeq ($(TARGET_IS_TABLET),true)
+PRODUCT_PACKAGES += \
+    SPenActions
+
+PRODUCT_PACKAGES += \
+    vendor.samsung.hardware.spen-service.davinci
+endif
+
 # Tether
 ifneq ($(TARGET_IS_WIFI-ONLY),true)
 PRODUCT_PACKAGES += \
