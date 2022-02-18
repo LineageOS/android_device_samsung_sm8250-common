@@ -68,6 +68,7 @@
 /mnt/vendor/efs/camera(/.*)?                 u:object_r:camera_efs_file:s0
 /mnt/vendor/efs/prov(/.*)?                   u:object_r:dak_efs_file:s0
 /mnt/vendor/efs/prov_data(/.*)?              u:object_r:dak_efs_file:s0
+/mnt/vendor/efs/spen(/.*)?                   u:object_r:spen_efs_file:s0
 /mnt/vendor/efs/wifi(/.*)?                   u:object_r:wifi_efs_file:s0
 
 # Root folders
@@ -95,6 +96,7 @@
 /sys/devices/platform/soc/b0000000.qcom,cnss-qca6490/subsys[0-9]+/restart_level                     u:object_r:vendor_sysfs_ssr_toggle:s0
 /sys/devices/platform/soc/[a-z0-9]+\.i2c/i2c-[0-9]/[0-9]-[0-9a-f]+/input/input[0-9]+/enabled        u:object_r:vendor_sysfs_touchscreen:s0
 /sys/devices(/platform)?/soc/[a-z0-9]+\.i2c/i2c-[0-9]+/[0-9]+-[a-z0-9]+/input/input[0-9]+(/.*)?     u:object_r:vendor_sysfs_touchscreen_writable:s0
+/sys/devices/virtual/sec/sec_epen(/.*)?                                                             u:object_r:vendor_sysfs_spen:s0
 
 # Vendor HALs
 /(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint-service\.samsung                  u:object_r:hal_fingerprint_default_exec:s0
@@ -112,4 +114,5 @@
 /(vendor|system/vendor)/bin/hw/vendor\.lineage\.powershare-service\.samsung                                 u:object_r:hal_lineage_powershare_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.lineage\.touch-service\.samsung                                      u:object_r:hal_lineage_touch_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.samsung\.hardware\.gnss@2\.0-service                                 u:object_r:hal_gnss_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.samsung\.hardware\.spen-service                                      u:object_r:hal_samsung_spen_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.samsung\.hardware\.thermal@1\.0-service                              u:object_r:hal_thermal_default_exec:s0
