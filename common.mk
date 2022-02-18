@@ -327,6 +327,15 @@ PRODUCT_PACKAGES += \
     sehradiomanager
 endif
 
+# S Pen
+ifeq ($(TARGET_IS_TABLET),true)
+PRODUCT_PACKAGES += \
+    SPenActions
+
+PRODUCT_PACKAGES += \
+    vendor.samsung.hardware.spen-service
+endif
+
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors-service.samsung-multihal
