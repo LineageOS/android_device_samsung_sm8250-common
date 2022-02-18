@@ -19,6 +19,7 @@ type camera_efs_file, file_type;
 type dak_efs_file, file_type;
 type imei_efs_file, file_type;
 type sec_efs_file, file_type;
+type spen_efs_file, file_type;
 type wifi_efs_file, file_type;
 
 # Fastcharge
@@ -62,6 +63,9 @@ allow omr_file labeledfs:filesystem associate;
 
 type spu_file, fs_type;
 allow spu_file labeledfs:filesystem associate;
+
+# S pen
+type vendor_sysfs_spen, sysfs_type, fs_type;
 
 # Thermal
 type vendor_sysfs_thermal, fs_type, sysfs_type;
