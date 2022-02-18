@@ -2,6 +2,9 @@ allow vendor_init tmpfs:dir create_dir_perms;
 
 allow vendor_init cgroup:file rw_file_perms;
 
+allow vendor_init efs_file:dir rw_dir_perms;
+allow vendor_init spen_efs_file:dir create_dir_perms;
+
 get_prop(vendor_init, vts_status_prop)
 set_prop(vendor_init, vendor_sec_nfc_prop)
 set_prop(vendor_init, vendor_ssr_prop)
