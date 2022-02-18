@@ -16,3 +16,6 @@ vendor.samsung.hardware.radio.network.ISehRadioNetwork/slot1        u:object_r:h
 vendor.samsung.hardware.radio.network.ISehRadioNetwork/slot2        u:object_r:hal_radio_service:s0
 vendor.samsung.hardware.radio.sim.ISehRadioSim/slot1                u:object_r:hal_radio_service:s0
 vendor.samsung.hardware.radio.sim.ISehRadioSim/slot2                u:object_r:hal_radio_service:s0
+
+# S pen
+vendor.samsung.hardware.spen.ISPen/default                          u:object_r:hal_samsung_spen_service:s0
