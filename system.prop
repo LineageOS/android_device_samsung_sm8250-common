@@ -4,6 +4,9 @@ vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.line
 # Filesystem
 fs_mgr.overlayfs.prefer_cache_backing_storage=true
 
+# Graphics
+debug.hwui.skia_atrace_enabled=false
+
 # Keystore
 ro.security.keystore.keytype=sakv2,gak,sgak
 
