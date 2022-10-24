@@ -30,11 +30,12 @@ def IncrementalOTA_Assertions(info):
   return
 
 def IncrementalOTA_InstallEnd(info):
+  info.input_zip = info.target_zip
   OTA_InstallEnd(info)
   return
 
 def OTA_Assertions(info):
-  android_info = info.input_zip.read("OTA/android-info-extra.txt")
+  android_info = input_zip.read("OTA/android-info-extra.txt")
   m = re.search(r'require\s+version-bootloader-min\s*=\s*(\S+)', android_info.decode('utf-8'))
   if m:
     bootloader_version = m.group(1)
