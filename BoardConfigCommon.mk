@@ -76,6 +76,7 @@ TARGET_KERNEL_SOURCE := kernel/samsung/sm8250
 TARGET_KERNEL_CONFIG := \
     vendor/kona-perf_defconfig \
     vendor/samsung/kona-sec-common.config
+TARGET_KERNEL_NO_GCC := true
 
 # Additional root folders
 TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
