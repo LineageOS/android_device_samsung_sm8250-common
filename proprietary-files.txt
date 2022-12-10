@@ -606,9 +606,7 @@ vendor/etc/init/init_thermal-engine.rc
 vendor/etc/init/vendor.samsung.hardware.thermal@1.0-service.rc
 vendor/etc/thermal-engine.conf
 vendor/etc/vintf/manifest/vendor.samsung.hardware.thermal@1.0-manifest.xml
-vendor/lib64/libhypervintf.so
 vendor/lib64/libthermalclient.so
-vendor/lib64/vendor.samsung.hardware.hyper-V2-ndk_platform.so
 vendor/lib64/vendor.samsung.hardware.thermal@1.0.so
 
 # Time
