@@ -108,6 +108,7 @@ dalvik.vm.lockprof.threshold=500
 # Display
 debug.egl.hw=0
 debug.mdpcomp.logs=0
+debug.sf.auto_latch_unsignaled=0
 debug.sf.disable_backpressure=1
 debug.sf.early_app_phase_offset_ns=100000
 debug.sf.early_gl_app_phase_offset_ns=100000
