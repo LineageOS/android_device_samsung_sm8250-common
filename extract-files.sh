@@ -68,6 +68,10 @@ done
 
 function blob_fixup() {
     case "${1}" in
+        vendor/lib/hw/audio.primary.kona-samsung.so)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF}" --set-soname "audio.primary.kona-samsung.so" "${2}"
+            ;;
         vendor/lib64/libsec-ril.so)
             [ "$2" = "" ] && return 0
             # Replace SlotID prop
