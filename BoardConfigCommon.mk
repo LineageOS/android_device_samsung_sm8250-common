@@ -16,7 +16,6 @@
 
 COMMON_PATH := device/samsung/sm8250-common
 
-BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 BUILD_BROKEN_INCORRECT_PARTITION_IMAGES := true
 
 # Android Verified Boot
