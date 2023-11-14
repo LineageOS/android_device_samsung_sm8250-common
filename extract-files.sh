@@ -70,7 +70,7 @@ function blob_fixup() {
     case "${1}" in
         vendor/lib64/libhypermotion_core.so|vendor/lib64/libsensorlistener.so|vendor/lib64/libvdis_core.so)
             [ "$2" = "" ] && return 0
-            "${PATCHELF}" --add-needed "libshim_sensorndkbridge.so" "${2}"
+            grep -q "libshim_sensorndkbridge.so" "${2}" || "${PATCHELF}" --add-needed "libshim_sensorndkbridge.so" "${2}"
             ;;
         vendor/lib64/libsec-ril.so)
             [ "$2" = "" ] && return 0
