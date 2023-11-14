@@ -78,7 +78,7 @@ function blob_fixup() {
             ;;
         vendor/lib64/libsensorlistener.so)
             [ "$2" = "" ] && return 0
-            "${PATCHELF}" --add-needed "libshim_sensorndkbridge.so" "${2}"
+            grep -q "libshim_sensorndkbridge.so" "${2}" || "${PATCHELF}" --add-needed "libshim_sensorndkbridge.so" "${2}"
             ;;
         vendor/lib64/hw/com.qti.chi.override.so)
             [ "$2" = "" ] && return 0
