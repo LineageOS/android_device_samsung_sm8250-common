@@ -427,10 +427,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.lineage.touch@1.0-service.samsung_sm8250
 
-# Vendor service manager
-PRODUCT_PACKAGES += \
-    vndservicemanager
-
 # Vibrator
 PRODUCT_PACKAGES += \
     android.hardware.vibrator-service.samsung
