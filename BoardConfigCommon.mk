@@ -171,12 +171,12 @@ $(call soong_config_set,samsungVars,target_specific_header_path,$(COMMON_PATH)/i
 # Init
 TARGET_INIT_VENDOR_LIB := //$(COMMON_PATH):libinit_samsung_sm8250
 
-# HIDL manifests
+# HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
     $(COMMON_PATH)/configs/framework_compatibility_matrix.xml \
     vendor/lineage/config/device_framework_matrix.xml
 DEVICE_MANIFEST_FILE += $(COMMON_PATH)/configs/manifest.xml
-DEVICE_MATRIX_FILE += $(COMMON_PATH)/configs/compatibility_matrix.xml
+DEVICE_MATRIX_FILE := hardware/qcom-caf/common/compatibility_matrix.xml
 
 # QCOM
 BOARD_USES_QCOM_HARDWARE := true
