@@ -91,6 +91,9 @@ on init
     chmod 0660 /sys/devices/platform/soc/1d84000.ufshc/auto_hibern8
     start logd
 
+on early-init && property:ro.baseband=apq
+    setprop ro.radio.noril yes
+
 on early-fs
     start vold
 
