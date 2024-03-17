@@ -196,7 +196,6 @@ ro.vendor.sec.radio.def_network=9
 persist.vendor.radio.atfwd.start=true
 persist.vendor.radio.enableadvancedscan=true
 vendor.sec.rild.libpath=/vendor/lib64/libsec-ril.so
-vendor.sec.rild.libpath2=/vendor/lib64/libsec-ril-dsds.so
 
 # Wifi
 wifi.aware.interface=wifi-aware0

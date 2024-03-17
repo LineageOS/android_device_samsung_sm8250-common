@@ -7,15 +7,9 @@
 service ril-daemon /vendor/bin/hw/rild
     class main
     user radio
-    group radio cache inet misc audio log oem_2901 system drmrpc vpn readproc wakelock
+    group radio cache inet misc audio log oem_2901 system drmrpc vpn readproc wakelock net_admin
     capabilities BLOCK_SUSPEND NET_ADMIN NET_RAW SYS_ADMIN CHOWN SYS_TIME
     socket sap_uim_socket1 stream 660 bluetooth bluetooth
-
-service ril-daemon1 /vendor/bin/hw/rild -c 2
-    class main
-    user radio
-    group radio cache inet misc audio log oem_2901 system drmrpc vpn readproc wakelock
-    capabilities BLOCK_SUSPEND NET_ADMIN NET_RAW SYS_ADMIN CHOWN SYS_TIME
 
 # QMUX must be in multiple groups to support external process connections
 service qmuxd /vendor/bin/qmuxd
@@ -30,6 +24,9 @@ service irsc_util_oem /vendor/bin/irsc_util "/vendor/etc/sec_config_oem"
 
 # Avoid running ril-daemon services on qualcomm model
 service vendor.ril-daemon /vendor/bin/hw/rild-dummy
+    override
+
+service vendor.ril-daemon1 /vendor/bin/hw/rild-dummy
     override
 
 service vendor.ril-daemon2 /vendor/bin/hw/rild-dummy

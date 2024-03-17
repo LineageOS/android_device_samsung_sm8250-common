@@ -108,4 +108,4 @@
 /(vendor|system/vendor)/bin/hw/vendor\.lineage\.powershare@[0-9]\.[0-9]-service\.samsung                    u:object_r:hal_lineage_powershare_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.lineage\.touch\@[0-9]\.[0-9]-service\.samsung\_sm8250                u:object_r:hal_lineage_touch_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor.samsung.hardware.thermal@1.0-service                                  u:object_r:hal_thermal_default_exec:s0
-
+/(vendor|system/vendor)/bin/hw/sehradiomanager                                                              u:object_r:sehradiomanager_exec:s0
