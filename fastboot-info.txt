@@ -1,0 +1,15 @@
+version 1
+flash boot
+flash dtbo
+flash recovery
+flash --apply-vbmeta vbmeta_samsung vbmeta.img
+reboot fastboot
+update-super
+flash system
+flash system_ext
+flash odm
+flash product
+flash vendor
+if-wipe erase cache
+if-wipe erase userdata
+if-wipe erase metadata
