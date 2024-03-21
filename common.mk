@@ -187,7 +187,9 @@ PRODUCT_PACKAGES += \
     libdrmclearkeyplugin \
     android.hardware.drm@1.3.vendor
 
-# fastbootd
+# Fastboot
+TARGET_BOARD_FASTBOOT_INFO_FILE := $(LOCAL_PATH)/fastboot-info.txt
+
 PRODUCT_PACKAGES += \
     fastbootd
 
