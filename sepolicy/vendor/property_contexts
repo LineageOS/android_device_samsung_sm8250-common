@@ -28,8 +28,7 @@ vendor.sec.rild.                                 u:object_r:vendor_radio_prop:s0
 ro.vendor.sec.radio.                             u:object_r:vendor_radio_prop:s0
 ro.vendor.use_data_netmgrd                       u:object_r:vendor_radio_prop:s0
 ro.vendor.epdg.support                           u:object_r:vendor_radio_prop:s0
-
-vendor.calls                                     u:object_r:vendor_call_prop:s0
+vendor.calls                                     u:object_r:vendor_radio_prop:s0
 
 # Secure Element
 vendor.seHal.                                    u:object_r:vendor_sehal_prop:s0

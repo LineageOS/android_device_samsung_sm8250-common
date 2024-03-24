@@ -1,8 +1,0 @@
-type audio_parameter_service, domain, coredomain;
-type audio_parameter_service_exec, system_file_type, exec_type, file_type;
-
-init_daemon_domain(audio_parameter_service)
-
-hal_client_domain(audio_parameter_service, hal_audio)
-
-set_prop(audio_parameter_service, vendor_call_prop)

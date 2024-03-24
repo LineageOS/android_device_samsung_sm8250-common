@@ -3,8 +3,6 @@
 get_prop(rild, vendor_radio_prop)
 get_prop(rild, radio_prop)
 
-set_prop(rild, vendor_call_prop)
-
 allow rild block_device:dir search;
 allow rild mnt_vendor_file:dir { getattr search };
 

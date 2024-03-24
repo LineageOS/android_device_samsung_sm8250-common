@@ -7,7 +7,7 @@ allow hal_audio_default imei_efs_file:file { read open getattr };
 
 allow hal_audio_default efs_file:dir search;
 
-get_prop(hal_audio_default, vendor_call_prop)
+get_prop(hal_audio_default, vendor_radio_prop)
 
 # TAS256X sysfs
 allow hal_audio_default sysfs_audio_writable:file rw_file_perms;

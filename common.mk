@@ -75,7 +75,6 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@7.0-impl.samsung-sm8250 \
     android.hardware.audio.effect@7.0-impl \
     android.hardware.soundtrigger@2.2-impl \
-    audio_parameter_service.samsung_sm8250 \
     audio.r_submix.default \
     audio.usb.default
 
