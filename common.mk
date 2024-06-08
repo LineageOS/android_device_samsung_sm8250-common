@@ -443,8 +443,12 @@ PRODUCT_PACKAGES += \
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.3-service-qti \
+    android.hardware.usb.gadget@1.2-service-qti \
     init.qcom.usb.rc \
     init.qcom.usb.sh
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/usb/usb_compositions.conf:$(TARGET_COPY_OUT_VENDOR)/etc/usb_compositions.conf
 
 # Tether
 PRODUCT_PACKAGES += \
