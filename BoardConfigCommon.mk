@@ -227,7 +227,7 @@ TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_samsung_sm8250
 TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)/releasetools
 
 # Security patch
-VENDOR_SECURITY_PATCH := 2024-03-01
+VENDOR_SECURITY_PATCH := 2024-05-01
 
 # SePolicy
 include device/qcom/sepolicy_vndr/SEPolicy.mk
