@@ -55,6 +55,7 @@ TARGET_2ND_CPU_VARIANT := generic
 TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a76
 
 # Kernel config
+TARGET_KERNEL_CONFIG        := vendor/kona-sec-perf_defconfig 
 TARGET_KERNEL_SOURCE        := kernel/samsung/sm8250
 TARGET_KERNEL_ARCH          := arm64
 TARGET_KERNEL_HEADER_ARCH   := arm64
