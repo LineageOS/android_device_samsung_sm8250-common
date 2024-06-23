@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e5b5a405_51773680",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29080
+      },
+      "writtenOn": "2024-06-23T10:07:18Z",
+      "side": 1,
+      "message": "this will do nothing:\n1. for native executables soong will replace a76 with a55\n2. art has the same features enabled for a76 and a55",
+      "revId": "38035580231a0d8eb6e22d5d9025c98fd7887d92",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
