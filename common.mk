@@ -277,7 +277,8 @@ PRODUCT_COPY_FILES += \
 
 # Minijail
 PRODUCT_PACKAGES += \
-    libavservices_minijail
+    libavservices_minijail \
+    libavservices_minijail.vendor
 
 # Net
 PRODUCT_PACKAGES += \
@@ -303,9 +304,6 @@ PRODUCT_COPY_FILES += \
 
 # OMX
 PRODUCT_PACKAGES += \
-    android.hardware.media.c2@1.0.vendor \
-    android.hardware.media.c2@1.1.vendor:64 \
-    libstagefright_bufferpool@2.0.1.vendor \
     libmm-omxcore \
     libOmxAacEnc \
     libOmxAmrEnc \
