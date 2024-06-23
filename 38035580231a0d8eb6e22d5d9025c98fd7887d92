@@ -16,6 +16,42 @@
       "message": "this will do nothing:\n1. for native executables soong will replace a76 with a55\n2. art has the same features enabled for a76 and a55",
       "revId": "38035580231a0d8eb6e22d5d9025c98fd7887d92",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "091b9a32_bcd6d70c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33569
+      },
+      "writtenOn": "2024-06-23T10:26:51Z",
+      "side": 1,
+      "message": "This one is a mismerge from my test branch. I have no intention to merge this change.",
+      "parentUuid": "e5b5a405_51773680",
+      "revId": "38035580231a0d8eb6e22d5d9025c98fd7887d92",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "cda623bb_b5a55bca",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33569
+      },
+      "writtenOn": "2024-06-23T10:26:51Z",
+      "side": 1,
+      "message": "It is a mismerge from my test branch. I don\u0027t have any intends to merge this one.",
+      "parentUuid": "e5b5a405_51773680",
+      "revId": "38035580231a0d8eb6e22d5d9025c98fd7887d92",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
