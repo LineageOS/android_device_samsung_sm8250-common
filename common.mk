@@ -132,6 +132,10 @@ PRODUCT_PACKAGES += \
     libgui_vendor \
     libcamera2ndk_vendor
 
+# CNE
+PRODUCT_PACKAGES += \
+    CneApp.libvndfwk_detect_jni.qti_vendor_symlink
+
 # Configstore
 PRODUCT_PACKAGES += \
     disable_configstore \
