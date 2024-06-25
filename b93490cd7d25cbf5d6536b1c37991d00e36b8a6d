@@ -16,6 +16,23 @@
       "message": "Pick my change.",
       "revId": "b93490cd7d25cbf5d6536b1c37991d00e36b8a6d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fb5e221e_3a72651e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2024-06-25T08:07:54Z",
+      "side": 1,
+      "message": "Oh well, if you don\u0027t have the CneApp just remove the symlink.",
+      "revId": "b93490cd7d25cbf5d6536b1c37991d00e36b8a6d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
