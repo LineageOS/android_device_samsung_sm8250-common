@@ -1070,15 +1070,6 @@ vendor/lib64/libllvm-qcom.so
 vendor/lib64/libOpenCL.so
 vendor/lib64/libVkLayer_q3dtools.so
 
-# Health
-vendor/bin/hw/android.hardware.health@2.1-service-samsung
-vendor/etc/init/android.hardware.health@2.1-service-samsung.rc
--vendor/etc/vintf/manifest/android.hardware.health@2.1-samsung.xml
-vendor/lib/hw/android.hardware.health@2.0-impl-2.1-samsung.so
-vendor/lib/vendor.samsung.hardware.health@2.0.so
-vendor/lib64/hw/android.hardware.health@2.0-impl-2.1-samsung.so
-vendor/lib64/vendor.samsung.hardware.health@2.0.so
-
 # HotwordEnrollment
 -product/priv-app/HotwordEnrollmentOKGoogleEx3HEXAGON/HotwordEnrollmentOKGoogleEx3HEXAGON.apk
 -product/priv-app/HotwordEnrollmentXGoogleEx3HEXAGON/HotwordEnrollmentXGoogleEx3HEXAGON.apk

@@ -89,7 +89,7 @@
 /(vendor|system/vendor)/bin/hw/android.hardware.biometrics.fingerprint-service.samsung                      u:object_r:hal_fingerprint_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.camera\.provider@2\.5-service\_64\.samsung                u:object_r:hal_camera_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.drm@[0-9]\.[0-9]-service\.widevine                        u:object_r:hal_drm_widevine_exec:s0
-/(vendor|system/vendor)/bin/hw/android\.hardware\.health@2\.1-service-samsung                               u:object_r:hal_health_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.health-service\.samsung                                   u:object_r:hal_health_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.keymaster@[0-9]\.[0-9]-service\.samsung                   u:object_r:hal_keymaster_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.keymaster@4\.0-strongbox\-service\-qti                    u:object_r:hal_keymaster_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.light(@[0-9].[0-9])?-service\.samsung                     u:object_r:hal_light_default_exec:s0
