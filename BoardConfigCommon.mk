@@ -61,23 +61,10 @@ BOARD_KERNEL_SEPARATED_DTBO    := true
 BOARD_INCLUDE_DTB_IN_BOOTIMG   := true
 
 BOARD_KERNEL_CMDLINE := console=null androidboot.hardware=qcom androidboot.memcg=1 lpm_levels.sleep_disabled=1 video=vfb:640x400,bpp=32,memsize=3072000 msm_rtb.filter=0x237 service_locator.enable=1 androidboot.usbcontroller=a600000.dwc3 swiotlb=2048 printk.devkmsg=on firmware_class.path=/vendor/firmware_mnt/image loop.max_part=7
-BOARD_DTB_OFFSET           := 0x01F00000
 BOARD_KERNEL_BASE          := 0x00000000
-BOARD_KERNEL_OFFSET        := 0x00008000
 BOARD_KERNEL_PAGESIZE      := 4096
-BOARD_KERNEL_TAGS_OFFSET   := 0x01E00000
-BOARD_RAMDISK_OFFSET       := 0x02000000
-BOARD_KERNEL_SECOND_OFFSET := 0x00F00000
 
-# Kernel: mkbootimgs args
-BOARD_MKBOOTIMG_ARGS += --ramdisk_offset $(BOARD_RAMDISK_OFFSET)
-BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
-BOARD_MKBOOTIMG_ARGS += --dtb_offset $(BOARD_DTB_OFFSET)
-BOARD_MKBOOTIMG_ARGS += --pagesize $(BOARD_KERNEL_PAGESIZE)
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
-BOARD_MKBOOTIMG_ARGS += --board $(BOARD_NAME)
-BOARD_MKBOOTIMG_ARGS += --second_offset $(BOARD_KERNEL_SECOND_OFFSET)
-BOARD_MKBOOTIMG_ARGS += --kernel_offset $(BOARD_KERNEL_OFFSET)
 
 # Additional root folders
 TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
