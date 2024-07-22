@@ -162,6 +162,7 @@ ro.hardware.keystore=mdfpp
 ro.hardware.keystore_desede=true
 
 # Media
+debug.stagefright.c2inputsurface=-1
 vendor.media.omx=0
 
 # NFC
