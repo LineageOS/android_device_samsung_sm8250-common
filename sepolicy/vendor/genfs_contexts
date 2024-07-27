@@ -117,8 +117,6 @@ genfscon sysfs /devices/platform/soc/soc:sec-dual-battery/power_supply/sec-dual-
 genfscon sysfs /devices/platform/soc/soc:sec-direct-charger/power_supply/sec-direct-charger/wakeup                          u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/soc:qcom,msm-audio-apr/soc:qcom,msm-audio-apr:qcom,q6core-audio/soc:qcom,msm-audio-apr:qcom,q6core-audio:sound/Listen   u:object_r:sysfs_wakeup:s0
 
-genfscon sysfs /devices/virtual/diag/diag/wakeup                                                                            u:object_r:sysfs_wakeup:s0
-
 # Sensors
 genfscon sysfs /devices/virtual/camera/                                                                     u:object_r:sysfs_camera:s0
 genfscon sysfs /devices/virtual/camera/rear/ssrm_camera_info                                                u:object_r:sysfs_camera_writable:s0
