@@ -283,9 +283,9 @@ vendor/lib64/vendor.qti.esepowermanager@1.0.so
 
 # FASTCV
 vendor/lib/libfastcvdsp_stub.so
--vendor/lib/libfastcvopt.so
+vendor/lib/libfastcvopt.so
 vendor/lib64/libfastcvdsp_stub.so
--vendor/lib64/libfastcvopt.so
+vendor/lib64/libfastcvopt.so
 
 # Gatekeeper
 vendor/lib64/hw/gatekeeper.mdfpp.so
@@ -361,7 +361,7 @@ vendor/lib64/libkeymaster_helper.so
 vendor/lib64/libkeymasterdeviceutils.so
 vendor/lib64/libkeymasterutils.so
 vendor/lib64/libqtikeymaster4.so
--vendor/lib64/libskeymaster4device.so
+vendor/lib64/libskeymaster4device.so
 vendor/lib64/libspcom.so
 
 # Latency
@@ -601,7 +601,7 @@ vendor/etc/init/vendor.samsung.hardware.thermal@1.0-service.rc
 vendor/etc/thermal-engine.conf
 vendor/etc/vintf/manifest/vendor.samsung.hardware.thermal@1.0-manifest.xml
 vendor/lib64/libhypervintf.so
--vendor/lib64/libthermalclient.so
+vendor/lib64/libthermalclient.so
 vendor/lib64/vendor.samsung.hardware.hyper-V2-ndk_platform.so
 vendor/lib64/vendor.samsung.hardware.thermal@1.0.so
 
