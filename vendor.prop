@@ -161,6 +161,9 @@ ro.incremental.enable=true
 ro.hardware.keystore=mdfpp
 ro.hardware.keystore_desede=true
 
+# Media
+vendor.media.omx=0
+
 # NFC
 ro.vendor.nfc.info.antpos=1
 ro.vendor.nfc.support.advancedsetting=false
