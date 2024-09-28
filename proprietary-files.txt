@@ -1,5 +1,7 @@
 # Common proprietary files - from Samsung package version G780GXXSDEXJ3 (T), unless pinned
 
+# libOmxVpp depends on libOmxCore, which is a GNU makefile target
+
 # ADSP
 vendor/bin/adsprpcd
 vendor/etc/init/vendor.qti.adsprpc-service.rc
@@ -132,7 +134,7 @@ vendor/lib64/libarcsoft_aieffectpk_video.so
 vendor/lib64/libarcsoft_aieffectpk_video_bokeh.so
 vendor/lib64/libarcsoft_aieffectpk_video_plight.so
 vendor/lib64/libarcsoft_deflicker_native.so
-vendor/lib64/libarcsoft_multi_frame_video_hdr.so
+vendor/lib64/libarcsoft_multi_frame_video_hdr.so;DISABLE_CHECKELF
 vendor/lib64/libarcsoft_object_tracking.so
 vendor/lib64/libarcsoft_superresolution_bokeh.so
 vendor/lib64/libbeautyshot.arcsoft.so
@@ -413,7 +415,7 @@ vendor/lib/libOmxDsdDec.so
 vendor/lib/libOmxEvrcDec.so
 vendor/lib/libOmxG711Dec.so
 vendor/lib/libOmxQcelp13Dec.so
-vendor/lib/libOmxVpp.so
+vendor/lib/libOmxVpp.so;DISABLE_CHECKELF
 vendor/lib/libOmxWmaDec.so
 vendor/lib/libdsd2pcm.so
 vendor/lib/libmmosal.so
@@ -425,7 +427,7 @@ vendor/lib64/libOmxApeDec.so
 vendor/lib64/libOmxEvrcDec.so
 vendor/lib64/libOmxG711Dec.so
 vendor/lib64/libOmxQcelp13Dec.so
-vendor/lib64/libOmxVpp.so
+vendor/lib64/libOmxVpp.so;DISABLE_CHECKELF
 vendor/lib64/libOmxWmaDec.so
 vendor/lib64/libmmosal.so
 
