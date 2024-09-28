@@ -1270,7 +1270,6 @@ vendor/lib/libqcmaputils.so
 vendor/lib/libqrtr.so
 vendor/lib/libqsocket.so
 vendor/lib/libsec_semRil.so
-vendor/lib/libsecril-client.so
 vendor/lib/libsystem_health_mon.so
 vendor/lib64/libconfigdb.so
 vendor/lib64/libdsi_netctrl.so
@@ -1290,7 +1289,6 @@ vendor/lib64/libSemTelephonyProps.so
 vendor/lib64/libSemDataProps.so
 vendor/lib64/libsec_semRil.so
 vendor/lib64/libsec-ril.so|3298a4818e1a2a42aaef90ac8ae53a1c2ea8ce3a
-vendor/lib64/libsecril-client.so
 vendor/lib64/libsystem_health_mon.so
 vendor/lib64/libvkmanager_vendor.so
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.0.so
