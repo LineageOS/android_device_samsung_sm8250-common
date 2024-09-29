@@ -20,9 +20,9 @@ cc_library_static {
         "recovery_updater.cpp",
     ],
     include_dirs: [
-        "system/libbase/include",
+        "bootable/deprecated-ota/edify/include",
         "bootable/recovery",
-        "bootable/recovery/edify/include",
-        "bootable/recovery/otautil/include"
+        "bootable/recovery/otautil/include",
+        "system/libbase/include",
     ],
 }
