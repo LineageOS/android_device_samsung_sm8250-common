@@ -267,7 +267,6 @@ vendor/lib64/libpadm.so
 vendor/lib64/libscaler_hw.unifunc.so
 vendor/lib64/libsegmentationeffect.uniplugin@1.0.so
 vendor/lib64/libsensorlistener.so
-vendor/lib64/libsensorndkbridge.so
 vendor/lib64/libsmartfocus_interface.so
 vendor/lib64/libsnap_compute.so
 vendor/lib64/libsnap_compute_wrapper.so
