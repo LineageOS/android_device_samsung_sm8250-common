@@ -399,7 +399,8 @@ PRODUCT_PACKAGES += \
     android.frameworks.sensorservice@1.0.vendor \
     android.hardware.sensors-service.samsung-multihal \
     android.hardware.sensors@2.0-ScopedWakelock.vendor \
-    libsensorndkbridge
+    libsensorndkbridge \
+    libshim_sensorndkbridge
 
 # Telephony
 PRODUCT_PACKAGES += \
