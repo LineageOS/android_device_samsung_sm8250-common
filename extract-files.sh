@@ -80,6 +80,9 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             "${PATCHELF}" --replace-needed "libcrypto.so" "libcrypto-v33.so" "${2}"
             ;;
+        vendor/etc/init/android.hardware.gatekeeper@1.0-service.rc)
+            [ "$2" = "" ] && return 0
+            sed -i 's/mdfpp/default/g' "${2}"
         *)
             return 1
             ;;

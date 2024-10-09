@@ -33,7 +33,6 @@
         <interface>
             <name>IGatekeeper</name>
             <instance>default</instance>
-            <instance>mdfpp</instance>
         </interface>
     </hal>
     <hal format="hidl" override="true">
