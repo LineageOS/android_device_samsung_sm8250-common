@@ -1030,13 +1030,7 @@ vendor/lib64/libgnsspps.so
 vendor/lib64/libgps.utils.so
 
 # Gatekeeper
-vendor/bin/hw/android.hardware.gatekeeper@1.0-service
-vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
-vendor/etc/init/android.hardware.gatekeeper@1.0-service-mdfpp.rc
-vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
-vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 vendor/lib64/hw/gatekeeper.mdfpp.so
-vendor/lib64/android.hardware.gatekeeper@1.0-impl.so
 
 # Graphics
 vendor/lib/egl/eglSubDriverAndroid.so

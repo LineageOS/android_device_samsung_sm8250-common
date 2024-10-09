@@ -1,13 +1,4 @@
 <compatibility-matrix version="5.0" type="framework">
-    <hal format="hidl" optional="true">
-        <name>android.hardware.gatekeeper</name>
-        <version>1.0</version>
-        <interface>
-            <name>IGatekeeper</name>
-            <instance>default</instance>
-            <instance>mdfpp</instance>
-        </interface>
-    </hal>
     <hal format="aidl" optional="true">
         <name>android.hardware.light</name>
         <interface>
