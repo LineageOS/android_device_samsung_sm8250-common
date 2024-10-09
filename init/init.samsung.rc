@@ -56,6 +56,8 @@ on post-fs
     restorecon /efs
 
 on post-fs-data
+    mkdir /data/vendor/gatekeeper 0770 system system
+
     # carrier partition
     chown system system /carrier
     chmod 0771 /carrier
@@ -278,3 +280,10 @@ on property:sys.boot_completed=1
 
 on property:vendor.chre.enabled=0
     stop chre
+
+service vendor.gatekeeper-1-0 /vendor/bin/hw/android.hardware.gatekeeper@1.0-service
+    interface android.hardware.gatekeeper@1.0::IGatekeeper default
+    override
+    class hal
+    user system
+    group system 5678
