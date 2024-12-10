@@ -114,7 +114,7 @@ vendor/lib64/libarcsoft_aieffectpk_video.so
 vendor/lib64/libarcsoft_aieffectpk_video_bokeh.so
 vendor/lib64/libarcsoft_aieffectpk_video_plight.so
 vendor/lib64/libarcsoft_deflicker_native.so
-vendor/lib64/libarcsoft_multi_frame_video_hdr.so;DISABLE_CHECKELF
+vendor/lib64/libarcsoft_multi_frame_video_hdr.so
 vendor/lib64/libarcsoft_object_tracking.so
 vendor/lib64/libarcsoft_superresolution_bokeh.so
 vendor/lib64/libbeautyshot.arcsoft.so
