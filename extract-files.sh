@@ -70,6 +70,12 @@ done
 
 function blob_fixup() {
     case "${1}" in
+        vendor/lib64/libarcsoft_multi_frame_video_hdr.so)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF_0_17_2}" --clear-symbol-version "remote_handle_close" "${2}"
+            "${PATCHELF_0_17_2}" --clear-symbol-version "remote_handle_invoke" "${2}"
+            "${PATCHELF_0_17_2}" --clear-symbol-version "remote_handle_open" "${2}"
+            ;;
         vendor/lib64/libhypermotion_core.so|vendor/lib64/libsensorlistener.so|vendor/lib64/libvdis_core.so)
             [ "$2" = "" ] && return 0
             grep -q "libshim_sensorndkbridge.so" "${2}" || "${PATCHELF}" --add-needed "libshim_sensorndkbridge.so" "${2}"
