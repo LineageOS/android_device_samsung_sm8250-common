@@ -1,6 +1,6 @@
 # Audio
-aaudio.mmap_exclusive_policy=2
-aaudio.mmap_policy=2
+aaudio.mmap_exclusive_policy?=2
+aaudio.mmap_policy?=2
 aaudio.hw_burst_min_usec=2000
 af.fast_track_multiplier=1
 persist.vendor.audio.ambisonic.auto.profile=false
