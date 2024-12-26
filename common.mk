@@ -178,12 +178,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.mapper@2.0.vendor \
     vendor.qti.hardware.display.mapper@3.0.vendor \
     vendor.qti.hardware.display.mapper@4.0.vendor \
-    vendor.qti.hardware.memtrack-service \
-    AdvancedDisplay
-
-# Doze
-PRODUCT_PACKAGES += \
-    SamsungDoze
+    vendor.qti.hardware.memtrack-service
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -254,8 +249,8 @@ PRODUCT_PACKAGES += \
     vendor.lineage.health-service.default
 
 # LiveDisplay
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service.samsung-qcom.sm8250
+#PRODUCT_PACKAGES += \
+#    vendor.lineage.livedisplay@2.0-service.samsung-qcom.sm8250
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -298,15 +293,15 @@ PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.3.vendor
 
 # NFC
-PRODUCT_PACKAGES += \
-    android.hardware.nfc@1.2-service.samsung \
-    com.android.nfc_extras \
-    Tag
+#PRODUCT_PACKAGES += \
+#    android.hardware.nfc@1.2-service.samsung \
+#    com.android.nfc_extras \
+#    Tag
 
 # NFC configs
-PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/configs/nfc/libnfc-sec-vendor.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-sec-vendor.conf \
-    $(COMMON_PATH)/configs/nfc/libnfc-nci-SLSI.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci-SLSI.conf
+#PRODUCT_COPY_FILES += \
+#    $(COMMON_PATH)/configs/nfc/libnfc-sec-vendor.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-sec-vendor.conf \
+#    $(COMMON_PATH)/configs/nfc/libnfc-nci-SLSI.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci-SLSI.conf
 
 # OMX
 PRODUCT_PACKAGES += \
@@ -334,10 +329,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.raw.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.raw.xml \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml \
     frameworks/native/data/etc/android.hardware.location.gps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.location.gps.xml \
-    frameworks/native/data/etc/android.hardware.nfc.hcef.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.hcef.xml \
-    frameworks/native/data/etc/android.hardware.nfc.hce.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.hce.xml \
-    frameworks/native/data/etc/android.hardware.nfc.uicc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.uicc.xml \
-    frameworks/native/data/etc/android.hardware.nfc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.xml \
     frameworks/native/data/etc/android.hardware.opengles.aep.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.opengles.aep.xml \
     frameworks/native/data/etc/android.hardware.se.omapi.ese.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.se.omapi.ese.xml \
     frameworks/native/data/etc/android.hardware.sensor.accelerometer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.accelerometer.xml \
@@ -348,8 +339,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.sensor.stepcounter.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.stepcounter.xml \
     frameworks/native/data/etc/android.hardware.sensor.stepdetector.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.stepdetector.xml \
     frameworks/native/data/etc/android.hardware.strongbox_keystore.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.strongbox_keystore.xml \
-    frameworks/native/data/etc/android.hardware.telephony.gsm.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.gsm.xml \
-    frameworks/native/data/etc/android.hardware.telephony.ims.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.ims.xml \
     frameworks/native/data/etc/android.hardware.touchscreen.multitouch.jazzhand.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml \
     frameworks/native/data/etc/android.hardware.usb.accessory.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.usb.accessory.xml \
     frameworks/native/data/etc/android.hardware.usb.host.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.usb.host.xml \
@@ -420,9 +409,9 @@ PRODUCT_PACKAGES += \
     sehradiomanager
 
 # Secure Element
-PRODUCT_PACKAGES += \
-    android.hardware.secure_element@1.0.vendor \
-    libchrome.vendor
+#PRODUCT_PACKAGES += \
+#    android.hardware.secure_element@1.0.vendor \
+#    libchrome.vendor
 
 # Sensors
 PRODUCT_PACKAGES += \
@@ -433,11 +422,11 @@ PRODUCT_PACKAGES += \
     libshim_sensorndkbridge
 
 # Telephony
-PRODUCT_PACKAGES += \
-    telephony-ext
+#PRODUCT_PACKAGES += \
+#    telephony-ext
 
-PRODUCT_BOOT_JARS += \
-    telephony-ext
+#PRODUCT_BOOT_JARS += \
+#    telephony-ext
 
 # Thermal
 PRODUCT_PACKAGES += \
@@ -463,9 +452,9 @@ PRODUCT_PACKAGES += \
     init.qcom.usb.sh
 
 # Tether
-PRODUCT_PACKAGES += \
-    ipacm \
-    IPACM_cfg.xml
+#PRODUCT_PACKAGES += \
+#    ipacm \
+#    IPACM_cfg.xml
 
 # VNDK
 PRODUCT_PACKAGES += \
