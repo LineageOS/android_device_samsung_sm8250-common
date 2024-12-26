@@ -24,7 +24,7 @@ source "${HELPER}"
 setup_vendor "${DEVICE_COMMON}" "${VENDOR_COMMON:-$VENDOR}" "${ANDROID_ROOT}" true
 
 # Warning headers and guards
-write_headers "r8q"
+write_headers "gts7l gts7lwifi r8q"
 
 # The standard common blobs
 write_makefiles "${MY_DIR}/proprietary-files.txt"
