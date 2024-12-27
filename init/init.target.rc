@@ -130,14 +130,6 @@ on early-boot
 on boot
     write /dev/cpuset/audio-app/cpus 1-2
 
-    # USB controller configuration
-    setprop vendor.usb.rndis.func.name "gsi"
-    setprop vendor.usb.rmnet.func.name "gsi"
-    setprop vendor.usb.rmnet.inst.name "rmnet"
-    setprop vendor.usb.dpl.inst.name "dpl"
-    setprop vendor.usb.qdss.inst.name "qdss"
-    setprop vendor.usb.controller a600000.dwc3
-
     # 8250 cpuset
     write /dev/cpuset/top-app/cpus 0-7
     write /dev/cpuset/foreground/cpus 0-2,4-7
