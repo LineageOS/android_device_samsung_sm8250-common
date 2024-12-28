@@ -37,6 +37,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
 
 # Init files and fstab
 PRODUCT_PACKAGES += \
+    fstab.qcom \
+    fstab.qcom.ramdisk \
     fstab.ramplus \
     init.audio.samsung.rc \
     init.fingerprint.rc \
@@ -64,10 +66,6 @@ PRODUCT_PACKAGES += \
     init.qcom.post_boot.sh \
     init.qcom.sh \
     init.qti.dcvs.sh
-
-PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom \
-    $(COMMON_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.qcom
 
 # Audio
 PRODUCT_PACKAGES += \
