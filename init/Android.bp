@@ -1,0 +1,178 @@
+//
+// Copyright (C) 2024 The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+prebuilt_etc {
+    name: "fstab.ramplus",
+    src: "fstab.ramplus",
+    soc_specific: true,
+}
+
+prebuilt_etc {
+    name: "init.audio.samsung.rc",
+    src: "init.audio.samsung.rc",
+    sub_dir: "init",
+    soc_specific: true,
+}
+
+prebuilt_etc {
+    name: "init.fingerprint.rc",
+    src: "init.fingerprint.rc",
+    sub_dir: "init",
+    soc_specific: true,
+}
+
+prebuilt_etc {
+    name: "init.nfc.samsung.rc",
+    src: "init.nfc.samsung.rc",
+    sub_dir: "init",
+    soc_specific: true,
+}
+
+prebuilt_etc {
+    name: "init.qcom.rc",
+    src: "init.qcom.rc",
+    sub_dir: "init/hw",
+    soc_specific: true,
+}
+
+prebuilt_etc {
+    name: "init.qcom.usb.rc",
+    src: "init.qcom.usb.rc",
+    sub_dir: "init/hw",
+    soc_specific: true,
+}
+
+prebuilt_etc {
+    name: "init.ramplus.rc",
+    src: "init.ramplus.rc",
+    sub_dir: "init",
+    soc_specific: true,
+}
+
+prebuilt_etc {
+    name: "init.samsung.bsp.rc",
+    src: "init.samsung.bsp.rc",
+    sub_dir: "init/hw",
+    soc_specific: true,
+}
+
+prebuilt_etc {
+    name: "init.samsung.display.rc",
+    src: "init.samsung.display.rc",
+    sub_dir: "init/hw",
+    soc_specific: true,
+}
+
+prebuilt_etc {
+    name: "init.samsung.eif.rc",
+    src: "init.samsung.eif.rc",
+    sub_dir: "init/hw",
+    soc_specific: true,
+}
+
+prebuilt_etc {
+    name: "init.samsung.rc",
+    src: "init.samsung.rc",
+    sub_dir: "init/hw",
+    soc_specific: true,
+}
+
+prebuilt_etc {
+    name: "init.target.rc",
+    src: "init.target.rc",
+    sub_dir: "init/hw",
+    soc_specific: true,
+}
+
+prebuilt_etc {
+    name: "init.vendor.onebinary.rc",
+    src: "init.vendor.onebinary.rc",
+    sub_dir: "init",
+    soc_specific: true,
+}
+
+prebuilt_etc {
+    name: "init.vendor.rilchip.rc",
+    src: "init.vendor.rilchip.rc",
+    sub_dir: "init",
+    soc_specific: true,
+}
+
+prebuilt_etc {
+    name: "init.vendor.rilcommon.rc",
+    src: "init.vendor.rilcommon.rc",
+    sub_dir: "init",
+    soc_specific: true,
+}
+
+prebuilt_etc {
+    name: "init.vendor.sensors.rc",
+    src: "init.vendor.sensors.rc",
+    sub_dir: "init",
+    soc_specific: true,
+}
+
+prebuilt_etc {
+    name: "ueventd.qcom.rc",
+    filename: "ueventd.rc",
+    src: "ueventd.qcom.rc",
+    soc_specific: true,
+}
+
+prebuilt_etc {
+    name: "wifi_qcom.rc",
+    src: "wifi_qcom.rc",
+    sub_dir: "init",
+    soc_specific: true,
+}
+
+prebuilt_etc {
+    name: "wifi_sec.rc",
+    src: "wifi_sec.rc",
+    sub_dir: "init",
+    soc_specific: true,
+}
+
+sh_binary {
+    name: "init.class_main.sh",
+    src: "init.class_main.sh",
+    soc_specific: true,
+}
+
+sh_binary {
+    name: "init.mdm.sh",
+    src: "init.mdm.sh",
+    soc_specific: true,
+}
+
+sh_binary {
+    name: "init.qcom.early_boot.sh",
+    src: "init.qcom.early_boot.sh",
+    soc_specific: true,
+}
+
+sh_binary {
+    name: "init.qcom.post_boot.sh",
+    src: "init.qcom.post_boot.sh",
+    soc_specific: true,
+}
+
+sh_binary {
+    name: "init.qcom.sh",
+    src: "init.qcom.sh",
+    soc_specific: true,
+}
+
+sh_binary {
+    name: "init.qcom.usb.sh",
+    src: "init.qcom.usb.sh",
+    soc_specific: true,
+}
+
+sh_binary {
+    name: "init.qti.dcvs.sh",
+    src: "init.qti.dcvs.sh",
+    soc_specific: true,
+}
