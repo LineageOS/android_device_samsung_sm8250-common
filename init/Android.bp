@@ -4,6 +4,13 @@
 //
 
 prebuilt_etc {
+    name: "fstab.qcom",
+    src: "fstab.qcom",
+    soc_specific: true,
+    ramdisk_available: true,
+}
+
+prebuilt_etc {
     name: "fstab.ramplus",
     src: "fstab.ramplus",
     soc_specific: true,
