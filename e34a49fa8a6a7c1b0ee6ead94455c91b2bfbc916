@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9d799e85_9a8237dc",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2024-12-29T11:05:33Z",
+      "side": 1,
+      "message": "Can you please get me a dump of `fastboot getvar all` from your r8q?",
+      "revId": "e34a49fa8a6a7c1b0ee6ead94455c91b2bfbc916",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
