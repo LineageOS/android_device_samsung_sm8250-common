@@ -105,14 +105,9 @@ TARGET_USERIMAGES_USE_EXT4           := true
 # Partitions
 -include vendor/lineage/config/BoardConfigReservedSize.mk
 
-BOARD_DTBOIMG_PARTITION_SIZE                    := 8388608
-BOARD_BOOTIMAGE_PARTITION_SIZE                  := 67108864
-BOARD_RECOVERYIMAGE_PARTITION_SIZE              := 82694144
-BOARD_CACHEIMAGE_PARTITION_SIZE                 := 629145600
-BOARD_SUPER_PARTITION_SIZE                      := 10292822016
-BOARD_SUPER_PARTITION_GROUPS                    := qti_dynamic_partitions
-BOARD_QTI_DYNAMIC_PARTITIONS_PARTITION_LIST     := system system_ext odm product vendor
-BOARD_QTI_DYNAMIC_PARTITIONS_SIZE               := 10292822012
+BOARD_QTI_DYNAMIC_PARTITIONS_PARTITION_LIST := system system_ext odm product vendor
+BOARD_QTI_DYNAMIC_PARTITIONS_SIZE := $(shell echo $$(($(BOARD_SUPER_PARTITION_SIZE) - 4194304))) # (BOARD_SUPER_PARTITION_SIZE - "reasonable overhead of 4 MiB")
+BOARD_SUPER_PARTITION_GROUPS := qti_dynamic_partitions
 
 BOARD_FLASH_BLOCK_SIZE := 262144 # (BOARD_KERNEL_PAGESIZE * 64)
 
