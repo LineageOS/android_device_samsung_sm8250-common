@@ -14,8 +14,6 @@
 # limitations under the License.
 #
 
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
-
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
@@ -27,8 +25,6 @@ $(call inherit-product, hardware/qcom-caf/common/common.mk)
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
-
-PRODUCT_ENFORCE_RRO_TARGETS := *
 
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 29
@@ -297,6 +293,13 @@ PRODUCT_PACKAGES += \
     libOmxVdec \
     libOmxVenc \
     libstagefrighthw
+
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay \
+    $(LOCAL_PATH)/overlay-lineage
+
+PRODUCT_ENFORCE_RRO_TARGETS := *
 
 # Permissions
 PRODUCT_COPY_FILES += \
