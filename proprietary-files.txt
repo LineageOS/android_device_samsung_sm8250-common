@@ -1,4 +1,4 @@
-# All blobs are from G780GXXS8EXC1 (T), unless pinned
+# All blobs are from G780GXXSCEXI1 (T), unless pinned
 
 # ADSP
 vendor/bin/adsprpcd
