@@ -585,15 +585,6 @@ vendor/lib64/libgsl.so
 vendor/lib64/libllvm-glnext.so
 vendor/lib64/libllvm-qcom.so
 
-# Health
-vendor/bin/hw/android.hardware.health@2.1-service-samsung
-vendor/etc/init/android.hardware.health@2.1-service-samsung.rc
--vendor/etc/vintf/manifest/android.hardware.health@2.1-samsung.xml
-vendor/lib/hw/android.hardware.health@2.0-impl-2.1-samsung.so
-vendor/lib/vendor.samsung.hardware.health@2.0.so
-vendor/lib64/hw/android.hardware.health@2.0-impl-2.1-samsung.so|42b247fc8066d045c299a1b4d25559419f14d61a
-vendor/lib64/vendor.samsung.hardware.health@2.0.so
-
 # Keymaster
 -vendor/bin/hw/android.hardware.keymaster@4.0-strongbox-service-qti
 vendor/bin/sec_nvm
