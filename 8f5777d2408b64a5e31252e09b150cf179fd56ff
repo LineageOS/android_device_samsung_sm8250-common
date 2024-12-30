@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e2a6a6a3_06e56c37",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2024-12-30T08:58:36Z",
+      "side": 1,
+      "message": "Everything related with NFC must be removed. It\u0027s common.",
+      "revId": "8f5777d2408b64a5e31252e09b150cf179fd56ff",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
