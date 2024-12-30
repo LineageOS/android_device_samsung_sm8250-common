@@ -1,4 +1,4 @@
-# All blobs are from G780GXXS8EXC1 (T), unless pinned
+# Common proprietary files - from Samsung package version G780GXXSDEXJ3 (T), unless pinned
 
 # ACDB
 vendor/etc/acdbdata/adsp_avs_config.acdb
@@ -1035,7 +1035,7 @@ vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
 vendor/etc/init/android.hardware.gatekeeper@1.0-service-mdfpp.rc
 vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
-vendor/lib64/hw/gatekeeper.mdfpp.so|c9d435865554978ce5dc255b555e2368599f621b
+vendor/lib64/hw/gatekeeper.mdfpp.so
 vendor/lib64/android.hardware.gatekeeper@1.0-impl.so
 
 # Graphics
@@ -1082,7 +1082,7 @@ vendor/etc/init/android.hardware.health@2.1-service-samsung.rc
 -vendor/etc/vintf/manifest/android.hardware.health@2.1-samsung.xml
 vendor/lib/hw/android.hardware.health@2.0-impl-2.1-samsung.so
 vendor/lib/vendor.samsung.hardware.health@2.0.so
-vendor/lib64/hw/android.hardware.health@2.0-impl-2.1-samsung.so|42b247fc8066d045c299a1b4d25559419f14d61a
+vendor/lib64/hw/android.hardware.health@2.0-impl-2.1-samsung.so
 vendor/lib64/vendor.samsung.hardware.health@2.0.so
 
 # HotwordEnrollment
@@ -1102,7 +1102,7 @@ vendor/lib/libkeymasterutils.so
 vendor/lib/libqtikeymaster4.so
 vendor/lib/libspcom.so
 -vendor/lib64/libkeymaster_helper.so
--vendor/lib64/libskeymaster4device.so|8d67e6b59bba0c5a7a7fc8c08fb3ab1a07e157c4
+-vendor/lib64/libskeymaster4device.so
 vendor/lib64/libkeymasterutils.so
 vendor/lib64/libkeymasterdeviceutils.so
 vendor/lib64/libqtikeymaster4.so
