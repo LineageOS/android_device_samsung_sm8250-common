@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5f83e4a4_37409705",
+        "filename": "overlay/packages/apps/LineageParts/res/values/config.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2024-12-30T10:07:38Z",
+      "side": 0,
+      "message": "why is this one being deleted?",
+      "revId": "bedd7e8bd1a6e8db3e6ec22a29bad2f4085afadb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
