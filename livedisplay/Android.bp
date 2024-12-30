@@ -19,8 +19,9 @@ cc_binary {
     relative_install_path: "hw",
     srcs: [
         "AdaptiveBacklight.cpp",
-        "SunlightEnhancement.cpp",
         "DisplayColorCalibration.cpp",
+        "DisplayModes.cpp",
+        "SunlightEnhancement.cpp",
         "service.cpp",
     ],
     shared_libs: [
