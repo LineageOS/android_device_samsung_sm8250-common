@@ -52,6 +52,13 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "init.recovery.qcom.rc",
+    src: "etc/init.recovery.qcom.rc",
+    sub_dir: "init",
+    recovery: true,
+}
+
+prebuilt_etc {
     name: "init.samsung.bsp.rc",
     src: "init.samsung.bsp.rc",
     sub_dir: "init/hw",

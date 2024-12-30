@@ -46,6 +46,7 @@ PRODUCT_PACKAGES += \
     init.nfc.samsung.rc \
     init.qcom.rc \
     init.ramplus.rc \
+    init.recovery.qcom.rc \
     init.samsung.bsp.rc \
     init.samsung.display.rc \
     init.samsung.eif.rc \
@@ -382,10 +383,6 @@ PRODUCT_PACKAGES += \
     libsqlite.vendor \
     libvndfwk_detect_jni.qti \
     libvndfwk_detect_jni.qti.vendor
-
-# Recovery
-PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/recovery/root/init.recovery.qcom.rc:root/init.recovery.qcom.rc
 
 # RIL
 PRODUCT_PACKAGES += \
