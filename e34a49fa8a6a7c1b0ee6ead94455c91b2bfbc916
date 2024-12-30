@@ -16,6 +16,23 @@
       "message": "Can you please get me a dump of `fastboot getvar all` from your r8q?",
       "revId": "e34a49fa8a6a7c1b0ee6ead94455c91b2bfbc916",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ff469332_a0107e57",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33569
+      },
+      "writtenOn": "2024-12-30T05:45:55Z",
+      "side": 1,
+      "message": "Boot, recovery and super partition sizes are different for r8q.",
+      "revId": "e34a49fa8a6a7c1b0ee6ead94455c91b2bfbc916",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
