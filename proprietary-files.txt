@@ -1112,7 +1112,6 @@ vendor/lib64/libsecfr_model.so
 vendor/lib64/libshotsuggestion_engines.so
 
 # Media
-vendor/etc/seccomp_policy/configstore@1.1.policy
 vendor/etc/seccomp_policy/mediacodec.policy
 vendor/lib/libAlacSwDec.so
 vendor/lib/libApeSwDec.so
