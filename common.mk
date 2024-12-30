@@ -16,8 +16,6 @@
 
 COMMON_PATH := device/samsung/sm8250-common
 
-DEVICE_PACKAGE_OVERLAYS += $(COMMON_PATH)/overlay
-
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
@@ -26,8 +24,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
-
-PRODUCT_ENFORCE_RRO_TARGETS := *
 
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 29
@@ -296,6 +292,13 @@ PRODUCT_PACKAGES += \
     libOmxVdec \
     libOmxVenc \
     libstagefrighthw
+
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    $(COMMON_PATH)/overlay \
+    $(COMMON_PATH)/overlay-lineage
+
+PRODUCT_ENFORCE_RRO_TARGETS := *
 
 # Permissions
 PRODUCT_COPY_FILES += \
