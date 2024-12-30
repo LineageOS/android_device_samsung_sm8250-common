@@ -12,9 +12,6 @@
      limitations under the License.
 -->
 <resources>
-    <!-- Whether device has screen with higher aspect ratio -->
-    <bool name="config_haveHigherAspectRatioScreen">true</bool>
-
     <!-- Defines the actions shown in advanced reboot submenu -->
     <string-array name="config_restartActionsList">
         <item>restart</item>
@@ -22,7 +19,4 @@
         <item>restart_fastboot</item>
         <item>restart_download</item>
      </string-array>
-
-     <!-- Whether the device supports wireless charging or not -->
-    <bool name="config_deviceSupportsWirelessCharging">true</bool>
 </resources>
