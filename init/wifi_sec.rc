@@ -6,39 +6,39 @@ on post-fs-data
     mkdir /data/vendor/wifi/wpa/sockets 0770 wifi wifi
     mkdir /data/vendor/log/wifi 0770 wifi system
 
-# for WIFI TRP/TIS
+    # for WIFI TRP/TIS
     chown wifi wifi /data/vendor/conn/.psm.info
     chmod 0640 /data/vendor/conn/.psm.info
 
-# for WIFI Antenna Selection
+    # for WIFI Antenna Selection
     chown wifi wifi /data/vendor/conn/.ant.info
     chmod 0640 /data/vendor/conn/.ant.info
 
-# for WIFI Version
+    # for WIFI Version
     chown wifi wifi /data/vendor/conn/.wifiver.info
     chmod 0644 /data/vendor/conn/.wifiver.info
 
-# for WIFI MEMDUMP
-# The default value of below memdump file is set in SecProductFeature
-    # write /data/vendor/conn/.memdump.info 2
+    # for WIFI MEMDUMP
+    # The default value of below memdump file is set in SecProductFeature
+    #write /data/vendor/conn/.memdump.info 2
     chown wifi wifi /data/vendor/conn/.memdump.info
     chmod 0640 /data/vendor/conn/.memdump.info
 
-# for WIFI hotspot
+    # for WIFI hotspot
     chown wifi wifi /data/vendor/conn/.softap.info
     chmod 0644 /data/vendor/conn/.softap.info
     chown system wifi /vendor/etc/wifi/indoorchannel.info
     chmod 0664 /vendor/etc/wifi/indoorchannel.info
 
-# for updating the supported feature
+    # for updating the supported feature
     chown wifi wifi /data/vendor/conn/.feature.info
     chmod 0640 /data/vendor/conn/.feature.info
     chown wifi wifi /sys/wifi/feature
     chmod 0640 /sys/wifi/feature
 
-# for WIFI MAC
+    # for WIFI MAC
     mkdir /mnt/vendor/efs/wifi 0755 wifi wifi
-    chown wifi wifi /mnt/vendor/efs/wifi/.mac.info
+    chown wifi system /mnt/vendor/efs/wifi/.mac.info
     chmod 0644 /mnt/vendor/efs/wifi/.mac.info
     chown wifi wifi /mnt/vendor/efs/wifi/.mac.cob
     chmod 0644 /mnt/vendor/efs/wifi/.mac.cob

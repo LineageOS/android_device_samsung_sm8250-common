@@ -24,8 +24,8 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "init.fingerprint.rc",
-    src: "init.fingerprint.rc",
+    name: "fingerprint_common.rc",
+    src: "fingerprint_common.rc",
     sub_dir: "init",
     soc_specific: true,
 }

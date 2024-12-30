@@ -43,7 +43,7 @@ PRODUCT_PACKAGES += \
     fstab.qcom.ramdisk \
     fstab.ramplus \
     init.audio.samsung.rc \
-    init.fingerprint.rc \
+    fingerprint_common.rc \
     init.nfc.samsung.rc \
     init.qcom.rc \
     init.ramplus.rc \
