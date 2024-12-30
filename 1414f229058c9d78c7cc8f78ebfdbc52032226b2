@@ -24,6 +24,30 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "1537a599_dbe07790",
+        "filename": "configs/framework_compatibility_matrix.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2024-12-30T15:01:57Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "409f26b2_7d01447e",
+      "range": {
+        "startLine": 2,
+        "startChar": 0,
+        "endLine": 9,
+        "endChar": 10
+      },
+      "revId": "1414f229058c9d78c7cc8f78ebfdbc52032226b2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "319bfd5d_3d44d2b7",
@@ -37,6 +61,24 @@
       "writtenOn": "2024-12-30T10:00:00Z",
       "side": 1,
       "message": "I\u0027d prefer to do this: https://github.com/LineageOS/android_device_samsung_gts4lv-common/commit/cb2135ad50d949ade42071dbaa564693f6fed7c1",
+      "revId": "1414f229058c9d78c7cc8f78ebfdbc52032226b2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4babca71_22f2ceb4",
+        "filename": "extract-files.sh",
+        "patchSetId": 4
+      },
+      "lineNbr": 83,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2024-12-30T15:01:57Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "319bfd5d_3d44d2b7",
       "revId": "1414f229058c9d78c7cc8f78ebfdbc52032226b2",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
