@@ -13,9 +13,6 @@
 -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Whether to show min refresh rate in display settings -->
-    <bool name="config_show_min_refresh_rate_switch">true</bool>
-
     <!-- The number of vibration intensity levels supported by the device.
 
          Note that this should correspond to the ability to vary the vibration amplitude, with
@@ -34,7 +31,4 @@
          should be either LOW (1) or HIGH (3).
     -->
     <integer name="config_vibration_supported_intensity_levels">3</integer>
-
-    <!-- Max network scan search time in seconds -->
-    <integer name="config_network_scan_helper_max_search_time_sec">254</integer>
 </resources>
