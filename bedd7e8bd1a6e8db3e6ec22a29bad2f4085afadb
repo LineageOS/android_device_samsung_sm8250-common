@@ -16,6 +16,24 @@
       "message": "why is this one being deleted?",
       "revId": "bedd7e8bd1a6e8db3e6ec22a29bad2f4085afadb",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cafacf46_4f7ec77e",
+        "filename": "overlay/packages/apps/LineageParts/res/values/config.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2024-12-30T21:06:39Z",
+      "side": 0,
+      "message": "Done",
+      "parentUuid": "5f83e4a4_37409705",
+      "revId": "bedd7e8bd1a6e8db3e6ec22a29bad2f4085afadb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
