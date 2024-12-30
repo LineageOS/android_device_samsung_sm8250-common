@@ -301,14 +301,8 @@ PRODUCT_PACKAGES += \
 
 # NFC
 PRODUCT_PACKAGES += \
-    android.hardware.nfc@1.2-service.samsung \
     com.android.nfc_extras \
     Tag
-
-# NFC configs
-PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/configs/nfc/libnfc-sec-vendor.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-sec-vendor.conf \
-    $(COMMON_PATH)/configs/nfc/libnfc-nci-SLSI.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci-SLSI.conf
 
 # OMX
 PRODUCT_PACKAGES += \
