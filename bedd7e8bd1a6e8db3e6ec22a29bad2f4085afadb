@@ -3,6 +3,40 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "60716845_84a2cf5a",
+        "filename": "overlay-lineage/packages/apps/Dialer/java/com/android/dialer/callrecord/res/values/config.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2024-12-30T21:09:18Z",
+      "side": 0,
+      "message": "Mobile specific one",
+      "revId": "bedd7e8bd1a6e8db3e6ec22a29bad2f4085afadb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "bf9587e6_74d66ad0",
+        "filename": "overlay-lineage/packages/apps/FlipFlap/res/values/config.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2024-12-30T21:09:18Z",
+      "side": 0,
+      "message": "Mobile specific one, or at least I don\u0027t think that there\u0027s any windowed cover for tablets",
+      "revId": "bedd7e8bd1a6e8db3e6ec22a29bad2f4085afadb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "5f83e4a4_37409705",
         "filename": "overlay/packages/apps/LineageParts/res/values/config.xml",
         "patchSetId": 4
