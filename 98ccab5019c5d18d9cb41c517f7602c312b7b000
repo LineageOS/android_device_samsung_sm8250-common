@@ -16,6 +16,23 @@
       "message": "There is a newer package, besides the commit message should ideally be \"Update from XYZ\" and consequently bump SPL.",
       "revId": "98ccab5019c5d18d9cb41c517f7602c312b7b000",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e05ce6e1_cb6a7905",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33569
+      },
+      "writtenOn": "2024-12-30T09:00:45Z",
+      "side": 1,
+      "message": "It\u0027s coming from my old pick. I\u0027ll ofc move it to latest SPL before merging it, when I\u0027m done with vendor repo.",
+      "revId": "98ccab5019c5d18d9cb41c517f7602c312b7b000",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
