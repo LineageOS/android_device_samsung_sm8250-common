@@ -463,7 +463,6 @@ vendor/lib64/libvideotransitioneffect_zoom.arcsoft.so
 vendor/lib64/unihal_cutils@2.1.so
 vendor/lib64/unihal_main@2.1.so
 vendor/lib64/unihal_uniplugin@1.0.so
-vendor/lib64/vendor.qti.hardware.camera.device@1.0.so
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
 vendor/lib64/libcodecsolutionhelper_vendor.so
 vendor/lib/libcodecsolutionhelper_vendor.so
@@ -682,7 +681,6 @@ vendor/lib/libsrib_CNNInterface.camera.samsung.so
 vendor/lib/libsrib_humanaware_engine.camera.samsung.so
 vendor/lib/libswvdec.so
 vendor/lib/libtensorflowLite.singletake.camera.samsung.so
-vendor/lib/vendor.qti.hardware.camera.postproc@1.0.so
 vendor/lib64/libBlurDetectionDeepLearning.camera.samsung.so
 vendor/lib64/libcapiv2svacnn.so
 vendor/lib64/libcapiv2svarnn.so
@@ -701,7 +699,6 @@ vendor/lib64/libsrib_CNNInterface.camera.samsung.so
 vendor/lib64/libsrib_humanaware_engine.camera.samsung.so
 vendor/lib64/libswvdec.so
 vendor/lib64/libtensorflowLite.singletake.camera.samsung.so
-vendor/lib64/vendor.qti.hardware.camera.postproc@1.0.so
 vendor/lib/libPanDetector.so
 vendor/lib64/libPanDetector.so
 vendor/lib/libengine_did.so
