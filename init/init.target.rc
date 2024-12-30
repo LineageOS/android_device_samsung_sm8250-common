@@ -1,3 +1,4 @@
+
 # Copyright (c) 2018-2020, The Linux Foundation. All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
@@ -37,7 +38,7 @@ on early-init
     write /proc/sys/kernel/sched_boost 1
 
 on init
-# Top-App
+    #Top-App
     chown root system /dev/stune/top-app/schedtune.boost
     chown root system /dev/stune/top-app/schedtune.colocate
     chown root system /dev/stune/top-app/schedtune.prefer_idle
@@ -50,12 +51,12 @@ on init
     chmod 0664 /dev/stune/top-app/schedtune.prefer_prime
     chmod 0664 /dev/stune/top-app/schedtune.sched_boost_enabled
     chmod 0664 /dev/stune/top-app/schedtune.sched_boost_no_override
-# ForeGround
+    #ForeGround
     chown root system /dev/stune/foreground/schedtune.boost
     chown root system /dev/stune/foreground/schedtune.colocate
     chown root system /dev/stune/foreground/schedtune.prefer_idle
     chown root system /dev/stune/foreground/schedtune.prefer_prime
-# BackGround
+    #BackGround
     chown root system /dev/stune/background/schedtune.boost
     chown root system /dev/stune/background/schedtune.colocate
     chown root system /dev/stune/background/schedtune.prefer_idle
@@ -72,7 +73,7 @@ on init
     chown root system /sys/devices/system/cpu/cpu7/core_ctl/max_cpus
     chmod 0664 /sys/devices/system/cpu/cpu7/core_ctl/max_cpus
 
-# Performance Sysfs
+    #Performance Sysfs
     chown root system /sys/devices/platform/soc/3d00000.qcom,kgsl-3d0/kgsl/kgsl-3d0/max_clock_mhz
     chown root system /sys/devices/platform/soc/3d00000.qcom,kgsl-3d0/kgsl/kgsl-3d0/max_clock_mhz
     chmod 0664 /sys/devices/platform/soc/3d00000.qcom,kgsl-3d0/kgsl/kgsl-3d0/max_clock_mhz
@@ -89,6 +90,7 @@ on init
     symlink /dev/block/platform/soc/1d84000.ufshc /dev/block/bootdevice
     chown system system /sys/devices/platform/soc/1d84000.ufshc/auto_hibern8
     chmod 0660 /sys/devices/platform/soc/1d84000.ufshc/auto_hibern8
+    start logd
 
 on early-fs
     start vold
@@ -103,9 +105,8 @@ on fs
     mkdir /mnt/vendor/persist/data 0700 system system
 
 on post-fs
-# set RLIMIT_MEMLOCK to 64MB
+    # set RLIMIT_MEMLOCK to 64MB
     setrlimit 8 67108864 67108864
-
     write /dev/ipa 1
 
 on late-fs
@@ -113,7 +114,7 @@ on late-fs
 
 on post-fs-data
     mkdir /vendor/data/tombstones 0771 system system
-# Enable WLAN cold boot calibration
+    # Enable WLAN cold boot calibration
     write /sys/devices/platform/soc/b0000000.qcom,cnss-qca6490/fs_ready 1
 
 # for WIFI MAC address
@@ -122,14 +123,13 @@ on post-fs-data
     chmod 0664 /mnt/vendor/efs/wifi/.mac.info
     chown wifi root /mnt/vendor/efs/wifi/.mac.cob
     chmod 0664 /mnt/vendor/efs/wifi/.mac.cob
-
 on early-boot
     start vendor.sensors
 
 on boot
     write /dev/cpuset/audio-app/cpus 1-2
 
-# USB controller configuration
+    # USB controller configuration
     setprop vendor.usb.rndis.func.name "gsi"
     setprop vendor.usb.rmnet.func.name "gsi"
     setprop vendor.usb.rmnet.inst.name "rmnet"
@@ -137,7 +137,7 @@ on boot
     setprop vendor.usb.qdss.inst.name "qdss"
     setprop vendor.usb.controller a600000.dwc3
 
-# 8250 cpuset
+    # 8250 cpuset
     write /dev/cpuset/top-app/cpus 0-7
     write /dev/cpuset/foreground/cpus 0-2,4-7
     write /dev/cpuset/background/cpus 0-2
@@ -178,10 +178,10 @@ on property:ro.boot.debug_level=0x494d
     setprop vendor.fastrpc.debug.trace 1
 
 on property:vendor.display.lcd_density=560
-    setprop dalvik.vm.heapgrowthlimit 256m
+   setprop dalvik.vm.heapgrowthlimit 256m
 
 on property:vendor.display.lcd_density=640
-    setprop dalvik.vm.heapgrowthlimit 512m
+   setprop dalvik.vm.heapgrowthlimit 512m
 
 on boot && property:persist.vendor.usb.controller.default=*
     setprop vendor.usb.controller ${persist.vendor.usb.controller.default}
@@ -195,18 +195,18 @@ on charger
     setprop sys.usb.configfs 1
 
 service vendor.lowi /vendor/bin/sscrpcd
-    class core
-    user system
-    group system wakelock
-    capabilities BLOCK_SUSPEND
+   class core
+   user system
+   group system wakelock
+   capabilities BLOCK_SUSPEND
 
-# pd-mapper
+#pd-mapper
 service vendor.pd_mapper /vendor/bin/pd-mapper
     class core
     user system
     group system
 
-# Peripheral manager
+#Peripheral manager
 service vendor.per_mgr /vendor/bin/pm-service
     class core
     user system
@@ -242,4 +242,4 @@ service dcvs-sh /vendor/bin/init.qti.dcvs.sh
     oneshot
 
 on property:vendor.dcvs.prop=1
-    start dcvs-sh
+   start dcvs-sh

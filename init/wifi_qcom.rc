@@ -1,9 +1,9 @@
 on post-fs-data
-# for boot_wlan
+    # for boot_wlan
     chown wifi wifi /sys/kernel/boot_wlan/boot_wlan
     chmod 0640 /sys/kernel/boot_wlan/boot_wlan
 
-# for WIFI qcwlanstate
+    # for WIFI qcwlanstate
     chown wifi wifi /sys/wifi/qcwlanstate
     chmod 0644 /sys/wifi/qcwlanstate
 
@@ -14,20 +14,20 @@ on post-fs-data
     symlink /data/vendor/ramdump /data/vendor/log/wifi/ramdump
     chown system wifi /data/vendor/log/wifi/ramdump
 
-# for WIFI Antenna
+    # for WIFI Antenna
     write /data/vendor/conn/.wificable.info E
     chown system root /data/vendor/conn/.wificable.info
     chmod 0666 /data/vendor/conn/.wificable.info
     chown wifi root /sys/wifi/wificable
     chmod 0664 /sys/wifi/wificable
 	
-# for WIFI TRP/TIS
+    # for WIFI TRP/TIS
     chown wifi wifi /data/vendor/conn/.psm.info
     chmod 0644 /data/vendor/conn/.psm.info
     chown wifi wifi /sys/wifi/pm
     chmod 0640 /sys/wifi/pm
 
-# for WIFI Antenna Selection
+    # for WIFI Antenna Selection
     chown wifi wifi /data/vendor/conn/.ant.info
     chmod 0644 /data/vendor/conn/.ant.info
     chown wifi wifi /sys/wifi/ant
@@ -45,7 +45,7 @@ on property:vendor.wlan.ramdump_mode=2
 on property:vendor.wlan.ramdump_mode=3
     write /sys/module/subsystem_restart/parameters/enable_ramdumps 3
     stop vendor.ss_ramdump
-    # start vendor.ss_ramdump
+    #start vendor.ss_ramdump
 
 on property:sys.boot_completed=1
     chown wifi wifi /sys/module/wlan/parameters/fwpath
