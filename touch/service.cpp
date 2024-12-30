@@ -21,6 +21,7 @@
 #include <hidl/HidlTransportSupport.h>
 
 #include "GloveMode.h"
+#include "HighTouchPollingRate.h"
 #include "TouchscreenGesture.h"
 
 using android::hardware::configureRpcThreadpool;
@@ -30,10 +31,12 @@ using android::status_t;
 using android::OK;
 
 using ::vendor::lineage::touch::V1_0::samsung::GloveMode;
+using ::vendor::lineage::touch::V1_0::samsung::HighTouchPollingRate;
 using ::vendor::lineage::touch::V1_0::samsung::TouchscreenGesture;
 
 int main() {
     sp<GloveMode> gloveMode;
+    sp<HighTouchPollingRate> highTouchPollingRate;
     sp<TouchscreenGesture> touchscreenGesture;
     status_t status;
 
@@ -45,9 +48,17 @@ int main() {
         goto shutdown;
     }
 
+    highTouchPollingRate = new HighTouchPollingRate();
+    if (highTouchPollingRate == nullptr) {
+        LOG(ERROR) << "Can not create an instance of Touch HAL HighTouchPollingRate Iface, "
+                   << "exiting.";
+        goto shutdown;
+    }
+
     touchscreenGesture = new TouchscreenGesture();
     if (touchscreenGesture == nullptr) {
-        LOG(ERROR) << "Can not create an instance of Touch HAL TouchscreenGesture Iface, exiting.";
+        LOG(ERROR) << "Can not create an instance of Touch HAL TouchscreenGesture Iface, "
+                   << "exiting.";
         goto shutdown;
     }
 
@@ -58,6 +69,15 @@ int main() {
         if (status != OK) {
             LOG(ERROR) << "Could not register service for Touch HAL GloveMode Iface (" << status
                        << ")";
+            goto shutdown;
+        }
+    }
+
+    if (highTouchPollingRate->isSupported()) {
+        status = highTouchPollingRate->registerAsService();
+        if (status != OK) {
+            LOG(ERROR) << "Could not register service for Touch HAL HighTouchPollingRate Iface ("
+                       << status << ")";
             goto shutdown;
         }
     }
