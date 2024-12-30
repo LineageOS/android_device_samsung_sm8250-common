@@ -300,7 +300,6 @@ vendor/lib64/libvideotransitioneffect_zoom.arcsoft.so
 vendor/lib64/unihal_cutils@2.1.so
 vendor/lib64/unihal_main@2.1.so
 vendor/lib64/unihal_uniplugin@1.0.so
-vendor/lib64/vendor.qti.hardware.camera.device@1.0.so
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
 
 # Camera-r8q
@@ -423,7 +422,6 @@ vendor/lib64/libtensorflowLite.singletake.camera.samsung.so
 vendor/lib64/libthirdparty_zoomtranslator_imp.so
 vendor/lib64/libtswrappercommon.so
 vendor/lib64/libvdis_interface.so
-vendor/lib64/vendor.qti.hardware.camera.postproc@1.0.so
 
 # Camera (firmware)
 vendor/firmware/CAMERA_ICP.elf
