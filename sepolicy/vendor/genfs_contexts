@@ -10,11 +10,12 @@ genfscon sysfs /devices/platform/soc/soc:battery/power_supply/battery/charging_e
 genfscon sysfs /devices/platform/soc/soc:battery/power_supply/battery/lcd                                            u:object_r:sysfs_battery_writable:s0
 genfscon sysfs /devices/platform/soc/soc:sec-direct-charger/power_supply/                                            u:object_r:sysfs_battery:s0
 genfscon sysfs /devices/platform/soc/soc:i2c@22/i2c-0/0-003b/power_supply/mfc-charger/                               u:object_r:sysfs_battery:s0
+genfscon sysfs /devices/platform/soc/980000.i2c/i2c-2/2-0057/power_supply/pca9468-charger/type                       u:object_r:sysfs_battery:s0
 genfscon sysfs /devices/platform/soc/980000.i2c/i2c-2/2-0066/max77705-charger/power_supply/                          u:object_r:sysfs_battery:s0
 genfscon sysfs /devices/platform/soc/980000.i2c/i2c-2/2-0066/max77705-fuelgauge/power_supply/                        u:object_r:sysfs_battery:s0
 genfscon sysfs /devices/platform/soc/soc:i2c@22/i2c-3/3-003b/power_supply/mfc-charger/type                           u:object_r:sysfs_battery:s0
-genfscon sysfs /devices/platform/soc/980000.i2c/i2c-5/5-0057/power_supply/pca9468-charger/type                       u:object_r:sysfs_battery:s0
 genfscon sysfs /devices/platform/soc/soc:sec-direct-charger/power_supply/sec-direct-charger/type                     u:object_r:sysfs_battery:s0
+genfscon sysfs /devices/platform/soc/980000.i2c/i2c-5/5-0057/power_supply/pca9468-charger/type                       u:object_r:sysfs_battery:s0
 genfscon sysfs /devices/platform/soc/980000.i2c/i2c-5/5-0066/max77705-charger/power_supply/otg/type                  u:object_r:sysfs_battery:s0
 genfscon sysfs /devices/platform/soc/980000.i2c/i2c-5/5-0066/max77705-charger/power_supply/max77705-charger/type     u:object_r:sysfs_battery:s0
 genfscon sysfs /devices/platform/soc/980000.i2c/i2c-5/5-0066/max77705-fuelgauge/power_supply/max77705-fuelgauge/type u:object_r:sysfs_battery:s0
