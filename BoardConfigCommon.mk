@@ -149,23 +149,14 @@ DEVICE_MANIFEST_FILE += $(COMMON_PATH)/configs/network_manifest.xml
 endif
 DEVICE_MATRIX_FILE := hardware/qcom-caf/common/compatibility_matrix.xml
 
+# Media
+TARGET_USES_ION := true
+
 # QCOM
 BOARD_USES_QCOM_HARDWARE := true
 
 # Samsung
 BOARD_VENDOR := samsung
-
-# Display
-TARGET_USES_COLOR_METADATA := true
-TARGET_USES_DISPLAY_RENDER_INTENTS := true
-TARGET_USES_DRM_PP := true
-TARGET_USES_GRALLOC1 := true
-TARGET_USES_GRALLOC4 := true
-TARGET_USES_HWC2 := true
-TARGET_USES_ION := true
-TARGET_USES_QCOM_DISPLAY_BSP := true
-TARGET_USES_QTI_MAPPER_2_0 := true
-TARGET_USES_QTI_MAPPER_EXTENSIONS_1_1 := true
 
 # Prop files
 TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
