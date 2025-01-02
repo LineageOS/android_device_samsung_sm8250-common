@@ -18,6 +18,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "c2b49707_09c9e56f",
+        "filename": "overlay-lineage/packages/apps/Dialer/java/com/android/dialer/callrecord/res/values/config.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-01-02T15:56:21Z",
+      "side": 0,
+      "message": "Done",
+      "parentUuid": "60716845_84a2cf5a",
+      "revId": "bedd7e8bd1a6e8db3e6ec22a29bad2f4085afadb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "bf9587e6_74d66ad0",
