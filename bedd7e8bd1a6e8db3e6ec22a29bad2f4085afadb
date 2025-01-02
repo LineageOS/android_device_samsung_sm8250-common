@@ -35,6 +35,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "4e6d0fa0_e5f5c418",
+        "filename": "overlay-lineage/packages/apps/FlipFlap/res/values/config.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33569
+      },
+      "writtenOn": "2025-01-02T15:38:16Z",
+      "side": 0,
+      "message": "https://review.lineageos.org/c/LineageOS/android_device_samsung_sm8250-common/+/413331",
+      "parentUuid": "bf9587e6_74d66ad0",
+      "revId": "bedd7e8bd1a6e8db3e6ec22a29bad2f4085afadb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "5f83e4a4_37409705",
