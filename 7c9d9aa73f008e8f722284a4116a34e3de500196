@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2120ebe2_cc59ff09",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33569
+      },
+      "writtenOn": "2025-01-02T18:50:52Z",
+      "side": 1,
+      "message": "Still not properly decommonized for Wifi Tab variants.",
+      "revId": "7c9d9aa73f008e8f722284a4116a34e3de500196",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
