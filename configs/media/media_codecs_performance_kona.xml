@@ -221,36 +221,5 @@ limitations under the License.
             <Limit name="measured-frame-rate-1280x720" range="60-120" />
             <Limit name="measured-frame-rate-1920x1080" range="35-70" />
         </MediaCodec>
-        <MediaCodec name="OMX.SEC.avc.sw.dec" type="video/avc" update="true" >
-            <Limit name="measured-frame-rate-320x240" range="230-460" />
-            <Limit name="measured-frame-rate-720x480" range="70-140" />
-            <Limit name="measured-frame-rate-1280x720" range="25-50" />
-            <Limit name="measured-frame-rate-1920x1080" range="20-40" />
-        </MediaCodec>
-        <MediaCodec name="OMX.SEC.h263.sw.dec" type="video/3gpp" update="true" >
-            <Limit name="measured-frame-rate-176x144" range="700-1400" />
-            <Limit name="measured-frame-rate-352x288" range="600-1200" />
-        </MediaCodec>
-        <MediaCodec name="OMX.SEC.hevc.sw.dec" type="video/hevc" update="true" >
-            <Limit name="measured-frame-rate-352x288" range="400-800" />
-            <Limit name="measured-frame-rate-640x360" range="180-360" />
-            <Limit name="measured-frame-rate-720x480" range="180-360" />
-            <Limit name="measured-frame-rate-1280x720" range="80-160" />
-            <Limit name="measured-frame-rate-1920x1080" range="45-90" />
-        </MediaCodec>
-        <MediaCodec name="OMX.SEC.mpeg4.sw.dec" type="video/mp4v-es" update="true" >
-            <Limit name="measured-frame-rate-176x144" range="600-1200" />
-            <Limit name="measured-frame-rate-480x360" range="550-1100" />
-        </MediaCodec>
-        <MediaCodec name="OMX.SEC.vp8.dec" type="video/x-vnd.on2.vp8" update="true" >
-            <Limit name="measured-frame-rate-320x180" range="450-900" />
-            <Limit name="measured-frame-rate-640x360" range="350-700" />
-            <Limit name="measured-frame-rate-1280x720" range="90-180" />
-            <Limit name="measured-frame-rate-1920x1080" range="35-70" />
-        </MediaCodec>
-        <MediaCodec name="c2.sec.mpeg4.decoder" type="video/mp4v-es" update="true" >
-            <Limit name="measured-frame-rate-176x144" range="800-1600" />
-            <Limit name="measured-frame-rate-480x360" range="550-1100" />
-        </MediaCodec>
     </Decoders>
 </MediaCodecs>
