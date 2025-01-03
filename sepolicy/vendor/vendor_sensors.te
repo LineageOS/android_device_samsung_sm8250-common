@@ -1,9 +1,28 @@
-allow vendor_sensors {
-    vendor_sysfs_sensors
-    sysfs_sensors
-}:dir search;
+allow vendor_sensors vendor_sysfs_sensors:dir r_dir_perms;
+allow vendor_sensors vendor_sysfs_sensors:file r_file_perms;
 
-allow vendor_sensors {
-    vendor_sysfs_sensors
-    sysfs_sensors
-}:file { read open getattr };
+allow vendor_sensors mnt_vendor_file:dir create_dir_perms;
+allow vendor_sensors mnt_vendor_file:file create_file_perms;
+
+allow vendor_sensors app_efs_file:dir create_dir_perms;
+allow vendor_sensors app_efs_file:file create_file_perms;
+
+allow vendor_sensors vendor_sysfs_ssr:dir r_dir_perms;
+allow vendor_sensors vendor_sysfs_ssr:file r_file_perms;
+
+allow vendor_sensors sysfs_type:dir r_dir_perms;
+allow vendor_sensors sysfs_type:file r_file_perms;
+allow vendor_sensors sysfs_type:lnk_file r_file_perms;
+
+allow vendor_sensors vendor_sensors:capability2 block_suspend;
+
+allow vendor_sensors mnt_vendor_file:dir r_dir_perms;
+
+allow vendor_sensors vendor_sensors_vendor_data_file:dir create_dir_perms;
+allow vendor_sensors vendor_sensors_vendor_data_file:file create_file_perms;
+
+allow vendor_sensors vendor_qdsp_device:chr_file r_file_perms;
+
+allow vendor_sensors vendor_persist_sensors_file:fifo_file create_file_perms;
+allow vendor_sensors vendor_persist_sensors_file:dir create_dir_perms;
+allow vendor_sensors vendor_persist_sensors_file:file create_file_perms;

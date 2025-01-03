@@ -1,6 +1,4 @@
-# hal_lineage_fastcharge_default
+allow hal_lineage_fastcharge_default sysfs_sec_fastcharge:dir search;
+allow hal_lineage_fastcharge_default sysfs_sec_fastcharge_writable:file rw_file_perms;
 
 set_prop(hal_lineage_fastcharge, vendor_fastcharge_prop)
-
-allow hal_lineage_fastcharge_default sysfs_sec_switch:dir search;
-allow hal_lineage_fastcharge_default sysfs_sec_switch_writable:file rw_file_perms;

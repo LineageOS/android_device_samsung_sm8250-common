@@ -1,1 +1,0 @@
-allow vendor_rmt_storage { sysfs_npu sysfs_qcacld }:file { read open };
