@@ -1,0 +1,1 @@
+allow zygote self:capability { fsetid kill net_admin net_raw sys_nice sys_resource };

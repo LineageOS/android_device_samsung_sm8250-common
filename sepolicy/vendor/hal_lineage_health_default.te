@@ -1,2 +1,1 @@
-rw_dir_file(hal_lineage_health_default, sysfs_battery_writable)
-r_dir_file(hal_lineage_health_default, sysfs_battery)
+rw_dir_file(hal_lineage_health_default, sysfs_batteryinfo)
