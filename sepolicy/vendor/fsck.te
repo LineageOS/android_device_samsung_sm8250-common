@@ -1,9 +1,10 @@
 allow fsck self:capability kill;
 
-# Block devices
 allow fsck {
-    efs_block_device 
+    carrier_block_device
     dqmdbg_block_device
-    sec_efs_block_device 
-    spu_block_device 
+    efs_block_device
+    omr_block_device
+    sec_efs_block_device
+    spu_block_device
 }:blk_file rw_file_perms;

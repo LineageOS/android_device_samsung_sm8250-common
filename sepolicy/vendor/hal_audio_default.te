@@ -1,17 +1,13 @@
-# /efs/cirrus and /efs/tas256x/
-allow hal_audio_default audio_efs_file:file r_file_perms;
-allow hal_audio_default audio_efs_file:dir search;
+add_hwservice(hal_audio_default, hal_bluetooth_a2dp_hwservice)
 
-allow hal_audio_default imei_efs_file:dir search;
-allow hal_audio_default imei_efs_file:file { read open getattr };
+r_dir_file(hal_audio_default, imei_efs_file)
+r_dir_file(hal_audio_default, sec_efs_file)
 
 allow hal_audio_default efs_file:dir search;
 
+allow hal_audio_default vendor_sysfs_cirrus_cal:dir r_dir_perms;
+allow hal_audio_default vendor_sysfs_cirrus_cal:file rw_file_perms;
+
 get_prop(hal_audio_default, vendor_radio_prop)
 
-# TAS256X sysfs
-allow hal_audio_default sysfs_audio_writable:file rw_file_perms;
-allow hal_audio_default sysfs_audio_writable:dir search;
-
-# ro.multisim*
 dontaudit hal_audio_default { default_prop radio_prop }:file { getattr map open read };

@@ -1,6 +1,3 @@
-# Camera
-vendor_internal_prop(persist_camera_prop)
-
 # Fastcharge
 vendor_internal_prop(vendor_fastcharge_prop)
 
@@ -8,13 +5,11 @@ vendor_internal_prop(vendor_fastcharge_prop)
 vendor_internal_prop(vendor_gnss_psds_prop)
 
 # NFC
+vendor_internal_prop(vendor_sec_nfc_prop)
 vendor_internal_prop(vendor_nfc_prop)
-
-# power
-vendor_internal_prop(vendor_power_prop)
-
-# qseecom
-vendor_internal_prop(vendor_qseecomd_prop)
 
 # Secure Element
 vendor_internal_prop(vendor_sehal_prop)
+
+# Tee
+vendor_internal_prop(vendor_qseecomd_prop)

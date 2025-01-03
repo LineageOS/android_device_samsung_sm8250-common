@@ -1,1 +1,0 @@
-allow vendor_atfwd sysfs_qcacld:file { read open };
