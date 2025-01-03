@@ -128,12 +128,9 @@ PRODUCT_PACKAGES += \
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider-service.samsung \
-    libgrallocusage.vendor \
+    libpng.vendor \
     vendor.qti.hardware.camera.device@1.0.vendor \
     vendor.qti.hardware.camera.postproc@1.0.vendor \
-    libgui_vendor \
-    libcamera2ndk_vendor \
-    libpng.vendor
 
 # Configstore
 PRODUCT_PACKAGES += \
@@ -161,7 +158,6 @@ PRODUCT_PACKAGES += \
     libdisplayconfig.system.qti \
     libqdMetaData \
     libqdMetaData.system \
-    libtinyxml \
     libtinyxml2 \
     vendor.display.config@1.0 \
     vendor.display.config@1.0.vendor \
