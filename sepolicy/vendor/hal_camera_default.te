@@ -1,30 +1,26 @@
-# /efs/FactoryApp/
-allow hal_camera_default app_efs_file:file { read open getattr };
-allow hal_camera_default app_efs_file:dir search;
+r_dir_file(hal_camera_default, app_efs_file)
+r_dir_file(hal_camera_default, efs_file)
+r_dir_file(hal_camera_default, mnt_vendor_file)
+r_dir_file(hal_camera_default, vendor_sysfs_camera)
+r_dir_file(hal_camera_default, vendor_sysfs_sensors)
 
-# /sys/devices/virtual/camera/
-allow hal_camera_default sysfs_camera:file { read write open getattr };
-allow hal_camera_default sysfs_camera:dir search;
-allow hal_camera_default sysfs_camera_writable:file { read write open getattr };
-allow hal_camera_default rild:unix_stream_socket connectto;
+allow hal_camera_default camera_efs_file:dir create_dir_perms;
+allow hal_camera_default camera_efs_file:file create_file_perms;
+
+allow hal_camera_default vendor_sysfs_camera_writable:file rw_file_perms;
+
+allow hal_camera_default proc_meminfo:file r_file_perms;
+
+hal_client_domain(hal_camera_default, hal_thermal)
 
 binder_call(hal_camera_default, system_server)
-get_prop(hal_camera_default, vendor_mpctl_prop)
 
-# EFS
-allow hal_camera_default efs_file:dir search;
+allow hal_camera_default rild:unix_stream_socket connectto;
 
-allow hal_camera_default mnt_vendor_file:dir search;
+allow hal_camera_default vendor_xdsp_device:chr_file { ioctl read getattr lock map open watch watch_reads };
 
-dontaudit hal_camera_default default_prop:file read;
-
-allow hal_camera_default camera_config_prop:file { read open getattr map };
-
-allow hal_camera_default hal_system_suspend_service:service_manager find;
-allow hal_camera_default hal_thermal_samsung_hwservice:hwservice_manager find;
-binder_call(hal_camera_default, hal_thermal_default)
-
-# SPU
 allow hal_camera_default spu_file:dir search;
 
-dontaudit hal_camera_default system_prop:file read;
+allow hal_camera_default hal_system_suspend_service:service_manager find;
+
+set_prop(hal_camera_default, sec_camera_prop)

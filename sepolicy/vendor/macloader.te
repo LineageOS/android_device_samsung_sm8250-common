@@ -8,14 +8,14 @@ allow macloader self:capability { chown fowner fsetid net_admin net_raw sys_modu
 allow macloader self:udp_socket { ioctl create };
 allowxperm macloader self:udp_socket ioctl { SIOCGIFFLAGS SIOCSIFFLAGS };
 
-allow macloader efs_file:dir search;
+allow macloader sec_efs_file:dir search;
 allow macloader mnt_vendor_file:dir r_dir_perms;
 
 allow macloader wifi_efs_file:dir create_dir_perms;
 allow macloader wifi_efs_file:file create_file_perms;
 
-allow macloader conn_vendor_data_file:dir create_dir_perms;
-allow macloader conn_vendor_data_file:file create_file_perms;
+allow macloader vendor_convergence_data_file:dir create_dir_perms;
+allow macloader vendor_convergence_data_file:file create_file_perms;
 
 allow macloader kernel:key search;
 allow macloader kernel:system module_request;
@@ -30,8 +30,7 @@ allow macloader sysfs:file { read write open getattr };
 allow macloader sysfs_net:dir r_dir_perms;
 allow macloader sysfs_wlan_fwpath:file w_file_perms;
 
-allow macloader sysfs_wifi:dir r_dir_perms;
-allow macloader sysfs_wifi:file r_file_perms;
-allow macloader sysfs_wifi_writable:file rw_file_perms;
+allow macloader sysfs_wifi:dir search;
+allow macloader sysfs_wifi:file rw_file_perms;
 
 set_prop(macloader, vendor_wifi_prop)
