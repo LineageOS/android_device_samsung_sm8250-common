@@ -1,32 +1,18 @@
-allow hal_fingerprint_default {
-    fp_sensor_device
-    tee_device
-}:chr_file rw_file_perms;
-
-allow hal_fingerprint_default fingerprint_vendor_data_file:dir { rw_dir_perms create rmdir };
-allow hal_fingerprint_default fingerprint_vendor_data_file:file { read write open getattr rename create unlink };
-
 allow hal_fingerprint_default self:netlink_socket create_socket_perms_no_ioctl;
 
-# /efs/biometrics
-allow hal_fingerprint_default biometrics_efs_file:file r_file_perms;
-allow hal_fingerprint_default biometrics_efs_file:dir search;
-allow hal_fingerprint_default efs_file:dir search;
+allow hal_fingerprint_default goodix_device:chr_file rw_file_perms;
+allow hal_fingerprint_default tee_device:chr_file rw_file_perms;
 
-# /sys/class/fingerprint/
-allow hal_fingerprint_default sysfs_fingerprint:dir r_dir_perms;
-allow hal_fingerprint_default sysfs_fingerprint:file r_file_perms;
+allow hal_fingerprint_default vendor_biometrics_data_file:dir create_dir_perms;
+allow hal_fingerprint_default vendor_biometrics_data_file:file create_file_perms;
 
-# /data/vendor/biometrics/*
-allow hal_fingerprint_default biometrics_vendor_data_file:file create_file_perms;
-allow hal_fingerprint_default biometrics_vendor_data_file:dir { read write open add_name create rmdir remove_name search };
+allow hal_fingerprint_default sec_efs_file:dir r_dir_perms;
+allow hal_fingerprint_default sec_efs_file:file r_file_perms;
 
-# /sys/devices/platform/samsung_mobile_device/samsung_mobile_device/
-allow hal_fingerprint_default sysfs_battery:dir search;
-allow hal_fingerprint_default sysfs_battery:file { open read };
+r_dir_file(hal_fingerprint_default, efs_file)
 
-# /dev/uinput
-allow hal_fingerprint_default uhid_device:chr_file rw_file_perms;
+allow hal_fingerprint_default vendor_sysfs_display:dir r_dir_perms;
+allow hal_fingerprint_default vendor_sysfs_display:file r_file_perms;
 
-# /sys/devices/virtual/lcd/panel/
-allow hal_fingerprint_default sysfs_lcd_writable:file r_file_perms;
+allow hal_fingerprint_default vendor_sysfs_touchscreen:dir r_dir_perms;
+allow hal_fingerprint_default vendor_sysfs_touchscreen_writable:file rw_file_perms;

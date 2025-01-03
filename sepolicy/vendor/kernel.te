@@ -1,30 +1,12 @@
-# kernel.te
+r_dir_file(kernel, spu_file)
+allow kernel spu_file:lnk_file r_file_perms;
 
-# /vendor/firmware/ & /vendor/firmware_mnt
-allow kernel { vendor_firmware_file vendor_fw_mnt }:dir r_dir_perms;
-allow kernel { vendor_firmware_file vendor_fw_mnt }:file r_file_perms;
+allow kernel vendor_sysfs_sensors:file { open read };
 
-allow kernel block_device:blk_file { read write open };
-allow kernel block_device:dir search;
+allow kernel debug_block_device:blk_file rw_file_perms;
+allow kernel param_block_device:blk_file rw_file_perms;
 
-# /sys/devices/virtual/sec/hall_ic/hall_detect
-allow kernel sysfs_sensors:file { read open };
+allow kernel app_efs_file:dir rw_dir_perms;
+allow kernel app_efs_file:file create_file_perms;
 
-allow kernel {
-    sysfs_sensors
-    vendor_sysfs_sensors
-}:dir search;
-
-# /efs/FactoryApp/
-allow kernel efs_file:dir search;
-allow kernel app_efs_file:dir search;
-allow kernel app_efs_file:file { read open getattr };
-
-# /sys/devices/virtual/lcd/panel/
-allow kernel sysfs_lcd_writable:file r_file_perms;
-
-# debugfs
-allow kernel debugfs_mmc:dir search;
-
-# /spu
-allow kernel spu_file:dir search;
+allow kernel { block_device efs_file }:dir search;
