@@ -11,31 +11,18 @@ vendor/etc/audconf/OPEN/Hdmi_cal.acdb
 vendor/etc/audconf/OPEN/Headset_cal.acdb
 vendor/etc/audconf/OPEN/Speaker_cal.acdb
 vendor/etc/audconf/OPEN/workspaceFile.qwsp
-vendor/lib/libacdb-fts.so
-vendor/lib/libacdbloader.so
-vendor/lib/libacdbrtac.so
-vendor/lib/libadiertac.so
-vendor/lib/libaudcal.so
-vendor/lib64/libacdb-fts.so
-vendor/lib64/libacdbloader.so
-vendor/lib64/libacdbrtac.so
-vendor/lib64/libadiertac.so
-vendor/lib64/libaudcal.so
 
 # ADSP
 vendor/bin/adsprpcd
 vendor/etc/init/vendor.qti.adsprpc-service.rc
-vendor/lib/libadsprpc.so
-vendor/lib/libadsp_default_listener.so
-vendor/lib/libmdsprpc.so
-vendor/lib/libsdsprpc.so
-vendor/lib64/libadsprpc.so
 vendor/lib64/libadsp_default_listener.so
+vendor/lib64/libadsprpc.so
 vendor/lib64/libmdsprpc.so
 vendor/lib64/libsdsprpc.so
 
-# ADSP-Modules
+# ADSP modules
 vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDAD_Encoder.so
+vendor/lib/rfsa/adsp/libQ6MSFR_manager_skel.so
 vendor/lib/rfsa/adsp/libapps_mem_heap.so
 vendor/lib/rfsa/adsp/libcamera_nn_skel.so
 vendor/lib/rfsa/adsp/libcdsp_face_skel.so
@@ -45,140 +32,86 @@ vendor/lib/rfsa/adsp/libdsp_streamer_binning.so
 vendor/lib/rfsa/adsp/libfastcvadsp.so
 vendor/lib/rfsa/adsp/libfastcvdsp_skel.so
 vendor/lib/rfsa/adsp/libhexagon_nn_skel.so
-vendor/lib/rfsa/adsp/libQ6MSFR_manager_skel.so
 vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so
 vendor/lib/rfsa/adsp/libscveT2T_skel.so
 vendor/lib/rfsa/adsp/libsnpe_dsp_v66_domains_v2_skel.so
 vendor/lib/rfsa/adsp/libsns_device_mode_skel.so
 vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so
-vendor/lib64/rfsa/adsp/libsns_device_mode_skel.so
-vendor/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so
-vendor/lib64/libSNPE.so
-vendor/lib64/libsnpe_dsp_domains_v2.so
-vendor/lib64/libsnpe_wrapper.so
+
+# ANT+
+vendor/lib64/com.qualcomm.qti.ant@1.0.so
 
 # Audio
 system_ext/etc/permissions/audiosphere.xml
 system_ext/framework/audiosphere.jar
-vendor/bin/audioflacapp
 vendor/etc/audio_tuning_mixer.txt
+vendor/etc/dolby/dax-default.xml
 vendor/lib/hw/audio.primary.kona.so
-vendor/lib/hw/audio.sec_primary.default.so
 vendor/lib/hw/vendor.qti.hardware.audiohalext@1.0-impl.so
-vendor/lib/hw/vendor.samsung.hardware.audio@1.0-impl.so
-vendor/lib/btaudio_offload_if.so
-vendor/lib/libadm.so
-vendor/lib/libadpcmdec.so
-vendor/lib/libaudioconfigstore.so
-vendor/lib/libaudioparsers.so
-vendor/lib/libaudio_log_utils.so
-vendor/lib/libaudio_soundtrigger.so
-vendor/lib/libdrc.so
-vendor/lib/libhdmipassthru.so
-vendor/lib/libmulawdec.so
-vendor/lib/libprofileparamstorage.so
-vendor/lib/librecordalive.so
-vendor/lib/libqtigef.so
 vendor/lib/lib_SamsungRec_07020.so
-vendor/lib/lib_SoundAlive_3DPosition_ver202.so
-vendor/lib/lib_SoundAlive_AlbumArt_ver105.so
-vendor/lib/lib_SoundAlive_play_plus_ver400.so
 vendor/lib/lib_SoundAlive_SRC384_ver320.so
 vendor/lib/lib_soundaliveresampler.so
-vendor/lib/lib_SoundBooster_ver1050.so
+vendor/lib/libacdb-fts.so
+vendor/lib/libacdbloader.so
+vendor/lib/libacdbrtac.so
+vendor/lib/libadiertac.so
+vendor/lib/libadm.so
+vendor/lib/libadpcmdec.so
+vendor/lib/libaudcal.so
+vendor/lib/libaudio_log_utils.so
+vendor/lib/libaudio_soundtrigger.so
+vendor/lib/libaudioconfigstore.so
+vendor/lib/libaudioparsers.so
+vendor/lib/libhdmipassthru.so
+vendor/lib/libprofileparamstorage.so
+vendor/lib/libqtigef.so
+vendor/lib/librecordalive.so
 vendor/lib/libsamsungVoipResampler.so
 vendor/lib/libsecaudiocoreutils.so
 vendor/lib/libsecaudioinfo.so
-vendor/lib/libsmwrapper.so
 vendor/lib/libspatializerparamstorage.so
 vendor/lib/libspeakercalibration.so
 vendor/lib/libsurround_3mic_proc.so
-vendor/lib/spatializer-aidl-V1-cpp.so
 vendor/lib/vendor.qti.hardware.audiohalext@1.0.so
-vendor/lib/vendor.qti.voiceprint@1.0.so
-vendor/lib/vendor.samsung.hardware.audio@1.0.so
-vendor/lib64/hw/audio.sec_primary.default.so
-vendor/lib64/hw/vendor.samsung.hardware.audio@1.0-impl.so
-vendor/lib64/hw/vendor.qti.hardware.audiohalext@1.0-impl.so
-vendor/lib64/btaudio_offload_if.so
-vendor/lib64/libaudioconfigstore.so
-vendor/lib64/libaudioparsers.so
-vendor/lib64/libmulawdec.so
-vendor/lib64/libprofileparamstorage.so
-vendor/lib64/libqtigef.so
-vendor/lib64/lib_SoundAlive_3DPosition_ver202.so
-vendor/lib64/lib_SoundAlive_AlbumArt_ver105.so
-vendor/lib64/lib_SoundAlive_play_plus_ver400.so
-vendor/lib64/lib_SoundBooster_ver1050.so
-vendor/lib64/libsecaudiocoreutils.so
-vendor/lib64/libsecaudioinfo.so
-vendor/lib64/libspatializerparamstorage.so
-vendor/lib64/libspeakercalibration.so
-vendor/lib64/spatializer-aidl-V1-cpp.so
-vendor/lib64/vendor.qti.hardware.audiohalext@1.0.so
-vendor/lib64/vendor.qti.voiceprint@1.0.so
-vendor/lib64/vendor.samsung.hardware.audio@1.0.so
 
-# Audio modules
+# Audio FX modules
 vendor/lib/soundfx/libasphere.so
 vendor/lib/soundfx/libaudioeffectoffload.so
-vendor/lib/soundfx/libaudiosaplus_sec.so
-vendor/lib/soundfx/libmysound.so
-vendor/lib/soundfx/libmyspace.so
-vendor/lib/soundfx/libplaybackrecorder.so
 vendor/lib/soundfx/libqcbassboost.so
 vendor/lib/soundfx/libqcreverb.so
 vendor/lib/soundfx/libqcvirt.so
 vendor/lib/soundfx/libshoebox.so
 vendor/lib/soundfx/libswdap.so
-vendor/lib/soundfx/libswspatializer.so
-vendor/lib64/soundfx/libasphere.so
-vendor/lib64/soundfx/libaudioeffectoffload.so
-vendor/lib64/soundfx/libaudiosaplus_sec.so
-vendor/lib64/soundfx/libmysound.so
-vendor/lib64/soundfx/libmyspace.so
-vendor/lib64/soundfx/libplaybackrecorder.so
-vendor/lib64/soundfx/libqcbassboost.so
-vendor/lib64/soundfx/libqcreverb.so
-vendor/lib64/soundfx/libqcvirt.so
-vendor/lib64/soundfx/libswdap.so
-vendor/lib64/soundfx/libswspatializer.so
-vendor/lib64/soundfx/libshoebox.so
+
+# Audio (amplifier firmware)
+vendor/firmware/cs35l40-bot-dsp1-spk-prot-calib.bin
+vendor/firmware/cs35l40-bot-dsp1-spk-prot.bin
+vendor/firmware/cs35l40-bot-dsp1-spk-prot.wmfw
+vendor/firmware/cs35l40-rcv-dsp1-spk-prot-calib.bin
+vendor/firmware/cs35l40-rcv-dsp1-spk-prot.bin
+vendor/firmware/cs35l40-rcv-dsp1-spk-prot.wmfw
+vendor/firmware/cs40l20.bin
+vendor/firmware/cs40l20.wmfw
+vendor/firmware/cs40l25a.wmfw
+vendor/firmware/cs40l25a_cal.wmfw
+vendor/firmware/cs40l25a_clab.bin
+vendor/firmware/cs40l25a_clab.wmfw
+vendor/firmware/cs40l25a_exc.bin
+vendor/firmware/dax_param.bin
 
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
-vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so
-vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
-vendor/lib/hw/vendor.samsung.hardware.bluetooth.a2dp@1.0-impl.so
-vendor/lib/com.qualcomm.qti.ant@1.0.so
-vendor/lib/libbluetooth_audio_session_qti.so
-vendor/lib/libbtnv.so
-vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so
-vendor/lib/vendor.qti.hardware.bluetooth_sar@1.1.so
-vendor/lib/vendor.samsung.hardware.bluetooth.a2dp@1.0.so
-vendor/lib/vendor.samsung.hardware.bluetooth@2.0.so
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
-vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
-vendor/lib64/hw/vendor.samsung.hardware.bluetooth.a2dp@1.0-impl.so
-vendor/lib64/com.qualcomm.qti.ant@1.0.so
-vendor/lib64/libbluetooth_audio_session_qti.so
-vendor/lib64/libbtnv.so
-vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
-vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
-vendor/lib64/vendor.samsung.hardware.bluetooth.a2dp@1.0.so
 vendor/lib64/vendor.samsung.hardware.bluetooth@2.0.so
 
-# Bluetooth A2DP sink
-vendor/etc/a2dpsink_audio_policy_configuration.xml
-vendor/lib/hw/audio.a2dpsink.default.so
-vendor/lib/hw/vendor.samsung.hardware.bluetooth.a2dpsink@1.0-impl.so
-vendor/lib/libbluetooth_a2dpsink_session.so
-vendor/lib/vendor.samsung.hardware.bluetooth.a2dpsink@1.0.so
-vendor/lib64/hw/audio.a2dpsink.default.so
-vendor/lib64/hw/vendor.samsung.hardware.bluetooth.a2dpsink@1.0-impl.so
-vendor/lib64/libbluetooth_a2dpsink_session.so
-vendor/lib64/vendor.samsung.hardware.bluetooth.a2dpsink@1.0.so
+# Bluetooth (A2DP)
+vendor/lib/btaudio_offload_if.so
+vendor/lib/libbluetooth_audio_session_qti.so
+
+# Bluetooth (firmware)
+vendor/firmware/htbtfw20.tlv
+vendor/firmware/htnv20.bin
 
 # Configstore
 vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service
@@ -190,211 +123,31 @@ vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 vendor/bin/cdsprpcd
 vendor/etc/init/vendor.qti.cdsprpc-service.rc
 vendor/lib/libcdsprpc.so
-vendor/lib/libcdsp_default_listener.so
-vendor/lib/libsysmon_cdsp_skel.so
-vendor/lib64/libcdsprpc.so
 vendor/lib64/libcdsp_default_listener.so
+vendor/lib64/libcdsprpc.so
 vendor/lib64/libsysmon_cdsp_skel.so
-
-# CNE
-vendor/lib/libxml.so
-vendor/lib/vendor.qti.data.slm@1.0.so
-vendor/lib/vendor.qti.hardware.data.cne.internal.constants@1.0.so
-vendor/lib/vendor.qti.hardware.data.cne.internal.server@1.0.so
-vendor/lib/vendor.qti.hardware.data.connection@1.0.so
-vendor/lib/vendor.qti.hardware.data.connection@1.1.so
-vendor/lib/vendor.qti.hardware.data.dynamicdds@1.0.so
-vendor/lib/vendor.qti.hardware.data.qmi@1.0.so
-vendor/lib64/libxml.so
-vendor/lib64/vendor.qti.data.slm@1.0.so
-vendor/lib64/vendor.qti.hardware.data.cne.internal.constants@1.0.so
-vendor/lib64/vendor.qti.hardware.data.cne.internal.server@1.0.so
-vendor/lib64/vendor.qti.hardware.data.connection@1.0.so
-vendor/lib64/vendor.qti.hardware.data.connection@1.1.so
-vendor/lib64/vendor.qti.hardware.data.dynamicdds@1.0.so
-vendor/lib64/vendor.qti.hardware.data.qmi@1.0.so
 
 # CVP
 vendor/lib64/libcvp2.so
 vendor/lib64/libcvp2_hfi.so
-vendor/lib64/libcvpcpuRev_skel.so
 vendor/lib64/libcvp_common.so
+vendor/lib64/libcvpcpuRev_skel.so
 vendor/lib64/vendor.qti.hardware.cvp@1.0.so
 
 # Camera
-vendor/lib/com.qti.feature2.anchorsync.so
-vendor/lib/com.qti.feature2.demux.so
-vendor/lib/com.qti.feature2.frameselect.so
-vendor/lib/com.qti.feature2.fusion.so
-vendor/lib/com.qti.feature2.generic.so
-vendor/lib/com.qti.feature2.gs.so
-vendor/lib/com.qti.feature2.hdr.so
-vendor/lib/com.qti.feature2.memcpy.so
-vendor/lib/com.qti.feature2.mfsr.so
-vendor/lib/com.qti.feature2.qcfa.so
-vendor/lib/com.qti.feature2.rawhdr.so
-vendor/lib/com.qti.feature2.rt.so
-vendor/lib/com.qti.feature2.serializer.so
-vendor/lib/com.qti.feature2.stub.so
-vendor/lib/com.qti.feature2.swmf.so
-vendor/lib/hw/camera.qcom.so
-vendor/lib/hw/camera.unihal.default.so
-vendor/lib/libBeauty_v4.camera.samsung.so
-vendor/lib/libDVTracking_interface.so
-vendor/lib/libDepthBokehVideo_interface.so
-vendor/lib/libDualCamBokehCapture.camera.samsung.so
-vendor/lib/libFacePreProcessing.camera.samsung.so
-vendor/lib/libFace_Landmark_API.camera.samsung.so
-vendor/lib/libFrucSSMLib.so
-vendor/lib/libHandGesture.camera.samsung.so
-vendor/lib/libHprFace_GAE_api.camera.samsung.so
-vendor/lib/libHpr_RecGAE_cvFeature_v1.0.camera.samsung.so
-vendor/lib/libIDDQD_core.so
-vendor/lib/libIDDQD_interface.so
-vendor/lib/libLocalTM_capture_core.camera.samsung.so
-vendor/lib/libLocalTM_preview_core.so
-vendor/lib/libLocalTM_wrapper.camera.samsung.so
-vendor/lib/libMoonVerifier_v1.camera.samsung.so
-vendor/lib/libMultiROIDetector.camera.samsung.so
-vendor/lib/libObjectDetector_v1.camera.samsung.so
-vendor/lib/libOpenCv.camera.samsung.so
-vendor/lib/libPersonal_core.camera.samsung.so
-vendor/lib/libPersonal_interface.so
-vendor/lib/libPetDetector_interface.so
-vendor/lib/libSSMAutoTrigger_interface.so
-vendor/lib/libSSM_AutoTrigger.so
-vendor/lib/libSceneDetector_v1.camera.samsung.so
-vendor/lib/libarcsoft_aieffectpk_video.so
-vendor/lib/libarcsoft_aieffectpk_video_bokeh.so
-vendor/lib/libarcsoft_aieffectpk_video_plight.so
-vendor/lib/libarcsoft_dualcam_portraitlighting.so
-vendor/lib/libarcsoft_dualcam_portraitlighting_preview.so
-vendor/lib/libarcsoft_multi_frame_video_hdr.so
-vendor/lib/libarcsoft_object_tracking.so
-vendor/lib/libarcsoft_superresolution_bokeh.so
-vendor/lib/libbeautyshot.arcsoft.so
-vendor/lib/libcamera_nn_stub.so
-vendor/lib/libcamerapostproc.so
-vendor/lib/libcamxexternalformatutils.so
-vendor/lib/libcamxfacialfeatures.so
-vendor/lib/libcamxfdalgo.so
-vendor/lib/libcamxfdengine.so
-vendor/lib/libcamxifestriping.so
-vendor/lib/libcamximageformatutils.so
-vendor/lib/libcamxncs.so
-vendor/lib/libcamxstatscore.so
-vendor/lib/libcamxswprocessalgo.so
-vendor/lib/libcamxtintlessalgo.so
-vendor/lib/libchilog.so
-vendor/lib/libcom.qti.chinodeutils.so
-vendor/lib/libdualcam_refocus_image.so
-vendor/lib/libdualcam_refocus_video.so
-vendor/lib/libexifa.camera.samsung.so
-vendor/lib/libface_landmark.arcsoft.so
-vendor/lib/libfocuspeaking.so
-vendor/lib/libfocuspeaking_interface.so
-vendor/lib/libhand_interaction.uniplugin@1.0.so
-vendor/lib/libhandgesture.arcsoft.so
-vendor/lib/libhigh_dynamic_range_bokeh.so
-vendor/lib/libhypermotion_core.so
-vendor/lib/libhypermotion_interface.so
-vendor/lib/libjpegencoder_sw.unifunc.so
-vendor/lib/liblivefocus_capture_engine.so
-vendor/lib/liblivefocus_capture_interface.so
-vendor/lib/liblivefocus_preview_engine.so
-vendor/lib/liblivefocus_preview_interface.so
-vendor/lib/libmmcamera_faceproc.so
-vendor/lib/libmmcamera_faceproc2.so
-vendor/lib/libmpbase.so
-vendor/lib/libmultiviewspin_interface.so
-vendor/lib/libmultiviewzoom_interface.so
-vendor/lib/libofflinelog.so
-vendor/lib/libos.so
-vendor/lib/libpadm.so
-vendor/lib/libscaler_hw.unifunc.so
-vendor/lib/libsegmentationeffect.uniplugin@1.0.so
-vendor/lib/libsensorlistener.so
-vendor/lib/libsensorndkbridge.so
-vendor/lib/libsmartfocus_interface.so
-vendor/lib/libsns_device_mode_stub.so
-vendor/lib/libsns_fastRPC_util.so
-vendor/lib/libsns_low_lat_stream_stub.so
-vendor/lib/libsnsapi.so
-vendor/lib/libsocial_image_enhancement.uniplugin@1.0.so
-vendor/lib/libstork_shared.so
-vendor/lib/libswldc_capture_core.camera.samsung.so
-vendor/lib/libswregistrationalgo.so
-vendor/lib/libsynx.so
-vendor/lib/libthreadutils.so
-vendor/lib/libtriplecam_image_optical_zoom.so
-vendor/lib/libtriplecam_optical_zoom_control.so
-vendor/lib/libtriplecam_video_optical_zoom.so
-vendor/lib/libuniplugin.so
-vendor/lib/libvdis_core.so
-vendor/lib/libvideobeauty.arcsoft.so
-vendor/lib/libvideobeauty.uniplugin@1.0.so
-vendor/lib/libvideobeauty_interface.so
-vendor/lib/libvideotransitioneffect_roll.arcsoft.so
-vendor/lib/libvideotransitioneffect_zoom.arcsoft.so
-vendor/lib/libvideoutils.so
-vendor/lib/unihal_cutils@2.1.so
-vendor/lib/unihal_main@2.1.so
-vendor/lib/unihal_uniplugin@1.0.so
-vendor/lib/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
-vendor/lib64/com.qti.feature2.anchorsync.so
-vendor/lib64/com.qti.feature2.demux.so
-vendor/lib64/com.qti.feature2.frameselect.so
-vendor/lib64/com.qti.feature2.fusion.so
-vendor/lib64/com.qti.feature2.generic.so
-vendor/lib64/com.qti.feature2.gs.so
-vendor/lib64/com.qti.feature2.hdr.so
-vendor/lib64/com.qti.feature2.memcpy.so
-vendor/lib64/com.qti.feature2.mfsr.so
-vendor/lib64/com.qti.feature2.qcfa.so
-vendor/lib64/com.qti.feature2.rawhdr.so
-vendor/lib64/com.qti.feature2.rt.so
-vendor/lib64/com.qti.feature2.serializer.so
-vendor/lib64/com.qti.feature2.stub.so
-vendor/lib64/com.qti.feature2.swmf.so
 vendor/lib64/hw/camera.qcom.so
-vendor/lib64/hw/camera.unihal.default.so
-vendor/lib64/libBeauty_v4.camera.samsung.so
-vendor/lib64/libDLInterface.camera.samsung.so
-vendor/lib64/libDVTracking_interface.so
 vendor/lib64/libDepthBokehVideo_interface.so
-vendor/lib64/libDualCamBokehCapture.camera.samsung.so
-vendor/lib64/libFacePreProcessing.camera.samsung.so
-vendor/lib64/libFace_Landmark_API.camera.samsung.so
-vendor/lib64/libHandGesture.camera.samsung.so
-vendor/lib64/libHprFace_GAE_api.camera.samsung.so
-vendor/lib64/libHpr_RecGAE_cvFeature_v1.0.camera.samsung.so
-vendor/lib64/libIDDQD_core.so
-vendor/lib64/libIDDQD_interface.so
-vendor/lib64/libLocalTM_capture_core.camera.samsung.so
-vendor/lib64/libLocalTM_preview_core.so
-vendor/lib64/libLocalTM_wrapper.camera.samsung.so
-vendor/lib64/libMoonVerifier_v1.camera.samsung.so
-vendor/lib64/libMultiROIDetector.camera.samsung.so
-vendor/lib64/libObjectDetector_v1.camera.samsung.so
-vendor/lib64/libOpenCv.camera.samsung.so
-vendor/lib64/libPersonal_core.camera.samsung.so
-vendor/lib64/libPersonal_interface.so
-vendor/lib64/libPetDetector_interface.so
-vendor/lib64/libSSMAutoTrigger_interface.so
-vendor/lib64/libSSM_AutoTrigger.so
-vendor/lib64/libSceneDetector_v1.camera.samsung.so
+vendor/lib64/libSNPE.so
 vendor/lib64/libarcsoft_aieffectpk_video.so
 vendor/lib64/libarcsoft_aieffectpk_video_bokeh.so
 vendor/lib64/libarcsoft_aieffectpk_video_plight.so
-vendor/lib64/libarcsoft_dualcam_portraitlighting.so
-vendor/lib64/libarcsoft_dualcam_portraitlighting_preview.so
+vendor/lib64/libarcsoft_deflicker_native.so
 vendor/lib64/libarcsoft_multi_frame_video_hdr.so
 vendor/lib64/libarcsoft_object_tracking.so
 vendor/lib64/libarcsoft_superresolution_bokeh.so
 vendor/lib64/libbeautyshot.arcsoft.so
 vendor/lib64/libc++_shared.so
 vendor/lib64/libcamera_nn_stub.so
-vendor/lib64/libcamerapostproc.so
 vendor/lib64/libcamxexternalformatutils.so
 vendor/lib64/libcamxfacialfeatures.so
 vendor/lib64/libcamxfdalgo.so
@@ -405,166 +158,69 @@ vendor/lib64/libcamxncs.so
 vendor/lib64/libcamxstatscore.so
 vendor/lib64/libcamxswprocessalgo.so
 vendor/lib64/libcamxtintlessalgo.so
+vendor/lib64/libcapiv2svacnn.so
+vendor/lib64/libcapiv2svarnn.so
+vendor/lib64/libcapiv2vop.so
 vendor/lib64/libchilog.so
 vendor/lib64/libcom.qti.chinodeutils.so
-vendor/lib64/libdualcam_refocus_image.so
-vendor/lib64/libdualcam_refocus_video.so
-vendor/lib64/libexifa.camera.samsung.so
-vendor/lib64/libface_landmark.arcsoft.so
-vendor/lib64/libfocuspeaking.so
-vendor/lib64/libfocuspeaking_interface.so
-vendor/lib64/libformatConverter.unifunc.so
-vendor/lib64/libhand_interaction.uniplugin@1.0.so
 vendor/lib64/libhandgesture.arcsoft.so
-vendor/lib64/libhigh_dynamic_range_bokeh.so
 vendor/lib64/libhypermotion_core.so
 vendor/lib64/libhypermotion_interface.so
 vendor/lib64/libimage_enhancement.arcsoft.so
 vendor/lib64/libimagecodec_native.quram.so
 vendor/lib64/libipebpsstriping.so
 vendor/lib64/libjpegQtable_interface.so
-vendor/lib64/libjpegencoder_sw.unifunc.so
-vendor/lib64/liblivefocus_capture_engine.so
-vendor/lib64/liblivefocus_capture_interface.so
-vendor/lib64/liblivefocus_preview_engine.so
-vendor/lib64/liblivefocus_preview_interface.so
+vendor/lib64/libloadalgo_stub.so
 vendor/lib64/libmmcamera_faceproc.so
 vendor/lib64/libmmcamera_faceproc2.so
 vendor/lib64/libmpbase.so
+vendor/lib64/libmultiobject_tracker.so
 vendor/lib64/libmultiviewspin_interface.so
 vendor/lib64/libmultiviewzoom_interface.so
-vendor/lib64/libnanopb.so
 vendor/lib64/libofflinelog.so
 vendor/lib64/libos.so
 vendor/lib64/libpadm.so
-vendor/lib64/libscaler_hw.unifunc.so
-vendor/lib64/libsegmentationeffect.uniplugin@1.0.so
+vendor/lib64/libsavscmn.so
 vendor/lib64/libsensorlistener.so
 vendor/lib64/libsensorndkbridge.so
 vendor/lib64/libsmartfocus_interface.so
+vendor/lib64/libsnap_compute.so
+vendor/lib64/libsnap_compute_wrapper.so
+vendor/lib64/libsnap_vndk.so
+vendor/lib64/libsnaplite_native.so
+vendor/lib64/libsnaplite_wrapper.so
+vendor/lib64/libsnpe_dsp_domains_v2.so
+vendor/lib64/libsnpe_wrapper.so
 vendor/lib64/libsns_device_mode_stub.so
 vendor/lib64/libsns_fastRPC_util.so
 vendor/lib64/libsns_low_lat_stream_stub.so
 vendor/lib64/libsnsapi.so
-vendor/lib64/libsocial_image_enhancement.uniplugin@1.0.so
+vendor/lib64/libsnsdiaglog.so
 vendor/lib64/libstork_shared.so
-vendor/lib64/libswldc_capture_core.camera.samsung.so
 vendor/lib64/libswregistrationalgo.so
 vendor/lib64/libsynx.so
 vendor/lib64/libthreadutils.so
-vendor/lib64/libtriplecam_image_optical_zoom.so
-vendor/lib64/libtriplecam_optical_zoom_control.so
-vendor/lib64/libtriplecam_video_optical_zoom.so
+vendor/lib64/libtswrappercommon.so
 vendor/lib64/libuniplugin.so
 vendor/lib64/libvdis_core.so
 vendor/lib64/libvideobeauty.arcsoft.so
-vendor/lib64/libvideobeauty.uniplugin@1.0.so
 vendor/lib64/libvideobeauty_interface.so
 vendor/lib64/libvideotransitioneffect_roll.arcsoft.so
 vendor/lib64/libvideotransitioneffect_zoom.arcsoft.so
-vendor/lib64/unihal_cutils@2.1.so
-vendor/lib64/unihal_main@2.1.so
-vendor/lib64/unihal_uniplugin@1.0.so
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
-vendor/lib64/libcodecsolutionhelper_vendor.so
-vendor/lib/libcodecsolutionhelper_vendor.so
 
-# Camera-r8q
-vendor/lib/camera/com.qti.eeprom.truly_cmb433.so
-vendor/lib/camera/com.qti.tuned.default.bin
-vendor/lib/camera/com.samsung.sensor.hi847.so
-vendor/lib/camera/com.samsung.sensor.imx374.so
-vendor/lib/camera/com.samsung.sensor.imx516.so
-vendor/lib/camera/com.samsung.sensor.imx518.so
-vendor/lib/camera/com.samsung.sensor.imx555.so
-vendor/lib/camera/com.samsung.sensor.imx586.so
-vendor/lib/camera/com.samsung.sensor.imx616.so
-vendor/lib/camera/com.samsung.sensor.s5k2l3.so
-vendor/lib/camera/com.samsung.sensor.s5k2la.so
-vendor/lib/camera/com.samsung.sensor.s5k3l6.so
-vendor/lib/camera/com.samsung.sensor.s5k3p8sp.so
-vendor/lib/camera/com.samsung.sensor.s5k4ha.so
-vendor/lib/camera/com.samsung.sensor.s5k5e9yu05.so
-vendor/lib/camera/com.samsung.sensor.s5kgh1.so
-vendor/lib/camera/com.samsung.sensor.s5kgw2.so
-vendor/lib/camera/com.samsung.sensor.s5khm1.so
-vendor/lib/camera/com.samsung.sensormodule.0_0_sony_imx555.bin
-vendor/lib/camera/com.samsung.sensormodule.12_sony_imx616_full.bin
-vendor/lib/camera/com.samsung.sensormodule.1_sony_imx616.bin
-vendor/lib/camera/com.samsung.sensormodule.2_lsi_s5k3l6.bin
-vendor/lib/camera/com.samsung.sensormodule.3_hynix_hi847.bin
-vendor/lib/camera/com.samsung.tuned.hynix_hi847.bin
-vendor/lib/camera/com.samsung.tuned.lsi_s5k3l6.bin
-vendor/lib/camera/com.samsung.tuned.sony_imx555.bin
-vendor/lib/camera/com.samsung.tuned.sony_imx616.bin
-vendor/lib/camera/components/com.qti.camx.chiiqutils.so
-vendor/lib/camera/components/com.qti.eisv2.so
-vendor/lib/camera/components/com.qti.eisv3.so
-vendor/lib/camera/components/com.qti.hvx.addconstant.so
-vendor/lib/camera/components/com.qti.hvx.binning.so
-vendor/lib/camera/components/com.qti.node.depth.so
-vendor/lib/camera/components/com.qti.node.dummyrtb.so
-vendor/lib/camera/components/com.qti.node.dummysat.so
-vendor/lib/camera/components/com.qti.node.eisv2.so
-vendor/lib/camera/components/com.qti.node.eisv3.so
-vendor/lib/camera/components/com.qti.node.fcv.so
-vendor/lib/camera/components/com.qti.node.gpu.so
-vendor/lib/camera/components/com.qti.node.memcpy.so
-vendor/lib/camera/components/com.qti.node.remosaic.so
-vendor/lib/camera/components/com.qti.node.sbi.so
-vendor/lib/camera/components/com.qti.node.stich.so
-vendor/lib/camera/components/com.qti.node.swregistration.so
-vendor/lib/camera/components/com.qti.stats.afd.so
-vendor/lib/camera/components/com.qti.stats.asd.so
-vendor/lib/camera/components/com.qti.stats.hafoverride.so
-vendor/lib/camera/components/com.qti.stats.pdlibsony.so
-vendor/lib/camera/components/com.qti.stats.pdlibwrapper.so
-vendor/lib/camera/components/com.qti.stats.tracker.so
-vendor/lib/camera/components/com.samsung.node.capture_bokeh.so
-vendor/lib/camera/components/com.samsung.node.capture_fusion.so
-vendor/lib/camera/components/com.samsung.node.multi_frame_video_hdr.so
-vendor/lib/camera/components/com.samsung.node.realtimebokeh.so
-vendor/lib/camera/components/com.samsung.node.smooth_transition.so
-vendor/lib/camera/components/com.samsung.node.uniplugin_capture.so
-vendor/lib/camera/components/com.samsung.node.uniplugin_preview.so
-vendor/lib/camera/components/com.samsung.node.uniplugin_recording.so
-vendor/lib/camera/components/com.samsung.node.uniplugin_vdis.so
-vendor/lib/camera/components/com.ss.stats.aec.so
-vendor/lib/camera/components/com.ss.stats.af.so
-vendor/lib/camera/components/com.ss.stats.awb.so
-vendor/lib/camera/components/libdepthmapwrapper.so
-vendor/lib/camera/fdconfigpreview.bin
-vendor/lib/camera/fdconfigpreviewlite.bin
-vendor/lib/camera/fdconfigvideo.bin
-vendor/lib/camera/fdconfigvideolite.bin
-vendor/lib/camera/ois_mcu_stm32g_fw.bin
-vendor/lib64/camera/com.qti.eeprom.truly_cmb433.so
-vendor/lib64/camera/com.qti.tuned.default.bin
-vendor/lib64/camera/com.samsung.sensor.hi847.so
-vendor/lib64/camera/com.samsung.sensor.imx374.so
-vendor/lib64/camera/com.samsung.sensor.imx516.so
-vendor/lib64/camera/com.samsung.sensor.imx518.so
-vendor/lib64/camera/com.samsung.sensor.imx555.so
-vendor/lib64/camera/com.samsung.sensor.imx586.so
-vendor/lib64/camera/com.samsung.sensor.imx616.so
-vendor/lib64/camera/com.samsung.sensor.s5k2l3.so
-vendor/lib64/camera/com.samsung.sensor.s5k2la.so
-vendor/lib64/camera/com.samsung.sensor.s5k3l6.so
-vendor/lib64/camera/com.samsung.sensor.s5k3p8sp.so
-vendor/lib64/camera/com.samsung.sensor.s5k4ha.so
-vendor/lib64/camera/com.samsung.sensor.s5k5e9yu05.so
-vendor/lib64/camera/com.samsung.sensor.s5kgh1.so
-vendor/lib64/camera/com.samsung.sensor.s5kgw2.so
-vendor/lib64/camera/com.samsung.sensor.s5khm1.so
-vendor/lib64/camera/com.samsung.sensormodule.0_0_sony_imx555.bin
-vendor/lib64/camera/com.samsung.sensormodule.12_sony_imx616_full.bin
-vendor/lib64/camera/com.samsung.sensormodule.1_sony_imx616.bin
-vendor/lib64/camera/com.samsung.sensormodule.2_lsi_s5k3l6.bin
-vendor/lib64/camera/com.samsung.sensormodule.3_hynix_hi847.bin
-vendor/lib64/camera/com.samsung.tuned.hynix_hi847.bin
-vendor/lib64/camera/com.samsung.tuned.lsi_s5k3l6.bin
-vendor/lib64/camera/com.samsung.tuned.sony_imx555.bin
-vendor/lib64/camera/com.samsung.tuned.sony_imx616.bin
+# Camera calibrations
+vendor/lib64/camera/f_dual_calibration.bin
+vendor/lib64/camera/fdconfigpreview.bin
+vendor/lib64/camera/fdconfigpreviewlite.bin
+vendor/lib64/camera/fdconfigvideo.bin
+vendor/lib64/camera/fdconfigvideolite.bin
+vendor/lib64/camera/t_tof_calibration.bin
+vendor/lib64/camera/uw_dual_calibration.bin
+vendor/lib64/camera/w_dual_calibration.bin
+vendor/lib64/camera/w_tof_calibration.bin
+
+# Camera components
 vendor/lib64/camera/components/com.qti.camx.chiiqutils.so
 vendor/lib64/camera/components/com.qti.eisv2.so
 vendor/lib64/camera/components/com.qti.eisv3.so
@@ -602,133 +258,84 @@ vendor/lib64/camera/components/com.ss.stats.af.so
 vendor/lib64/camera/components/com.ss.stats.awb.so
 vendor/lib64/camera/components/com.ss.stats.pdlib.so
 vendor/lib64/camera/components/libdepthmapwrapper.so
-vendor/lib64/camera/f_dual_calibration.bin
-vendor/lib64/camera/fdconfigpreview.bin
-vendor/lib64/camera/fdconfigpreviewlite.bin
-vendor/lib64/camera/fdconfigvideo.bin
-vendor/lib64/camera/fdconfigvideolite.bin
-vendor/lib64/camera/ois_mcu_stm32g_fw.bin
-vendor/lib64/camera/t_tof_calibration.bin
-vendor/lib64/camera/uw_dual_calibration.bin
-vendor/lib64/camera/w_dual_calibration.bin
-vendor/lib64/camera/w_tof_calibration.bin
-vendor/lib/hw/com.qti.chi.override.so
-vendor/lib/libIMUSensor.so
-vendor/lib/libvdis_interface.so
 
-# NOP CONNECT_RILD
-vendor/lib64/hw/com.qti.chi.override.so|5aa35822eb93f5eb7e09d20c60274eb9de1ef0f0
+# Camera features
+vendor/lib64/com.qti.feature2.anchorsync.so
+vendor/lib64/com.qti.feature2.demux.so
+vendor/lib64/com.qti.feature2.frameselect.so
+vendor/lib64/com.qti.feature2.fusion.so
+vendor/lib64/com.qti.feature2.generic.so
+vendor/lib64/com.qti.feature2.gs.so
+vendor/lib64/com.qti.feature2.hdr.so
+vendor/lib64/com.qti.feature2.memcpy.so
+vendor/lib64/com.qti.feature2.mfsr.so
+vendor/lib64/com.qti.feature2.qcfa.so
+vendor/lib64/com.qti.feature2.rawhdr.so
+vendor/lib64/com.qti.feature2.rt.so
+vendor/lib64/com.qti.feature2.serializer.so
+vendor/lib64/com.qti.feature2.stub.so
+vendor/lib64/com.qti.feature2.swmf.so
 
-vendor/lib64/libIMUSensor.so
-vendor/lib64/libvdis_interface.so
-vendor/lib/libHprVisualEffect.so
-vendor/lib64/libHprVisualEffect.so
-vendor/lib/libImageFormatConverter.so
-vendor/lib64/libImageFormatConverter.so
-vendor/lib/libmultiobject_tracker.so
-vendor/lib64/libmultiobject_tracker.so
-vendor/lib/libRelighting_API.camera.samsung.so
-vendor/lib64/libRelighting_API.camera.samsung.so
-vendor/lib/libsaiv_BeautySolutionVideo.so
-vendor/lib64/libsaiv_BeautySolutionVideo.so
-vendor/lib/libscenedetector.uniplugin@1.0.so
-vendor/lib64/libscenedetector.uniplugin@1.0.so
-vendor/lib/libsegmentationeffect_capture.uniplugin@1.0.so
-vendor/lib64/libsegmentationeffect_capture.uniplugin@1.0.so
-vendor/lib/libssengine.uniplugin@1.0.so
-vendor/lib64/libssengine.uniplugin@1.0.so
+# Camera sensors
+vendor/lib64/camera/com.samsung.sensor.hi847.so
+vendor/lib64/camera/com.samsung.sensor.imx374.so
+vendor/lib64/camera/com.samsung.sensor.imx516.so
+vendor/lib64/camera/com.samsung.sensor.imx518.so
+vendor/lib64/camera/com.samsung.sensor.imx555.so
+vendor/lib64/camera/com.samsung.sensor.imx586.so
+vendor/lib64/camera/com.samsung.sensor.imx616.so
+vendor/lib64/camera/com.samsung.sensor.s5k2l3.so
+vendor/lib64/camera/com.samsung.sensor.s5k2la.so
+vendor/lib64/camera/com.samsung.sensor.s5k3l6.so
+vendor/lib64/camera/com.samsung.sensor.s5k3p8sp.so
+vendor/lib64/camera/com.samsung.sensor.s5k4ha.so
+vendor/lib64/camera/com.samsung.sensor.s5k5e9yu05.so
+vendor/lib64/camera/com.samsung.sensor.s5kgh1.so
+vendor/lib64/camera/com.samsung.sensor.s5kgw2.so
+vendor/lib64/camera/com.samsung.sensor.s5khm1.so
+vendor/lib64/camera/com.samsung.sensormodule.0_0_sony_imx555.bin
+vendor/lib64/camera/com.samsung.sensormodule.12_sony_imx616_full.bin
+vendor/lib64/camera/com.samsung.sensormodule.1_sony_imx616.bin
+vendor/lib64/camera/com.samsung.sensormodule.2_lsi_s5k3l6.bin
+vendor/lib64/camera/com.samsung.sensormodule.3_hynix_hi847.bin
+vendor/lib64/camera/com.samsung.tuned.hynix_hi847.bin
+vendor/lib64/camera/com.samsung.tuned.lsi_s5k3l6.bin
+vendor/lib64/camera/com.samsung.tuned.sony_imx555.bin
+vendor/lib64/camera/com.samsung.tuned.sony_imx616.bin
+
+# Camera-r8q
 vendor/lib64/K32QS_libTsAeFront.so
 vendor/lib64/K32QS_libTsAfFront.so
 vendor/lib64/K32QS_libTsAwbFront.so
-vendor/lib64/libarcsoft_deflicker_native.so
-vendor/lib64/libFrucDYNVLib.so
-vendor/lib64/libloadalgo_stub.so
-vendor/lib64/libmm-hdcpmgr.so
-vendor/lib64/liboemaids_vendor.so
-vendor/lib/libQ6MSFR_manager_stub.so
-vendor/lib64/libQ6MSFR_manager_stub.so
-vendor/lib64/libthirdparty_zoomtranslator_imp.so
 vendor/lib64/X12QS_libTsAe.so
 vendor/lib64/X12QS_libTsAf.so
 vendor/lib64/X12QS_libTsAwb.so
 vendor/lib64/X12QS_libTsPdafm.so
-vendor/lib/libshotsuggestion.so
-vendor/lib64/libshotsuggestion.so
-vendor/lib/libDeviceInfoProvider.so
-vendor/lib64/libDeviceInfoProvider.so
-vendor/lib/libengine_did.so
-vendor/lib64/libengine_did.so
-vendor/lib/libBlurDetectionDeepLearning.camera.samsung.so
-vendor/lib/libcapiv2svacnn.so
-vendor/lib/libcapiv2svarnn.so
-vendor/lib/libcapiv2vop.so
-vendor/lib/libevent_finder.uniplugin@1.0.so
-vendor/lib/libEventFinder.camera.samsung.so
-vendor/lib/libformatConverter.unifunc.so
-vendor/lib/libgaya.so
-vendor/lib/libhdrdynamicootf.so
-vendor/lib/libHDRVerifier_v1.camera.samsung.so
-vendor/lib/libheifcapture.so
-vendor/lib/libHumanSegVideoModel_Vendor.so
-vendor/lib/libimage_enhancement.arcsoft.so
-vendor/lib/libimagecodec_native.quram.so
-vendor/lib/libimgproc_sw.unifunc.so
-vendor/lib/libipebpsstriping.so
-vendor/lib/libjpegQtable_interface.so
-vendor/lib/libpantilt_detector.uniplugin@1.0.so
-vendor/lib/libsaped.so
-vendor/lib/libSingleTakeBlurDetection.uniplugin@1.0.so
-vendor/lib/libsnsdiaglog.so
-vendor/lib/libsrib_CNNInterface.camera.samsung.so
-vendor/lib/libsrib_humanaware_engine.camera.samsung.so
-vendor/lib/libtensorflowLite.singletake.camera.samsung.so
-vendor/lib64/libBlurDetectionDeepLearning.camera.samsung.so
-vendor/lib64/libcapiv2svacnn.so
-vendor/lib64/libcapiv2svarnn.so
-vendor/lib64/libcapiv2vop.so
-vendor/lib64/libEventFinder.camera.samsung.so
-vendor/lib64/libhdrdynamic.so
-vendor/lib64/libhdrdynamicootf.so
-vendor/lib64/libHDRVerifier_v1.camera.samsung.so
-vendor/lib64/libheifcapture.so
-vendor/lib64/libHumanSegVideoModel_Vendor.so
-vendor/lib64/libimgproc_sw.unifunc.so
-vendor/lib64/libsaped.so
-vendor/lib64/libsnap_v1.samsung.so
-vendor/lib64/libsnsdiaglog.so
-vendor/lib64/libsrib_CNNInterface.camera.samsung.so
-vendor/lib64/libsrib_humanaware_engine.camera.samsung.so
-vendor/lib64/libtensorflowLite.singletake.camera.samsung.so
-vendor/lib/libPanDetector.so
-vendor/lib64/libPanDetector.so
-vendor/lib/libengine_did.so
-vendor/lib64/libengine_did.so
-vendor/lib/libQ6MSFR_manager_stub.so
-vendor/lib64/libQ6MSFR_manager_stub.so
-vendor/lib/libHprVisualEffect.so
-vendor/lib64/libHprVisualEffect.so
-vendor/lib/libIMUSensor.so
+vendor/lib64/camera/com.qti.tuned.default.bin
+vendor/lib64/camera/ois_mcu_stm32g_fw.bin
+vendor/lib64/hw/com.qti.chi.override.so|5aa35822eb93f5eb7e09d20c60274eb9de1ef0f0
 vendor/lib64/libIMUSensor.so
-vendor/lib64/libtswrappercommon.so
+vendor/lib64/libthirdparty_zoomtranslator_imp.so
+vendor/lib64/libtriplecam_image_optical_zoom.so
+vendor/lib64/libtriplecam_optical_zoom_control.so
+vendor/lib64/libtriplecam_video_optical_zoom.so
+vendor/lib64/libvdis_interface.so
 
-# Certificate Authority 
--vendor/app/CACertService/CACertService.apk
-vendor/lib64/libcacertclient.so
-vendor/lib64/libjnihelper.so
-vendor/lib64/vendor.qti.hardware.cacert@1.0.so
+# Camera (firmware)
+vendor/firmware/CAMERA_ICP.elf
+vendor/firmware/a96t356_r8q_all.bin
+vendor/firmware/a96t356_r8q_usa.bin
 
-# Charger 
+# Charger
 vendor/bin/hvdcp_opti
 vendor/bin/init.qti.chg_policy.sh
 vendor/etc/charger_fstab.qti
 
-# DRM 
+# DRM
 vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service
 vendor/bin/qseecomd
-vendor/bin/ssgtzd
 vendor/etc/gpfspath_oem_config.xml
 vendor/etc/init/qseecomd.rc
-vendor/etc/init/ssgtzd.rc
 vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc
 vendor/etc/ssg/ta_config.json
 vendor/etc/ssg/tz_whitelist.json
@@ -736,9 +343,7 @@ vendor/lib/hw/vendor.qti.hardware.qseecom@1.0-impl.so
 vendor/lib/libGPreqcancel.so
 vendor/lib/libGPreqcancel_svc.so
 vendor/lib/libQSEEComAPI.so
-vendor/lib/libbase64.so
 vendor/lib/libcpion.so
-vendor/lib/libcppf.so
 vendor/lib/libdrmfs.so
 vendor/lib/libdrmtime.so
 vendor/lib/libminksocket.so
@@ -755,7 +360,8 @@ vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so
 vendor/lib64/libGPreqcancel.so
 vendor/lib64/libGPreqcancel_svc.so
 vendor/lib64/libQSEEComAPI.so
-vendor/lib64/libbase64.so
+vendor/lib64/libSecureUILib.so
+vendor/lib64/libStDrvInt.so
 vendor/lib64/libcpion.so
 vendor/lib64/libdrmfs.so
 vendor/lib64/libdrmtime.so
@@ -763,6 +369,8 @@ vendor/lib64/libminksocket.so
 vendor/lib64/libops.so
 vendor/lib64/libqisl.so
 vendor/lib64/librpmb.so
+vendor/lib64/libsecureui.so
+vendor/lib64/libsecureui_svcsock.so
 vendor/lib64/libsi.so
 vendor/lib64/libspl.so
 vendor/lib64/libssd.so
@@ -770,40 +378,11 @@ vendor/lib64/libtrustedapploader.so
 vendor/lib64/libtzdrmgenprov.so
 vendor/lib64/vendor.qti.hardware.qseecom@1.0.so
 
-# DRM-HDCP 
-vendor/bin/hdcp1prov
-vendor/bin/hdcp2p2prov
-vendor/lib64/libhdcp1prov.so
-vendor/lib64/libhdcp2p2prov.so
-vendor/lib64/libhdcpsrm.so
-
-# DRM - Widevine
-vendor/bin/hw/android.hardware.drm@1.3-service.widevine
-vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc
-vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml
-vendor/lib/mediadrm/libwvdrmengine.so
-vendor/lib/libwvhidl.so
-vendor/lib/liboemcrypto.so
-vendor/lib64/liboemcrypto.so
-
-# DSP 
+# DSP
 vendor/bin/dspservice
 vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc
 vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy
-vendor/lib/vendor.qti.hardware.dsp@1.0.so
 vendor/lib64/vendor.qti.hardware.dsp@1.0.so
-
-# Diag 
-vendor/lib/libdiag.so
-vendor/lib64/libdiag.so
-
-# Display
-vendor/lib64/libsnaplite_native.so
-vendor/lib64/libsnaplite_wrapper.so
-vendor/lib64/libsnap_compute.so
-vendor/lib64/libsnap_compute_wrapper.so
-vendor/lib64/libsnap_vndk.so
-vendor/lib64/libmm-hdcpmgr.so
 
 # Display (SDM) - from munch-user 14 RKQ1.211001.001 OS1.0.5.0.ULMMIXM release-keys
 vendor/lib64/libdisplayqos.so|56cfe5471e5c282ac83a31e5b155342ade8c08d0
@@ -818,11 +397,11 @@ vendor/lib64/libsdm-disp-vndapis.so|fd0b0beac164c92bfa012dbc059cb50cdde2dec6
 vendor/lib64/libsdmextension.so|99377ab065105f0cbd17bbe5907cdbb8027a9f17
 vendor/lib64/libtinyxml2_1.so|fb0a2b16e5cfd28515268edc5c2345190d1ef4e5
 
-# Display-calibration
+# Display calibration data
 vendor/etc/qdcm_calib_data_ss_dsi_panel_EA8079B_AMS646YB01_FHD.xml
 vendor/etc/qdcm_calib_data_ss_dsi_panel_S6E3FC3_AMS646YD01_FHD.xml
 
-# Display postprocessing 
+# Display postprocessing
 vendor/bin/hw/vendor.display.color@1.0-service
 vendor/bin/ppd
 vendor/bin/qdcmss
@@ -837,143 +416,64 @@ vendor/lib64/vendor.display.color@1.4.so
 vendor/lib64/vendor.display.color@1.5.so
 vendor/lib64/vendor.display.postproc@1.0.so
 
-# Dolby
-vendor/etc/dax3_media_codecs_dolby_audio.xml
-vendor/etc/dolby/dax-default.xml
-vendor/etc/media_codecs_dolby_audio.xml
-
-# ESE-Powermanager
+# ESE
 vendor/lib/vendor.qti.esepowermanager@1.0.so
 vendor/lib64/vendor.qti.esepowermanager@1.0.so
 
-# FASTCV 
+# FASTCV
 vendor/lib/libfastcvdsp_stub.so
 -vendor/lib/libfastcvopt.so
 vendor/lib64/libfastcvdsp_stub.so
 -vendor/lib64/libfastcvopt.so
-vendor/lib/libfastcrc.so
-
-# FM
-vendor/lib/ftm_fm_lib.so
-vendor/lib/vendor.qti.hardware.fm@1.0.so
-vendor/lib64/ftm_fm_lib.so
-vendor/lib64/vendor.qti.hardware.fm@1.0.so
 
 # Fingerprint
-vendor/lib/libbauthserver.so
-vendor/lib/libbauthtzcommon.so
-vendor/lib/libegis_fp_normal_sensor_test.so
-vendor/lib/libgf_in_system_lib.so
-vendor/lib/libsynaFpSensorTestNwd.so
-vendor/lib/libqfp_sensortest.so
-vendor/lib/vendor.qti.hardware.fingerprint@1.0.so
 vendor/lib64/libbauthserver.so
 vendor/lib64/libbauthtzcommon.so
 vendor/lib64/libegis_fp_normal_sensor_test.so
 vendor/lib64/libgf_in_system_lib.so
-vendor/lib64/libsynaFpSensorTestNwd.so
 vendor/lib64/libqfp_sensortest.so
-
-# Firmware
-vendor/firmware/CAMERA_ICP.elf
-vendor/firmware/a96t356_r8q_all.bin
-vendor/firmware/a96t356_r8q_usa.bin
-vendor/firmware/cs35l40-bot-dsp1-spk-prot-calib.bin
-vendor/firmware/cs35l40-bot-dsp1-spk-prot.bin
-vendor/firmware/cs35l40-bot-dsp1-spk-prot.wmfw
-vendor/firmware/cs35l40-rcv-dsp1-spk-prot-calib.bin
-vendor/firmware/cs35l40-rcv-dsp1-spk-prot.bin
-vendor/firmware/cs35l40-rcv-dsp1-spk-prot.wmfw
-vendor/firmware/cs40l20.bin
-vendor/firmware/cs40l20.wmfw
-vendor/firmware/cs40l25a.wmfw
-vendor/firmware/cs40l25a_cal.wmfw
-vendor/firmware/cs40l25a_clab.bin
-vendor/firmware/cs40l25a_clab.wmfw
-vendor/firmware/cs40l25a_exc.bin
-vendor/firmware/Data.msc
-vendor/firmware/dax_param.bin
-vendor/firmware/htbtfw20.tlv
-vendor/firmware/htnv20.bin
-vendor/firmware/ipa_fws.b00
-vendor/firmware/ipa_fws.b01
-vendor/firmware/ipa_fws.b02
-vendor/firmware/ipa_fws.b03
-vendor/firmware/ipa_fws.b04
-vendor/firmware/ipa_fws.elf
-vendor/firmware/ipa_fws.mdt
-vendor/firmware/ipa_uc.b00
-vendor/firmware/ipa_uc.b01
-vendor/firmware/ipa_uc.b02
-vendor/firmware/ipa_uc.elf
-vendor/firmware/ipa_uc.mdt
-vendor/firmware/nfc/sec_s3nrn4v_firmware.bin
-vendor/firmware/qca6390/amss20.bin
-vendor/firmware/qca6390/bdwlan.elf
-vendor/firmware/qca6390/bdwlan.elf1
-vendor/firmware/qca6390/bdwlan.elf2
-vendor/firmware/qca6390/m3.bin
-vendor/firmware/qca6390/regdb.bin
+vendor/lib64/libsynaFpSensorTestNwd.so
 
 # GPS
+vendor/app/CACertService/CACertService.apk
 vendor/bin/hw/android.hardware.gnss@2.1-service-qti
 vendor/bin/loc_launcher
 vendor/bin/lowi-server
 vendor/bin/xtra-daemon
-vendor/etc/init/android.hardware.gnss@2.1-service-qti.rc
-vendor/etc/vintf/manifest/android.hardware.gnss@2.1-service-qti.xml
+vendor/etc/flp.conf
 vendor/etc/gnss_antenna_info.conf
 vendor/etc/gps.conf
-vendor/etc/sap.conf
-vendor/etc/lowi.conf
-vendor/etc/flp.conf
+vendor/etc/init/android.hardware.gnss@2.1-service-qti.rc
 vendor/etc/izat.conf
-vendor/lib/hw/android.hardware.gnss@2.1-impl-qti.so
-vendor/lib/hw/vendor.samsung.hardware.gnss@2.0-impl-sec.so
-vendor/lib/libbatching.so
-vendor/lib/libdataitems.so
-vendor/lib/libgeofencing.so
-vendor/lib/libizat_client_api.so
-vendor/lib/libizat_core.so
-vendor/lib/liblbs_core.so
-vendor/lib/liblocationservice.so
-vendor/lib/liblocationservice_glue.so
-vendor/lib/liblocation_api.so
-vendor/lib/libloc_api_v02.so
-vendor/lib/libloc_core.so
-vendor/lib/libloc_socket.so
-vendor/lib/liblowi_client.so
-vendor/lib/liblowi_wifihal.so
-vendor/lib/libqcc_file_agent.so
-vendor/lib/libqdma_file_agent.so
-vendor/lib/libsynergy_loc_api.so
-vendor/lib/vendor.qti.gnss@1.0.so
-vendor/lib/vendor.qti.gnss@1.1.so
-vendor/lib/vendor.qti.gnss@1.2.so
-vendor/lib/vendor.qti.gnss@2.0.so
-vendor/lib/vendor.qti.gnss@2.1.so
-vendor/lib/vendor.qti.gnss@3.0.so
-vendor/lib/vendor.qti.gnss@4.0.so
-vendor/lib/vendor.qti.hardware.qccsyshal@1.0.so
-vendor/lib/vendor.samsung.hardware.gnss@2.0.so
+vendor/etc/lowi.conf
+vendor/etc/sap.conf
+vendor/etc/vintf/manifest/android.hardware.gnss@2.1-service-qti.xml
 vendor/lib64/hw/android.hardware.gnss@2.1-impl-qti.so
 vendor/lib64/hw/vendor.samsung.hardware.gnss@2.0-impl-sec.so
 vendor/lib64/libbatching.so
+vendor/lib64/libcacertclient.so
+vendor/lib64/libcdfw.so
+vendor/lib64/libcdfw_remote_api.so
 vendor/lib64/libdataitems.so
+vendor/lib64/libgarden.so
 vendor/lib64/libgeofencing.so
+vendor/lib64/libgnss.so
+vendor/lib64/libgnsspps.so
+vendor/lib64/libgps.utils.so
 vendor/lib64/libizat_client_api.so
 vendor/lib64/libizat_core.so
+vendor/lib64/libjnihelper.so
 vendor/lib64/liblbs_core.so
-vendor/lib64/libcdfw.so
-vendor/lib64/libcdfw_remote_api.so 
-vendor/lib64/liblocationservice.so
-vendor/lib64/liblocationservice_glue.so
-vendor/lib64/liblocation_api.so
 vendor/lib64/libloc_api_v02.so
 vendor/lib64/libloc_core.so
 vendor/lib64/libloc_socket.so
+vendor/lib64/liblocation_api.so
+vendor/lib64/liblocationservice.so
+vendor/lib64/liblocationservice_glue.so
 vendor/lib64/liblowi_client.so
 vendor/lib64/liblowi_wifihal.so
+vendor/lib64/libmmosal.so
+vendor/lib64/libpdmapper.so
 vendor/lib64/libqcc_file_agent.so
 vendor/lib64/libqdma_file_agent.so
 vendor/lib64/libsynergy_loc_api.so
@@ -984,18 +484,9 @@ vendor/lib64/vendor.qti.gnss@2.0.so
 vendor/lib64/vendor.qti.gnss@2.1.so
 vendor/lib64/vendor.qti.gnss@3.0.so
 vendor/lib64/vendor.qti.gnss@4.0.so
+vendor/lib64/vendor.qti.hardware.cacert@1.0.so
 vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so
 vendor/lib64/vendor.samsung.hardware.gnss@2.0.so
-
-# GPS-Hardware
-vendor/lib/libgarden.so
-vendor/lib/libgnss.so
-vendor/lib/libgnsspps.so
-vendor/lib/libgps.utils.so
-vendor/lib64/libgarden.so
-vendor/lib64/libgnss.so
-vendor/lib64/libgnsspps.so
-vendor/lib64/libgps.utils.so
 
 # Gatekeeper
 vendor/lib64/hw/gatekeeper.mdfpp.so
@@ -1007,34 +498,32 @@ vendor/lib/egl/libGLESv1_CM_adreno.so
 vendor/lib/egl/libGLESv2_adreno.so;SYMLINK=vendor/lib/libGLESv2_adreno.so
 vendor/lib/egl/libq3dtools_adreno.so;SYMLINK=vendor/lib/libq3dtools_adreno.so
 vendor/lib/egl/libq3dtools_esx.so
-vendor/lib/libadreno_utils.so
 vendor/lib/libC2D2.so
-vendor/lib/libc2d30_bltlib.so
 vendor/lib/libCB.so
-vendor/lib/libdisplayskuutils.so
-vendor/lib/libgpudataproducer.so
-vendor/lib/libgsl.so
-vendor/lib/libhdr_tm.so
-vendor/lib/libllvm-glnext.so
-vendor/lib/libllvm-qcom.so
 vendor/lib/libOpenCL.so
 vendor/lib/libVkLayer_q3dtools.so
+vendor/lib/libadreno_utils.so
+vendor/lib/libc2d30_bltlib.so
+vendor/lib/libgpudataproducer.so
+vendor/lib/libgsl.so
+vendor/lib/libllvm-glnext.so
+vendor/lib/libllvm-qcom.so
 vendor/lib64/egl/eglSubDriverAndroid.so
 vendor/lib64/egl/libEGL_adreno.so;SYMLINK=vendor/lib64/libEGL_adreno.so
 vendor/lib64/egl/libGLESv1_CM_adreno.so
 vendor/lib64/egl/libGLESv2_adreno.so;SYMLINK=vendor/lib64/libGLESv2_adreno.so
 vendor/lib64/egl/libq3dtools_adreno.so;SYMLINK=vendor/lib64/libq3dtools_adreno.so
 vendor/lib64/egl/libq3dtools_esx.so
-vendor/lib64/libadreno_utils.so
 vendor/lib64/libC2D2.so
-vendor/lib64/libc2d30_bltlib.so
 vendor/lib64/libCB.so
+vendor/lib64/libOpenCL.so
+vendor/lib64/libVkLayer_q3dtools.so
+vendor/lib64/libadreno_utils.so
+vendor/lib64/libc2d30_bltlib.so
 vendor/lib64/libgpudataproducer.so
 vendor/lib64/libgsl.so
 vendor/lib64/libllvm-glnext.so
 vendor/lib64/libllvm-qcom.so
-vendor/lib64/libOpenCL.so
-vendor/lib64/libVkLayer_q3dtools.so
 
 # Graphics (Adreno firmware)
 vendor/firmware/a650_gmu.bin
@@ -1050,21 +539,30 @@ product/priv-app/HotwordEnrollmentXGoogleEx3HEXAGON/HotwordEnrollmentXGoogleEx3H
 system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
 system_ext/framework/com.android.hotwordenrollment.common.util.jar
 
+# IPA (firmware)
+vendor/etc/init/ipa_fws.rc
+vendor/firmware/ipa_fws.b00
+vendor/firmware/ipa_fws.b01
+vendor/firmware/ipa_fws.b02
+vendor/firmware/ipa_fws.b03
+vendor/firmware/ipa_fws.b04
+vendor/firmware/ipa_fws.elf
+vendor/firmware/ipa_fws.mdt
+vendor/firmware/ipa_uc.b00
+vendor/firmware/ipa_uc.b01
+vendor/firmware/ipa_uc.b02
+vendor/firmware/ipa_uc.elf
+vendor/firmware/ipa_uc.mdt
+
 # Keymaster
--vendor/bin/hw/android.hardware.keymaster@4.0-strongbox-service-qti
+vendor/bin/hw/android.hardware.keymaster@4.0-strongbox-service-qti
 vendor/bin/sec_nvm
-vendor/bin/spdaemon
 vendor/etc/init/android.hardware.keymaster@4.0-strongbox-service-qti.rc
-vendor/etc/init/init.spdaemon_wait_spunvm.rc
-vendor/lib/libkeymasterdeviceutils.so
-vendor/lib/libkeymasterutils.so
-vendor/lib/libqtikeymaster4.so
-vendor/lib/libspcom.so
--vendor/lib64/libkeymaster_helper.so
--vendor/lib64/libskeymaster4device.so
-vendor/lib64/libkeymasterutils.so
+vendor/lib64/libkeymaster_helper.so
 vendor/lib64/libkeymasterdeviceutils.so
+vendor/lib64/libkeymasterutils.so
 vendor/lib64/libqtikeymaster4.so
+-vendor/lib64/libskeymaster4device.so
 vendor/lib64/libspcom.so
 
 # Latency
@@ -1079,48 +577,14 @@ vendor/lib/libgcs-calwrapper.so
 vendor/lib/libgcs-ipc.so
 vendor/lib/libgcs-osal.so
 vendor/lib/libgcs.so
-vendor/lib64/hw/sound_trigger.primary.kona.so
-vendor/lib64/libgcs-calwrapper.so
-vendor/lib64/libgcs-ipc.so
-vendor/lib64/libgcs-osal.so
-vendor/lib64/libgcs.so
-
-# MDM
-vendor/bin/ks
-vendor/bin/mdm_helper
-vendor/bin/mdm_helper_proxy
-vendor/lib64/libmdmimgload.so
+vendor/lib/libmulawdec.so
 
 # Machine learning
-vendor/lib/libpredeflicker_native.so
-vendor/lib/libsecfr_engine.so
-vendor/lib/libsecfr_model.so
-vendor/lib/libshotsuggestion_engines.so
-vendor/lib64/libreffeature.so
-vendor/lib64/libsecfr_engine.so
-vendor/lib64/libsecfr_model.so
-vendor/lib64/libshotsuggestion_engines.so
+#vendor/lib64/liblearningmodule.so
+#vendor/lib64/libmeters.so
+#vendor/lib64/libreffeature.so
 
-# Media
-vendor/lib/libmmosal.so
-vendor/lib/libvppclient.so
-vendor/lib/libvpphcp.so
-vendor/lib/libvpphvx.so
-vendor/lib/libvpplibrary.so
-vendor/lib/vendor.qti.hardware.vpp@1.1.so
-vendor/lib/vendor.qti.hardware.vpp@1.2.so
-vendor/lib/vendor.qti.hardware.vpp@1.3.so
-vendor/lib64/libdeccfg.so
-vendor/lib64/libmmosal.so
-vendor/lib64/libvppclient.so
-vendor/lib64/libvpphcp.so
-vendor/lib64/libvpphvx.so
-vendor/lib64/libvpplibrary.so
-vendor/lib64/vendor.qti.hardware.vpp@1.1.so
-vendor/lib64/vendor.qti.hardware.vpp@1.2.so
-vendor/lib64/vendor.qti.hardware.vpp@1.3.so
-
-# Media (Codec2) - from munch-user 14 RKQ1.211001.001 OS1.0.5.0.ULMMIXM release-keys
+# Media - from munch-user 14 RKQ1.211001.001 OS1.0.5.0.ULMMIXM release-keys
 vendor/bin/hw/vendor.qti.media.c2@1.0-service|c170ebc5a0416f609186639125132b87a5650ef8
 vendor/etc/init/vendor.qti.media.c2@1.0-service.rc|11209316ba8aae64b689217bc13b0804f6620678
 vendor/etc/seccomp_policy/codec2.vendor.base-arm.policy|9f6a77271971618b555d41d83e5c55f3cff684d2
@@ -1138,56 +602,50 @@ vendor/etc/nfc/sec_s3nrn4v_hwreg.bin
 vendor/etc/nfc/sec_s3nrn4v_swreg.bin
 vendor/lib64/nfc_nci_sec.so
 
+# NFC firmware
+vendor/firmware/nfc/sec_s3nrn4v_firmware.bin
+
 # NPU
 vendor/bin/npu_launcher
-vendor/lib/libhta_hexagon_runtime.so
-vendor/lib/libnpu.so
-vendor/lib/unnhal-acc-hta.so
-vendor/lib64/libhta_hexagon_runtime.so
 vendor/lib64/libnpu.so
-vendor/lib64/unnhal-acc-hta.so
 
-# Neural-networks
+# Neural networks
 vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-qti
 vendor/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc
 vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti-hta.xml
 vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti.xml
 vendor/lib64/libhexagon_nn_stub.so
 vendor/lib64/libhta.so
+vendor/lib64/libhta_hexagon_runtime.so
 vendor/lib64/unnhal-acc-adreno.so
 vendor/lib64/unnhal-acc-common.so
+vendor/lib64/unnhal-acc-hta.so
 vendor/lib64/unnhal-acc-hvx.so
 
-# OpenVX 
-vendor/lib/libopenvx.so
-vendor/lib64/libopenvx.so
-
-# Peripheral Manager 
+# Peripheral manager
 vendor/bin/pm-proxy
 vendor/bin/pm-service
 vendor/lib64/libperipheral_client.so
 
-# QCV 
+# QCV
 vendor/bin/init.qti.qcv.sh
 vendor/etc/init/init.qti.qcv.rc
-vendor/lib64/libsoc_helper.so
-vendor/lib64/libsoc_helper_jni.so
 
 # QMI
 vendor/bin/irsc_util
 vendor/bin/pd-mapper
 vendor/bin/qrtr-ns
-vendor/bin/ssr_setup
-vendor/etc/locale/plmn_delta_zh-rCN.bin
-vendor/etc/locale/plmn_delta_zh-rHK.bin
-vendor/etc/locale/plmn_delta_zh-rTW.bin
-vendor/etc/plmn_delta.bin
-vendor/etc/plmn_delta_attaio.bin
-vendor/etc/plmn_delta_usagsm.bin
+vendor/bin/rmt_storage
+vendor/bin/tftp_server
+vendor/etc/init/vendor.qti.rmt_storage.rc
+vendor/etc/init/vendor.qti.tftp.rc
+vendor/etc/sec_config
+vendor/lib/libdiag.so
 vendor/lib/libdiagjni.so
 vendor/lib/libdsutils.so
 vendor/lib/libidl.so
-vendor/lib/libqcci_legacy.so
+vendor/lib/libmdmdetect.so
+vendor/lib/libqcmaputils.so
 vendor/lib/libqdi.so
 vendor/lib/libqdp.so
 vendor/lib/libqmi.so
@@ -1196,14 +654,17 @@ vendor/lib/libqmi_client_helper.so
 vendor/lib/libqmi_client_qmux.so
 vendor/lib/libqmi_common_so.so
 vendor/lib/libqmi_csi.so
-vendor/lib/libqmi_csvt_srvc.so
 vendor/lib/libqmi_encdec.so
 vendor/lib/libqmi_legacy.so
 vendor/lib/libqmiservices.so
+vendor/lib/libqrtr.so
+vendor/lib/libqsocket.so
+vendor/lib64/libdiag.so
 vendor/lib64/libdiagjni.so
 vendor/lib64/libdsutils.so
 vendor/lib64/libidl.so
-vendor/lib64/libqcci_legacy.so
+vendor/lib64/libmdmdetect.so
+vendor/lib64/libqcmaputils.so
 vendor/lib64/libqdi.so
 vendor/lib64/libqdp.so
 vendor/lib64/libqmi.so
@@ -1212,14 +673,15 @@ vendor/lib64/libqmi_client_helper.so
 vendor/lib64/libqmi_client_qmux.so
 vendor/lib64/libqmi_common_so.so
 vendor/lib64/libqmi_csi.so
-vendor/lib64/libqmi_csvt_srvc.so
 vendor/lib64/libqmi_encdec.so
 vendor/lib64/libqmi_legacy.so
-vendor/lib64/libqmiservices.so
 vendor/lib64/libqmiservices-ext.so
 vendor/lib64/libqmiservices-sem-ext.so
+vendor/lib64/libqmiservices.so
+vendor/lib64/libqrtr.so
+vendor/lib64/libqsocket.so
 
-# QTEE 
+# QTEE
 vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service
 vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so
@@ -1228,59 +690,65 @@ vendor/lib64/libGPTEE_vendor.so
 vendor/lib64/libQTEEConnector_vendor.so
 vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
 
-# Radio
-vendor/bin/hw/rild
+# RIL
 vendor/bin/adpl
-vendor/bin/ipacm-diag
+vendor/bin/hw/rild
+vendor/bin/ks
+vendor/bin/mdm_helper
+vendor/bin/mdm_helper_proxy
 vendor/bin/netmgrd
-vendor/bin/tftp_server
+vendor/bin/shsusrd
+vendor/bin/spdaemon
+vendor/bin/ssgtzd
 vendor/etc/data/dsi_config.xml
 vendor/etc/data/netmgr_config.xml
 vendor/etc/init/dataadpl.rc
-vendor/etc/init/ipacm-diag.rc
-vendor/etc/init/ipa_fws.rc
+vendor/etc/init/init.spdaemon_wait_spunvm.rc
 vendor/etc/init/netmgrd.rc
-vendor/etc/init/vendor.qti.tftp.rc
+vendor/etc/init/shsusrd.rc
+vendor/etc/init/ssgtzd.rc
 vendor/etc/locale/plmn_delta_eng.bin
+vendor/etc/locale/plmn_delta_zh-rCN.bin
+vendor/etc/locale/plmn_delta_zh-rHK.bin
+vendor/etc/locale/plmn_delta_zh-rTW.bin
 vendor/etc/mtu-conf.xml
 vendor/etc/pdpcnt-conf.xml
+vendor/etc/plmn_delta.bin
+vendor/etc/plmn_delta_attaio.bin
 vendor/etc/plmn_delta_hktw.bin
+vendor/etc/plmn_delta_usagsm.bin
 vendor/etc/plmn_se13.bin
-vendor/etc/sec_config
 vendor/etc/sec_config_oem
 vendor/lib/libconfigdb.so
 vendor/lib/libdsi_netctrl.so
-vendor/lib/libmdmdetect.so
 vendor/lib/libnetmgr.so
 vendor/lib/libnetmgr_common.so
-vendor/lib/liboemaids_vendor.so
 vendor/lib/libpdmapper.so
 vendor/lib/libpdnotifier.so
-vendor/lib/libqcmaputils.so
-vendor/lib/libqrtr.so
-vendor/lib/libqsocket.so
+vendor/lib/libqcci_legacy.so
+vendor/lib/libqmi_csvt_srvc.so
 vendor/lib/libsec_semRil.so
 vendor/lib/libsystem_health_mon.so
+vendor/lib/libxml.so
+vendor/lib64/libSemDataProps.so
+vendor/lib64/libSemTelephonyProps.so
 vendor/lib64/libconfigdb.so
 vendor/lib64/libdsi_netctrl.so
 vendor/lib64/libengmode_client.so
-vendor/lib64/libmdmdetect.so
+vendor/lib64/libmdmimgload.so
 vendor/lib64/libnetmgr.so
 vendor/lib64/libnetmgr_common.so
 vendor/lib64/libnlnetmgr.so
-vendor/lib64/liboemaids_vendor.so
 vendor/lib64/libpdmapper.so
 vendor/lib64/libpdnotifier.so
-vendor/lib64/libqcmaputils.so
-vendor/lib64/libqrtr.so
-vendor/lib64/libqsocket.so
+vendor/lib64/libqcci_legacy.so
+vendor/lib64/libqmi_csvt_srvc.so
 vendor/lib64/libril_sem.so
-vendor/lib64/libSemTelephonyProps.so
-vendor/lib64/libSemDataProps.so
-vendor/lib64/libsec_semRil.so
 vendor/lib64/libsec-ril.so|3298a4818e1a2a42aaef90ac8ae53a1c2ea8ce3a
+vendor/lib64/libsec_semRil.so
 vendor/lib64/libsystem_health_mon.so
 vendor/lib64/libvkmanager_vendor.so
+vendor/lib64/libxml.so
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.0.so
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.1.so
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.2.so
@@ -1288,19 +756,7 @@ vendor/lib64/vendor.samsung.hardware.radio.bridge@2.0.so
 vendor/lib64/vendor.samsung.hardware.radio.bridge@2.1.so
 vendor/lib64/vendor.samsung.hardware.radio.channel@2.0.so
 
-# RemoteFS
-vendor/bin/rmt_storage
-vendor/etc/init/vendor.qti.rmt_storage.rc
-
 # SCVE
-vendor/lib/libscveCommon.so
-vendor/lib/libscveCommon_stub.so
-vendor/lib/libscveObjectSegmentation.so
-vendor/lib/libscveObjectSegmentation_stub.so
-vendor/lib/libscveObjectTracker.so
-vendor/lib/libscveObjectTracker_stub.so
-vendor/lib/vendor.qti.hardware.scve.objecttracker@1.0.so
-vendor/lib/vendor.qti.hardware.scve.panorama@1.0.so
 vendor/lib64/libscveCommon.so
 vendor/lib64/libscveCommon_stub.so
 vendor/lib64/libscveObjectSegmentation.so
@@ -1310,7 +766,7 @@ vendor/lib64/libscveObjectTracker_stub.so
 vendor/lib64/vendor.qti.hardware.scve.objecttracker@1.0.so
 vendor/lib64/vendor.qti.hardware.scve.panorama@1.0.so
 
-# Sec-feature
+# SEC features
 vendor/lib/libfloatingfeature.so
 vendor/lib/libsecnativefeature.so
 vendor/lib/libsemnativecarrierfeature.so
@@ -1318,14 +774,19 @@ vendor/lib64/libfloatingfeature.so
 vendor/lib64/libsecnativefeature.so
 vendor/lib64/libsemnativecarrierfeature.so
 
-# SecureMSM (SECDISP) 
-vendor/lib64/libSecureUILib.so
-vendor/lib64/libStDrvInt.so
-vendor/lib64/libsecureui.so
-vendor/lib64/libsecureui_svcsock.so
-vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
+# Sensors
+vendor/bin/factory.ssc
+vendor/bin/sscrpcd
+vendor/etc/init/vendor.sensors.sscrpcd.rc
+vendor/lib64/libnanopb.so
+vendor/lib64/libsensorslog.so
+vendor/lib64/libssc.so
+vendor/lib64/libssc_default_listener.so
+vendor/lib64/sensors.flicker.so
+vendor/lib64/sensors.grip.so
+vendor/lib64/sensors.ssc.so
 
-# Sensor-configs
+# Sensors configurations
 vendor/etc/sensors/config/ak991x_dri_0.json
 vendor/etc/sensors/config/ak991x_polling_0.json
 vendor/etc/sensors/config/kona_ak991x_0.json
@@ -1358,29 +819,7 @@ vendor/etc/sensors/config/sns_tilt_sw_enabled.json
 vendor/etc/sensors/config/sns_tilt_to_wake.json
 vendor/etc/sensors/sns_reg_config
 
-# Sensors
-vendor/bin/factory.ssc
-vendor/bin/sscrpcd
-vendor/etc/init/vendor.sensors.sscrpcd.rc
-vendor/lib/libsensorlistener.so
-vendor/lib/libsensorslog.so
-vendor/lib/libsns_registry_skel.so
-vendor/lib/libssc.so
-vendor/lib/libssc_default_listener.so
-vendor/lib/sensors.flicker.so
-vendor/lib/sensors.grip.so
-vendor/lib/sensors.ssc.so
-vendor/lib64/libnanopb.so
-vendor/lib64/libsensorlistener.so
-vendor/lib64/libsensorslog.so
-vendor/lib64/libsns_registry_skel.so
-vendor/lib64/libssc.so
-vendor/lib64/libssc_default_listener.so
-vendor/lib64/sensors.flicker.so
-vendor/lib64/sensors.grip.so
-vendor/lib64/sensors.ssc.so
-
-# SMC Invoke 
+# SMC Invoke
 vendor/lib/libminkdescriptor.so
 vendor/lib/libnative-api.so
 vendor/lib/libqcbor.so
@@ -1388,20 +827,14 @@ vendor/lib64/libminkdescriptor.so
 vendor/lib64/libnative-api.so
 vendor/lib64/libqcbor.so
 
-#shsusrd
-vendor/bin/shsusrd
-vendor/etc/init/shsusrd.rc
-
 # SSR
 vendor/bin/ssr_diag
+vendor/bin/ssr_setup
 vendor/bin/subsystem_ramdump
-vendor/lib/libsubsystem_control.so
-vendor/lib64/libsubsystem_control.so
 
 # Trusted User Interface (TUI)
 vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti
 vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc
-vendor/lib/vendor.qti.hardware.tui_comm@1.0.so
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
 
 # Thermal
@@ -1409,26 +842,45 @@ vendor/bin/hw/vendor.samsung.hardware.thermal@1.0-service
 vendor/bin/thermal-engine
 vendor/etc/init/init_thermal-engine.rc
 vendor/etc/init/vendor.samsung.hardware.thermal@1.0-service.rc
-vendor/etc/vintf/manifest/vendor.samsung.hardware.thermal@1.0-manifest.xml
 vendor/etc/thermal-engine.conf
-vendor/lib/vendor.samsung.hardware.thermal@1.0.so
--vendor/lib/libthermalclient.so
+vendor/etc/vintf/manifest/vendor.samsung.hardware.thermal@1.0-manifest.xml
 vendor/lib64/libhypervintf.so
 -vendor/lib64/libthermalclient.so
-vendor/lib64/vendor.samsung.hardware.thermal@1.0.so
 vendor/lib64/vendor.samsung.hardware.hyper-V2-ndk_platform.so
+vendor/lib64/vendor.samsung.hardware.thermal@1.0.so
 
 # Time
 vendor/app/TimeService/TimeService.apk
 vendor/bin/time_daemon
 vendor/etc/init/init.time_daemon.rc
+vendor/lib/libtime_genoff.so
 vendor/lib64/libtime_genoff.so
 
-# UBWC 
-vendor/lib/libstreamparser.so
+# VPP
+vendor/lib64/libvppclient.so
+vendor/lib64/libvpphcp.so
+vendor/lib64/libvpphvx.so
+vendor/lib64/libvpplibrary.so
+vendor/lib64/vendor.qti.hardware.vpp@1.1.so
+vendor/lib64/vendor.qti.hardware.vpp@1.2.so
+vendor/lib64/vendor.qti.hardware.vpp@1.3.so
+
+# Widevine DRM
+vendor/bin/hw/android.hardware.drm@1.3-service.widevine
+vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc
+vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml
+vendor/lib/liboemcrypto.so
+vendor/lib/libwvhidl.so
+vendor/lib/mediadrm/libwvdrmengine.so
+vendor/lib64/liboemcrypto.so
 
 # WiFi
 vendor/bin/cnss-daemon
-vendor/bin/cnss_diag
-vendor/lib/vendor.qti.hardware.wigig.netperftuner@1.0.so
-vendor/lib64/vendor.qti.hardware.wigig.netperftuner@1.0.so
+
+# WiFi (firmware)
+vendor/firmware/qca6390/amss20.bin
+vendor/firmware/qca6390/bdwlan.elf
+vendor/firmware/qca6390/bdwlan.elf1
+vendor/firmware/qca6390/bdwlan.elf2
+vendor/firmware/qca6390/m3.bin
+vendor/firmware/qca6390/regdb.bin
