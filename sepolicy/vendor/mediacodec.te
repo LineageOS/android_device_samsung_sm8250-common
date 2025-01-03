@@ -1,4 +1,0 @@
-binder_call(mediacodec, vendor_hal_perf_default)
-get_prop(mediacodec, vendor_mpctl_prop)
-allow mediacodec vendor_hal_perf_hwservice:hwservice_manager find;
-allow mediacodec spu_file:dir search;

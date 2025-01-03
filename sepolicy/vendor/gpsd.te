@@ -6,9 +6,9 @@ net_domain(gpsd)
 
 allow gpsd gpsd_exec:file rx_file_perms;
 
-allow gpsd gps_vendor_data_file:dir create_dir_perms;
-allow gpsd gps_vendor_data_file:fifo_file create_file_perms;
-allow gpsd gps_vendor_data_file:file create_file_perms;
+allow gpsd vendor_gnss_data_file:dir create_dir_perms;
+allow gpsd vendor_gnss_data_file:fifo_file create_file_perms;
+allow gpsd vendor_gnss_data_file:file create_file_perms;
 
 allow gpsd self:netlink_kobject_uevent_socket create_socket_perms_no_ioctl;
 allow gpsd self:udp_socket create_socket_perms_no_ioctl;
