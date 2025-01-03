@@ -1,114 +1,110 @@
-# Audio
-/sys/class/cirrus/cirrus_bd(/.*)?                  u:object_r:sysfs_audio_writable:s0
-/sys/class/cirrus/cirrus_cal(/.*)?                 u:object_r:sysfs_audio_writable:s0
-/sys/class/cirrus/cirrus_pwr(/.*)?                 u:object_r:sysfs_audio_writable:s0
-
 # Block devices
-/dev/block/platform/soc/1d84000\.ufshc/by-name/dsp               u:object_r:dsp_block_device:s0
-/dev/block/platform/soc/1d84000\.ufshc/by-name/dtbo              u:object_r:dtbo_block_device:s0
-/dev/block/platform/soc/1d84000\.ufshc/by-name/dqmdbg            u:object_r:dqmdbg_block_device:s0
-/dev/block/platform/soc/1d84000\.ufshc/by-name/efs               u:object_r:efs_block_device:s0
-/dev/block/platform/soc/1d84000\.ufshc/by-name/modem             u:object_r:vendor_modem_block_device:s0
-/dev/block/platform/soc/1d84000\.ufshc/by-name/omr               u:object_r:omr_block_device:s0
-/dev/block/platform/soc/1d84000\.ufshc/by-name/persistent        u:object_r:frp_block_device:s0
-/dev/block/platform/soc/1d84000\.ufshc/by-name/sec_efs           u:object_r:sec_efs_block_device:s0
-/dev/block/platform/soc/1d84000\.ufshc/by-name/spu               u:object_r:spu_block_device:s0
-/dev/block/platform/soc/1d84000\.ufshc/by-name/vbmeta            u:object_r:vbmeta_block_device:s0
-/dev/block/platform/soc/1d84000\.ufshc/by-name/vbmeta_samsung    u:object_r:vbmeta_block_device:s0
+/dev/block/platform/soc/1d84000\.ufshc/by-name/carrier            u:object_r:carrier_block_device:s0
+/dev/block/platform/soc/1d84000\.ufshc/by-name/config             u:object_r:frp_block_device:s0
+/dev/block/platform/soc/1d84000\.ufshc/by-name/debug              u:object_r:debug_block_device:s0
+/dev/block/platform/soc/1d84000\.ufshc/by-name/dqmdbg             u:object_r:dqmdbgblk_device:s0
+/dev/block/platform/soc/1d84000\.ufshc/by-name/dtbo               u:object_r:dtbo_block_device:s0
+/dev/block/platform/soc/1d84000\.ufshc/by-name/efs                u:object_r:efsblk_device:s0
+/dev/block/platform/soc/1d84000\.ufshc/by-name/keydata            u:object_r:keydata_block_device:s0
+/dev/block/platform/soc/1d84000\.ufshc/by-name/keyrefuge          u:object_r:keyrefuge_block_device:s0
+/dev/block/platform/soc/1d84000\.ufshc/by-name/omr                u:object_r:omr_block_device:s0
+/dev/block/platform/soc/1d84000\.ufshc/by-name/param              u:object_r:paramblk_device:s0
+/dev/block/platform/soc/1d84000\.ufshc/by-name/persistent         u:object_r:frp_block_device:s0
+/dev/block/platform/soc/1d84000\.ufshc/by-name/sec_efs            u:object_r:sec_efsblk_device:s0
+/dev/block/platform/soc/1d84000\.ufshc/by-name/spu                u:object_r:spublk_device:s0
+/dev/block/platform/soc/1d84000\.ufshc/by-name/steady             u:object_r:steady_block_device:s0
+/dev/block/platform/soc/1d84000\.ufshc/by-name/vbmeta             u:object_r:vbmeta_block_device:s0
+/dev/block/platform/soc/1d84000\.ufshc/by-name/vbmeta_samsung     u:object_r:vbmeta_block_device:s0
 
-# DATA
-/data/vendor/biometrics(/.*)?                u:object_r:biometrics_vendor_data_file:s0
-/data/vendor/conn(/.*)?                      u:object_r:conn_vendor_data_file:s0
-/data/vendor/secradio(/.*)?                  u:object_r:radio_vendor_data_file:s0
-/data/vendor/gatekeeper(/.*)?                u:object_r:gatekeeper_vendor_data_file:s0
-/data/vendor/gps(/.*)?                       u:object_r:gps_vendor_data_file:s0
+# Binaries
+/(vendor|system/vendor)/bin/hw/gps\.sh          u:object_r:gpsd_exec:s0
+/(vendor|system/vendor)/bin/hw/gpsd             u:object_r:gpsd_exec:s0
+/(vendor|system/vendor)/bin/hw/macloader        u:object_r:macloader_exec:s0
+/(vendor|system/vendor)/bin/hw/sehradiomanager  u:object_r:sehradiomanager_exec:s0
+/(vendor|system/vendor)/bin/argosd              u:object_r:argosd_exec:s0
 
-# Fingerprint
-/dev/esfp[0-9]                               u:object_r:fp_sensor_device:s0
-/dev/goodix_fp                               u:object_r:fp_sensor_device:s0
+/(vendor|system/vendor)/bin/factory\.ssc        u:object_r:factory_ssc_exec:s0
+/(vendor|system/vendor)/bin/secril_config_svc   u:object_r:vendor_secril_config_svc_exec:s0
 
-# GNSS
-/dev/ttyHS2                                  u:object_r:serial_device:s0
+# Data files
+/data/vendor/biometrics(/.*)?        u:object_r:vendor_biometrics_data_file:s0
+/data/vendor/conn(/.*)?              u:object_r:vendor_convergence_data_file:s0
+/data/vendor/gatekeeper(/.*)?        u:object_r:vendor_gatekeeper_data_file:s0
+/data/vendor/gps(/.*)?               u:object_r:vendor_gnss_data_file:s0
+/data/vendor/log/audiopcm(/.*)?      u:object_r:vendor_audiopcm_data_file:s0
+/data/vendor/secradio(/.*)?          u:object_r:vendor_radio_vendor_data_file:s0
 
-# NFC
-/dev/sec-nfc                                 u:object_r:nfc_device:s0
-/dev/pn547                                   u:object_r:nfc_device:s0
+# Devices
+/dev/drb                       u:object_r:drb_device:s0
+/dev/dun                       u:object_r:dun_device:s0
+/dev/esfp[0-9]+                u:object_r:fp_sensor_device:s0
+/dev/goodix_fp				   u:object_r:goodix_device:s0
+/dev/network_latency           u:object_r:radio_device:s0
+/dev/network_throughput        u:object_r:radio_device:s0
+/dev/p61                       u:object_r:secure_element_device:s0
+/dev/p3                        u:object_r:secure_element_device:s0
+/dev/pn547                     u:object_r:nfc_device:s0
+/dev/sec-nfc                   u:object_r:nfc_device:s0
+/dev/ssp                       u:object_r:ssp_device:s0
+/dev/ttyHS2                    u:object_r:serial_device:s0
+/dev/ttyHS5                    u:object_r:serial_device:s0
+/dev/ttyHS8                    u:object_r:ttyhs_device:s0
+/dev/tuihw                     u:object_r:tz_device:s0
+/dev/tzic                      u:object_r:tz_device:s0
+/dev/tzirs                     u:object_r:tz_device:s0
 
-# qos
-/dev/network_throughput                      u:object_r:radio_qos_device:s0
-
-# radio
-/dev/drb                                     u:object_r:drb_device:s0
-
-# secure element
-/dev/p61                                     u:object_r:secure_element_device:s0
-/dev/p3                                      u:object_r:secure_element_device:s0
-
-# strongbox
-/dev/ssp                                        u:object_r:ssp_device:s0
-/dev/tzic                                       u:object_r:tz_device:s0
-/dev/tzirs                                      u:object_r:tz_device:s0
-
-# serial
-/dev/ttyGS[0-9]*                             u:object_r:serial_device:s0
-
-# Sysfs nodes
-/sys/devices/platform/soc/[a-f0-9]+(\.)?qcom,[^/]+/(subsys[0-9]/)?wakeup(/.*)?            u:object_r:sysfs_wakeup:s0
-/sys/devices/platform/soc/[a-z0-9]+\.i2c/i2c-[0-9]+/[0-9]+-[a-z0-9]+/wakeup(/.*)?         u:object_r:sysfs_wakeup:s0
-/sys/devices/virtual/misc/msm_[a-z0-9]+(_[a-z0-9]+)?/wakeup([0-9])+(/.*)?                 u:object_r:sysfs_wakeup:s0
-/sys/devices/platform/soc/soc:(\.)?qcom,[^/]+/(subsys[0-9]/)?wakeup(/.*)?                 u:object_r:sysfs_wakeup:s0
-/sys/devices/platform/soc/soc:i2c@[0-9]+/i2c-[0-9]+/[0-9]+-[a-z0-9]+/wakeup(/.*)?         u:object_r:sysfs_wakeup:s0
-
-/sys/devices/platform/soc/[a-z0-9]+\.i2c/i2c-[0-9]/[0-9]-[0-9a-f]+/input/input[0-9]+/enabled    u:object_r:sysfs_power_writable:s0
-
-# EFS
+# efs files
 /efs/Battery(/.*)?                           u:object_r:battery_efs_file:s0
-/efs/biometrics(/.*)?                        u:object_r:biometrics_efs_file:s0
+/efs/DAK(/.*)?                               u:object_r:dak_efs_file:s0
 /efs/FactoryApp(/.*)?                        u:object_r:app_efs_file:s0
-/efs/cpk(/.*)?                               u:object_r:cpk_efs_file:s0
+/efs/afc(/.*)?                               u:object_r:sec_efs_file:s0
+/efs/biometrics(/.*)?                        u:object_r:sec_efs_file:s0
+/efs/cirrus(/.*)?                            u:object_r:sec_efs_file:s0
 /efs/imei(/.*)?                              u:object_r:imei_efs_file:s0
-/efs/nfc(/.*)?                               u:object_r:nfc_efs_file:s0
-/efs/pfw_data(/.*)?                          u:object_r:pfw_efs_file:s0
-/efs/tas25xx(/.*)?                           u:object_r:audio_efs_file:s0
-/efs/cirrus(/.*)?                            u:object_r:audio_efs_file:s0
+/efs/recovery(/.*)?                          u:object_r:sec_efs_file:s0
+/efs/sec_efs(/.*)?                           u:object_r:sec_efs_file:s0
+/efs/usb_hw_param(/.*)?                      u:object_r:sec_efs_file:s0
 
-/mnt/vendor/efs(/.*)?                        u:object_r:efs_file:s0
+# mnt/efs files
+/mnt/vendor/efs(/.*)?                        u:object_r:sec_efs_file:s0
+/mnt/vendor/efs/DAK(/.*)?                    u:object_r:dak_efs_file:s0
 /mnt/vendor/efs/bluetooth(/.*)?              u:object_r:bluetooth_efs_file:s0
-/mnt/vendor/efs/DAK(/.*)?                    u:object_r:prov_efs_file:s0
-/mnt/vendor/efs/prov(/.*)?                   u:object_r:prov_efs_file:s0
-/mnt/vendor/efs/prov_data(/.*)?              u:object_r:prov_efs_file:s0
-/mnt/vendor/efs/wifi(/.*)?                   u:object_r:wifi_efs_file:s0
+/mnt/vendor/efs/camera(/.*)?                 u:object_r:camera_efs_file:s0
+/mnt/vendor/efs/prov(/.*)?                   u:object_r:dak_efs_file:s0
+/mnt/vendor/efs/prov_data(/.*)?              u:object_r:dak_efs_file:s0
+/mnt/vendor/efs/wifi(/.*)?	                 u:object_r:wifi_efs_file:s0
 
-# firmware_mnt
-/vendor/firmware_mnt(/.*)?                   u:object_r:vendor_fw_mnt:s0
+# Rootdir
+/carrier(/.*)?                               u:object_r:carrier_file:s0
+/dqmdbg(/.*)?                                u:object_r:dqmdbgblk_file:s0
+/misc(/.*)?                                  u:object_r:misc_file:s0
+/omr(/.*)?                                   u:object_r:omr_file:s0
+/optics(/.*)?                                u:object_r:vendor_file:s0
+/prism(/.*)?                                 u:object_r:system_file:s0
+/spu(/.*)?                                   u:object_r:spu_file:s0
 
-# Root folders
-/omr(/.*)?                                      u:object_r:omr_file:s0
-/misc(/.*)?                                     u:object_r:misc_file:s0
-/optics(/.*)?                                   u:object_r:optics_file:s0
-/prism(/.*)?                                    u:object_r:prism_file:s0
-/carrier(/.*)?                                  u:object_r:carrier_file:s0
-/spu(/.*)?                                      u:object_r:spu_file:s0
-/dqmdbg(/.*)?                                   u:object_r:dqmdbg_file:s0
+# Sysfs
+/sys/devices/platform/soc/[a-f0-9]+(\.)?qcom,[^/]+/(subsys[0-9]/)?wakeup(/.*)?                      u:object_r:sysfs_wakeup:s0
+/sys/devices/platform/soc/[a-z0-9]+\.i2c/i2c-[0-9]+/[0-9]+-[a-z0-9]+/wakeup(/.*)?                   u:object_r:sysfs_wakeup:s0
+/sys/devices/virtual/misc/msm_[a-z0-9]+(_[a-z0-9]+)?/wakeup([0-9])+(/.*)?                           u:object_r:sysfs_wakeup:s0
+/sys/devices/platform/soc/soc:(\.)?qcom,[^/]+/(subsys[0-9]/)?wakeup(/.*)?                           u:object_r:sysfs_wakeup:s0
+/sys/devices/platform/soc/soc:i2c@[0-9]+/i2c-[0-9]+/[0-9]+-[a-z0-9]+/wakeup(/.*)?                   u:object_r:sysfs_wakeup:s0
+/sys/devices/platform/soc/b0000000.qcom,cnss-qca6490/subsys[0-9]+/name                              u:object_r:vendor_sysfs_ssr:s0
+/sys/devices/platform/soc/b0000000.qcom,cnss-qca6490/subsys[0-9]+/restart_level                     u:object_r:vendor_sysfs_ssr_toggle:s0
+/sys/devices/platform/soc/[a-z0-9]+\.i2c/i2c-[0-9]/[0-9]-[0-9a-f]+/input/input[0-9]+/enabled        u:object_r:vendor_sysfs_touchscreen:s0
+/sys/devices(/platform)?/soc/[a-z0-9]+\.i2c/i2c-[0-9]+/[0-9]+-[a-z0-9]+/input/input[0-9]+(/.*)?     u:object_r:vendor_sysfs_touchscreen_writable:s0
 
-# Vendor
-/(vendor|system/vendor)/bin/factory\.ssc                                                                    u:object_r:factory_ssc_exec:s0
-/(vendor|system/vendor)/bin/secril_config_svc                                                               u:object_r:secril_config_svc_exec:s0
-
-# HALs
+# Vendor HALs
 /(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint-service\.samsung                  u:object_r:hal_fingerprint_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.camera\.provider-service\.samsung                         u:object_r:hal_camera_default_exec:s0
-/(vendor|system/vendor)/bin/hw/android\.hardware\.drm@[0-9]\.[0-9]-service\.widevine                        u:object_r:hal_drm_widevine_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.health-service\.samsung                                   u:object_r:hal_health_default_exec:s0
-/(vendor|system/vendor)/bin/hw/android\.hardware\.keymaster@[0-9]\.[0-9]-service\.samsung                   u:object_r:hal_keymaster_default_exec:s0
-/(vendor|system/vendor)/bin/hw/android\.hardware\.keymaster@4\.0-strongbox-service-qti                      u:object_r:hal_keymaster_default_exec:s0
-/(vendor|system/vendor)/bin/hw/android\.hardware\.light(@[0-9].[0-9])?-service\.samsung                     u:object_r:hal_light_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.keymaster@4\.0-service\.samsung                           u:object_r:hal_keymaster_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.light-service\.samsung                                    u:object_r:hal_light_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.nfc@[0-9]\.[0-9]-service\.samsung                         u:object_r:hal_nfc_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.power(@[0-9]\.[0-9])?-service\.pixel-libperfmgr           u:object_r:hal_power_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.secure_element(@[0-9]\.[0-9])?-service                    u:object_r:hal_secure_element_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.secure_element(@[0-9]\.[0-9])?-service-gto                u:object_r:hal_secure_element_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.sensors-service\.samsung-multihal                         u:object_r:hal_sensors_default_exec:s0
-/(vendor|system/vendor)/bin/hw/android\.hardware\.usb\-service\.samsung                                     u:object_r:hal_usb_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.vibrator\-service\.samsung                                u:object_r:hal_vibrator_default_exec:s0
 /(vendor|system/vendor)/bin/hw/nxp\.android\.hardware\.nfc@[0-9]\.[0-9]-service                             u:object_r:hal_nfc_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.lineage\.fastcharge@[0-9]\.[0-9]-service\.samsung                    u:object_r:hal_lineage_fastcharge_default_exec:s0
@@ -117,9 +113,3 @@
 /(vendor|system/vendor)/bin/hw/vendor\.lineage\.touch\@[0-9]\.[0-9]-service\.samsung_sm8250                 u:object_r:hal_lineage_touch_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.samsung\.hardware\.gnss@2\.0-service                                 u:object_r:hal_gnss_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.samsung\.hardware\.thermal@1\.0-service                              u:object_r:hal_thermal_default_exec:s0
-
-# Misc daemons
-/(vendor|system/vendor)/bin/hw/gps\.sh                                                                      u:object_r:gpsd_exec:s0
-/(vendor|system/vendor)/bin/hw/gpsd                                                                         u:object_r:gpsd_exec:s0
-/(vendor|system/vendor)/bin/hw/macloader                                                                    u:object_r:macloader_exec:s0
-/(vendor|system/vendor)/bin/hw/sehradiomanager                                                              u:object_r:sehradiomanager_exec:s0

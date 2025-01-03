@@ -1,11 +1,1 @@
-allow vendor_qti_init_shell sysfs_power_writable:file { write setattr };
-
-allow vendor_qti_init_shell vendor_sysfs_qdss_dev:file setattr;
-
-allow vendor_qti_init_shell sysfs_devices_system_cpu:file setattr;
-
-allow vendor_qti_init_shell vendor_sysfs_devfreq:file setattr;
-
-allow vendor_qti_init_shell mnt_vendor_file:lnk_file { create rename unlink };
-
-set_prop(vendor_qti_init_shell, ctl_start_prop)
+allow vendor_qti_init_shell sysfs:file { read write open };

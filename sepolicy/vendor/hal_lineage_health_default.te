@@ -1,2 +1,2 @@
-rw_dir_file(hal_lineage_health_default, sysfs_battery_writable)
-r_dir_file(hal_lineage_health_default, sysfs_battery)
+allow hal_lineage_health_default vendor_sysfs_battery:dir search;
+allow hal_lineage_health_default vendor_sysfs_battery:file rw_file_perms;
