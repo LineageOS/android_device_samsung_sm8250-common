@@ -16,6 +16,24 @@
       "message": "Can you please test if this change is required with new sepolicy?\n\nhttps://review.lineageos.org/c/LineageOS/android_device_samsung_sm8250-common/+/413689",
       "revId": "4015168da9b70300f6272b8359b89634fbb021b5",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "49b25697_4588ec24",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-01-03T16:06:03Z",
+      "side": 1,
+      "message": "Let me check tomorrow. This needs a thorough review.",
+      "parentUuid": "7da69db1_612ef9e9",
+      "revId": "4015168da9b70300f6272b8359b89634fbb021b5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
