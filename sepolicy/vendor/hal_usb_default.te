@@ -1,1 +1,0 @@
-allow hal_usb_default vendor_sysfs_usb_c:dir { open read search };

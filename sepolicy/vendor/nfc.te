@@ -1,3 +1,0 @@
-# /data/vendor/nfc
-allow nfc vendor_nfc_vendor_data_file:dir rw_dir_perms;
-allow nfc vendor_nfc_vendor_data_file:file create_file_perms;

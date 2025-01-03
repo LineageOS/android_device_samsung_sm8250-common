@@ -1,4 +1,2 @@
-system_public_prop(vendor_call_prop)
-
-# Camera
+system_public_prop(sec_camera_prop)
 system_public_prop(sns_camera_light_prop)

@@ -1,10 +1,5 @@
-# /sys/devices/virtual/lcd/panel
-allow hal_lineage_livedisplay_sysfs sysfs_lcd_writable:file { read write open };
+allow hal_lineage_livedisplay_sysfs { vendor_sysfs_display vendor_sysfs_mdnie }:dir search;
+allow hal_lineage_livedisplay_sysfs { vendor_sysfs_display vendor_sysfs_mdnie }:file rw_file_perms;
 
-# /sys/devices/virtual/mdnie/mdnie/
-allow hal_lineage_livedisplay_sysfs sysfs_mdnie_writable:dir search;
-allow hal_lineage_livedisplay_sysfs sysfs_mdnie_writable:file { read write open getattr };
-allow hal_lineage_livedisplay_sysfs vendor_sysfs_graphics:file write;
-
-allow hal_lineage_livedisplay_sysfs vendor_display_vendor_data_file:dir { write add_name search };
-allow hal_lineage_livedisplay_sysfs vendor_display_vendor_data_file:file { read write open create getattr };
+allow hal_lineage_livedisplay_sysfs vendor_display_vendor_data_file:dir search;
+allow hal_lineage_livedisplay_sysfs vendor_display_vendor_data_file:file r_file_perms;
