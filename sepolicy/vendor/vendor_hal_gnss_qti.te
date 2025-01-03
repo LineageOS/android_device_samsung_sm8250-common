@@ -1,5 +1,3 @@
-allow vendor_hal_gnss_qti { sysfs_npu sysfs_qcacld }:file { read open };
+allow vendor_hal_gnss_qti hal_gnss_service:service_manager add;
 
-allow vendor_hal_gnss_qti sysfs_battery:dir search;
-
-dontaudit vendor_hal_gnss_qti { default_prop system_prop }:file { getattr map open read };
+dontaudit vendor_hal_gnss_qti { default_prop system_prop }:file { read open getattr map };

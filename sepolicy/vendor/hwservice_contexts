@@ -1,8 +1,8 @@
 # Bluetooth
-vendor.samsung.hardware.bluetooth::ISehBluetooth                                            u:object_r:hal_bluetooth_hwservice:s0
-vendor.samsung.hardware.bluetooth.a2dp::ISehBluetoothAudioOffload                           u:object_r:hal_bluetooth_a2dp_hwservice:s0
 vendor.samsung.hardware.bluetooth.a2dpsink::ISehBluetoothA2dpSinkProvidersFactory           u:object_r:hal_bluetooth_a2dp_hwservice:s0
+vendor.samsung.hardware.bluetooth.a2dp::ISehBluetoothAudioOffload                           u:object_r:hal_bluetooth_a2dp_hwservice:s0
 vendor.samsung.hardware.bluetooth.audio::ISehBluetoothAudioProvidersFactory                 u:object_r:hal_audio_hwservice:s0
+vendor.samsung.hardware.bluetooth::ISehBluetooth                                            u:object_r:hal_bluetooth_hwservice:s0
 
 # GNSS
 vendor.samsung.hardware.gnss::ISehGnss                                                      u:object_r:hal_gnss_hwservice:s0

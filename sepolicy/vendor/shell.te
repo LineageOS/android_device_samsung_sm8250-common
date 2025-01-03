@@ -1,2 +1,0 @@
-allow shell hal_memtrack_default_exec:file getattr;
-allow shell vendor_hal_drm_clearkey_exec:file getattr;

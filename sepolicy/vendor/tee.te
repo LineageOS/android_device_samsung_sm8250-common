@@ -1,9 +1,7 @@
-# Tee
+allow tee sec_efs_file:dir create_dir_perms;
+allow tee sec_efs_file:file create_file_perms;
+
+allow tee vendor_gatekeeper_data_file:dir create_dir_perms;
+allow tee vendor_gatekeeper_data_file:file create_file_perms;
+
 set_prop(tee, vendor_qseecomd_prop)
-
-allow tee gatekeeper_vendor_data_file:dir { write add_name read open search };
-allow tee gatekeeper_vendor_data_file:file { create write open read getattr };
-
-# This is for randomly generated TEE directories in /efs
-allow tee efs_file:dir { search read write open add_name };
-allow tee efs_file:file { read write open getattr create };
