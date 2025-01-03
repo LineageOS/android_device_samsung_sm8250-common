@@ -1,1 +1,0 @@
-allow vendor_shsusrd sysfs_qcacld:file { read open };
