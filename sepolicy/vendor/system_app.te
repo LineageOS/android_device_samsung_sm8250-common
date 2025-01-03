@@ -1,7 +1,17 @@
-allow system_app proc_pagetypeinfo:file { read open getattr };
-
 # Audio
 binder_call(system_app, hal_audio_default)
+
+# Camera
+binder_call(system_app, hal_camera_default)
+
+# Fingerprint
+binder_call(system_app, hal_fingerprint_default)
+
+# Health
+binder_call(system_app, hal_health_default)
+
+# Memtrack??
+binder_call(system_app, hal_memtrack_default)
 
 # ZRAM
 allow system_app sysfs_zram:dir search;
@@ -11,8 +21,8 @@ binder_call(system_app, hal_power_default)
 binder_call(system_app, hal_vibrator_default)
 
 # MDNIE
-allow system_app sysfs_mdnie_writable:dir search;
-allow system_app sysfs_mdnie_writable:file { open write getattr };
+allow system_app vendor_sysfs_mdnie:dir search;
+allow system_app vendor_sysfs_mdnie:file { getattr open write };
 
 # Sensors
 binder_call(system_app, hal_sensors_default)
