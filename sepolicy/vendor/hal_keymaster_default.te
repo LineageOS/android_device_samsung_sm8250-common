@@ -1,18 +1,17 @@
-# hal_keymaster_default
+r_dir_file(hal_keymaster_default, dak_efs_file)
 
-# /mnt/vendor
-allow hal_keymaster_default mnt_vendor_file:dir search;
+allow hal_keymaster_default mnt_vendor_file:dir r_dir_perms;
+allow hal_keymaster_default sec_efs_file:dir r_dir_perms;
 
-# /mnt/vendor/efs
-allow hal_keymaster_default efs_file:dir search;
+# Binder call for strongbox
+binder_call(hal_keymaster_default, vendor_hal_keymaster_qti)
 
-# /mnt/vendor/efs/DAK/
-allow hal_keymaster_default prov_efs_file:dir search;
-allow hal_keymaster_default prov_efs_file:file { read open getattr };
-
-# /vendor/firmware_mnt
-allow kernel vendor_fw_mnt:dir r_dir_perms;
-allow kernel vendor_fw_mnt:file r_file_perms;
+# Device calls
+allow hal_keymaster_default {
+    vendor_sp_keymaster_device
+    vendor_spcom_device
+    vendor_skp_device
+}:chr_file rw_file_perms;
 
 get_prop(hal_keymaster_default, vendor_spcomlib_prop)
 get_prop(hal_keymaster_default, vendor_tee_listener_prop)
@@ -30,6 +29,4 @@ allow hal_keymaster_default {
 }:chr_file rw_file_perms;
 
 allowxperm hal_keymaster_default vendor_spss_utils_device:chr_file ioctl { 0x5302 };
-
-binder_call(hal_keymaster_default, vendor_hal_keymaster_qti)
 
