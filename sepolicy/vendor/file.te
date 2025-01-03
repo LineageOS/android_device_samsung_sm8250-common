@@ -1,58 +1,71 @@
-# SYSFS
-type sysfs_camera, sysfs_type, r_fs_type, fs_type;
-type sysfs_fingerprint, sysfs_type, r_fs_type, fs_type;
-type sysfs_iio, sysfs_type, r_fs_type, fs_type;
-type sysfs_input, sysfs_type, r_fs_type, fs_type;
-type sysfs_mdnie_writable, fs_type, sysfs_type;
-type sysfs_npu, fs_type, sysfs_type;
-type sysfs_sec_key, sysfs_type, r_fs_type, fs_type;
-type sysfs_sec_switch, sysfs_type, r_fs_type, fs_type;
-type sysfs_sec_touchscreen, sysfs_type, r_fs_type, fs_type;
-type sysfs_sensors, sysfs_type, r_fs_type, fs_type;
-type sysfs_wifi, sysfs_type, r_fs_type, fs_type;
-type sysfs_qcacld, sysfs_type, r_fs_type, fs_type;
+# Audio
+type vendor_sysfs_cirrus_cal, fs_type, sysfs_type;
+type vendor_audiopcm_data_file, file_type, data_file_type;
 
-type sysfs_audio_writable, sysfs_type, rw_fs_type, fs_type;
-type sysfs_backlight_writable, sysfs_type, rw_fs_type, fs_type;
-type sysfs_camera_writable, sysfs_type, r_fs_type, fs_type;
-type sysfs_battery_writable, sysfs_type, rw_fs_type, fs_type;
-type sysfs_lcd_writable, sysfs_type, rw_fs_type, fs_type;
-type sysfs_power_writable, sysfs_type, rw_fs_type, fs_type;
-type sysfs_sensors_writable, sysfs_type, rw_fs_type, fs_type;
-type sysfs_sec_switch_writable, sysfs_type, rw_fs_type, fs_type;
-type sysfs_touchscreen_writable, sysfs_type, rw_fs_type, fs_type;
-type sysfs_wifi_writable, sysfs_type, rw_fs_type, fs_type;
+# Camera
+type vendor_sysfs_camera_writable, fs_type, sysfs_type;
 
-### DATA
-type biometrics_vendor_data_file, file_type, data_file_type;
-type conn_vendor_data_file, file_type, data_file_type;
-type radio_vendor_data_file, file_type, data_file_type;
-type gatekeeper_vendor_data_file, file_type, data_file_type;
-type gps_vendor_data_file, file_type, data_file_type;
+# Convergence (BT/WiFi)
+type vendor_convergence_data_file, file_type, data_file_type;
 
-# EFS types
+# Display
+type vendor_sysfs_display, fs_type, sysfs_type;
+type vendor_sysfs_mdnie, fs_type, sysfs_type;
+
+# EFS
 type app_efs_file, file_type;
-type audio_efs_file, file_type;
 type battery_efs_file, file_type;
-type biometrics_efs_file, file_type;
-type cpk_efs_file, file_type;
+type camera_efs_file, file_type;
+type dak_efs_file, file_type;
 type imei_efs_file, file_type;
-type nfc_efs_file, file_type;
-type pfw_efs_file, file_type;
-type prov_efs_file, file_type;
+type sec_efs_file, file_type;
 type wifi_efs_file, file_type;
 
-# firmware_mnt
-type vendor_fw_mnt, file_type, vendor_file_type;
+# Fastcharge
+type sysfs_sec_fastcharge, fs_type, sysfs_type;
+type sysfs_sec_fastcharge_writable, fs_type, sysfs_type;
 
-# PROC
+# Fingerprint
+type vendor_biometrics_data_file, file_type, data_file_type;
+
+# Gatekeeper
+type vendor_gatekeeper_data_file, file_type, data_file_type;
+
+# GNSS
+type vendor_gnss_data_file, file_type, data_file_type;
+
+# Input
+type proc_bus_input, fs_type, proc_type;
+type vendor_sysfs_input, fs_type, sysfs_type;
+
+# Last kmsg
 type proc_last_kmsg, fs_type, proc_type;
 
+# Radio
+type proc_simslot_count, fs_type, proc_type;
+
 # Root folders
-type carrier_file, file_type;
-type omr_file, file_type, mlstrustedobject;
-type misc_file, file_type;
-type optics_file, file_type;
-type prism_file, file_type;
-type spu_file, file_type;
-type dqmdbg_file, file_type;
+type carrier_file, fs_type;
+allow carrier_file labeledfs:filesystem associate;
+
+type dqmdbg_file, fs_type;
+allow dqmdbg_file labeledfs:filesystem associate;
+
+type misc_file, fs_type;
+allow misc_file labeledfs:filesystem associate;
+
+type omr_file, fs_type;
+allow omr_file labeledfs:filesystem associate;
+
+type spu_file, fs_type;
+allow spu_file labeledfs:filesystem associate;
+
+# Thermal
+type vendor_sysfs_thermal, fs_type, sysfs_type;
+
+# Touchscreen
+type vendor_sysfs_touchscreen, fs_type, sysfs_type;
+type vendor_sysfs_touchscreen_writable, fs_type, sysfs_type;
+
+# WiFi
+type sysfs_wifi, fs_type, sysfs_type;
