@@ -135,6 +135,7 @@ vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 # CDSP
 vendor/bin/cdsprpcd
 vendor/etc/init/vendor.qti.cdsprpc-service.rc
+vendor/lib/libcdsprpc.so
 vendor/lib64/libcdsp_default_listener.so
 vendor/lib64/libcdsprpc.so
 vendor/lib64/libsysmon_cdsp_skel.so
@@ -700,13 +701,6 @@ vendor/lib/libOmxVpp.so
 vendor/lib/libOmxWmaDec.so
 vendor/lib/libdsd2pcm.so
 vendor/lib/libmmosal.so
-vendor/lib/libvppclient.so
-vendor/lib/libvpphcp.so
-vendor/lib/libvpphvx.so
-vendor/lib/libvpplibrary.so
-vendor/lib/vendor.qti.hardware.vpp@1.1.so
-vendor/lib/vendor.qti.hardware.vpp@1.2.so
-vendor/lib/vendor.qti.hardware.vpp@1.3.so
 vendor/lib64/libOmxAacDec.so
 vendor/lib64/libOmxAlacDec.so
 vendor/lib64/libOmxAmrDec.so
@@ -718,13 +712,6 @@ vendor/lib64/libOmxQcelp13Dec.so
 vendor/lib64/libOmxVpp.so
 vendor/lib64/libOmxWmaDec.so
 vendor/lib64/libmmosal.so
-vendor/lib64/libvppclient.so
-vendor/lib64/libvpphcp.so
-vendor/lib64/libvpphvx.so
-vendor/lib64/libvpplibrary.so
-vendor/lib64/vendor.qti.hardware.vpp@1.1.so
-vendor/lib64/vendor.qti.hardware.vpp@1.2.so
-vendor/lib64/vendor.qti.hardware.vpp@1.3.so
 
 # NFC (SLSI)
 vendor/etc/nfc/sec_s3nrn4v_hwreg.bin
@@ -736,7 +723,6 @@ vendor/firmware/nfc/sec_s3nrn4v_firmware.bin
 
 # NPU
 vendor/bin/npu_launcher
-vendor/lib/libnpu.so
 vendor/lib64/libnpu.so
 
 # Neural networks
@@ -751,10 +737,6 @@ vendor/lib64/unnhal-acc-adreno.so
 vendor/lib64/unnhal-acc-common.so
 vendor/lib64/unnhal-acc-hta.so
 vendor/lib64/unnhal-acc-hvx.so
-
-# OpenVX
-vendor/lib/libopenvx.so
-vendor/lib64/libopenvx.so
 
 # Peripheral manager
 vendor/bin/pm-proxy
@@ -981,7 +963,24 @@ vendor/lib64/vendor.samsung.hardware.thermal@1.0.so
 vendor/app/TimeService/TimeService.apk
 vendor/bin/time_daemon
 vendor/etc/init/init.time_daemon.rc
+vendor/lib/libtime_genoff.so
 vendor/lib64/libtime_genoff.so
+
+# VPP
+vendor/lib/libvppclient.so
+vendor/lib/libvpphcp.so
+vendor/lib/libvpphvx.so
+vendor/lib/libvpplibrary.so
+vendor/lib/vendor.qti.hardware.vpp@1.1.so
+vendor/lib/vendor.qti.hardware.vpp@1.2.so
+vendor/lib/vendor.qti.hardware.vpp@1.3.so
+vendor/lib64/libvppclient.so
+vendor/lib64/libvpphcp.so
+vendor/lib64/libvpphvx.so
+vendor/lib64/libvpplibrary.so
+vendor/lib64/vendor.qti.hardware.vpp@1.1.so
+vendor/lib64/vendor.qti.hardware.vpp@1.2.so
+vendor/lib64/vendor.qti.hardware.vpp@1.3.so
 
 # Widevine DRM
 vendor/bin/hw/android.hardware.drm@1.3-service.widevine
