@@ -139,12 +139,18 @@ PRODUCT_PACKAGES += \
     gralloc.kona \
     vendor.qti.hardware.display.allocator-service \
     vendor.qti.hardware.display.composer-service \
-    vendor.qti.hardware.memtrack-service \
+    vendor.qti.hardware.memtrack-service
+
+ifneq ($(TARGET_IS_TABLET),true)
+PRODUCT_PACKAGES += \
     AdvancedDisplay
+endif
 
 # Doze
+ifneq ($(TARGET_IS_TABLET),true)
 PRODUCT_PACKAGES += \
     SamsungDoze
+endif
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -166,8 +172,10 @@ PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint-service.samsung
 
 # FlipFlap
+ifneq ($(TARGET_IS_TABLET),true)
 PRODUCT_PACKAGES += \
     FlipFlap
+endif
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
@@ -199,8 +207,10 @@ PRODUCT_PACKAGES += \
     vendor.lineage.health-service.default
 
 # LiveDisplay
+ifneq ($(TARGET_IS_TABLET),true)
 PRODUCT_PACKAGES += \
     vendor.lineage.livedisplay@2.0-service.samsung-qcom.sm8250
+endif
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -248,7 +258,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.sensor.compass.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.compass.xml \
     frameworks/native/data/etc/android.hardware.sensor.gyroscope.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.gyroscope.xml \
     frameworks/native/data/etc/android.hardware.sensor.light.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.light.xml \
-    frameworks/native/data/etc/android.hardware.sensor.proximity.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.proximity.xml \
     frameworks/native/data/etc/android.hardware.sensor.stepcounter.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.stepcounter.xml \
     frameworks/native/data/etc/android.hardware.sensor.stepdetector.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.stepdetector.xml \
     frameworks/native/data/etc/android.hardware.strongbox_keystore.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.strongbox_keystore.xml \
@@ -270,6 +279,11 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.verified_boot.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.verified_boot.xml \
     frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml
 
+ifneq ($(TARGET_IS_TABLET),true)
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.sensor.proximity.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.proximity.xml
+endif
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service.pixel-libperfmgr \
@@ -279,8 +293,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/power/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
 # PowerShare
+ifneq ($(TARGET_IS_TABLET),true)
 PRODUCT_PACKAGES += \
     vendor.lineage.powershare@1.0-service.samsung
+endif
 
 # Public libraries
 PRODUCT_COPY_FILES += \
@@ -291,8 +307,10 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors-service.samsung-multihal
 
 # Touch features
+ifneq ($(TARGET_IS_TABLET),true)
 PRODUCT_PACKAGES += \
     vendor.lineage.touch@1.0-service.samsung_sm8250
+endif
 
 # Vibrator
 PRODUCT_PACKAGES += \
