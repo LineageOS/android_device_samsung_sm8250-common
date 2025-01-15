@@ -18,7 +18,6 @@ COMMON_PATH := device/samsung/sm8250-common
 
 BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
-BUILD_BROKEN_INCORRECT_PARTITION_IMAGES := true
 
 # Android Verified Boot
 BOARD_AVB_ENABLE := true
@@ -190,6 +189,7 @@ TARGET_ODM_PROP += $(COMMON_PATH)/odm.prop
 
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
+SOONG_CONFIG_rfs_mpss_firmware_symlink_target := firmware_modem
 
 # Recovery
 BOARD_HAS_DOWNLOAD_MODE := true
