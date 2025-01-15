@@ -18,7 +18,6 @@ COMMON_PATH := device/samsung/sm8250-common
 
 BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
-BUILD_BROKEN_INCORRECT_PARTITION_IMAGES := true
 
 # Android Verified Boot
 BOARD_AVB_ENABLE := true
@@ -117,6 +116,8 @@ BOARD_QTI_DYNAMIC_PARTITIONS_PARTITION_LIST     := system system_ext odm product
 BOARD_QTI_DYNAMIC_PARTITIONS_SIZE               := 10292822012
 
 BOARD_FLASH_BLOCK_SIZE := 262144 # (BOARD_KERNEL_PAGESIZE * 64)
+
+SOONG_CONFIG_rfs_mpss_firmware_symlink_target := firmware_modem
 
 TARGET_COPY_OUT_SYSTEM_EXT := system_ext
 TARGET_COPY_OUT_ODM := odm
