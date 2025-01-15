@@ -145,9 +145,6 @@ BOARD_USES_ALSA_AUDIO := true
 # Keymaster
 TARGET_KEYMASTER_VARIANT := samsung
 
-# Include
-$(call soong_config_set,samsungVars,target_specific_header_path,$(COMMON_PATH)/include)
-
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
     hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml \
