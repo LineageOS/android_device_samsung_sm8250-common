@@ -16,6 +16,24 @@
       "message": "Can you not check whether PRODUCT_CHARACTERISTICS is tablet?",
       "revId": "79f8002ea609e2b0ae115fdb2d5e5e2b2028157a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8b489617_583d2a27",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-01-15T06:26:31Z",
+      "side": 1,
+      "message": "I tried (see initial patchset), but oddly doesn\u0027t work.",
+      "parentUuid": "08735bcc_177fa111",
+      "revId": "79f8002ea609e2b0ae115fdb2d5e5e2b2028157a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
