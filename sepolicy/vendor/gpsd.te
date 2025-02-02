@@ -1,0 +1,23 @@
+type gpsd, domain;
+type gpsd_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(gpsd)
+net_domain(gpsd)
+
+allow gpsd gpsd_exec:file rx_file_perms;
+
+allow gpsd gps_vendor_data_file:dir create_dir_perms;
+allow gpsd gps_vendor_data_file:fifo_file create_file_perms;
+allow gpsd gps_vendor_data_file:file create_file_perms;
+
+allow gpsd self:netlink_kobject_uevent_socket create_socket_perms_no_ioctl;
+allow gpsd self:udp_socket create_socket_perms_no_ioctl;
+
+allow gpsd serial_device:chr_file rw_file_perms;
+allow gpsd sysfs:file rw_file_perms;
+
+binder_call(gpsd, servicemanager)
+
+set_prop(gpsd, vendor_gnss_psds_prop)
+
+wakelock_use(gpsd)
