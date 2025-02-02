@@ -12,6 +12,9 @@ persist.camera.gyro.disable                      u:object_r:persist_camera_prop:
 # Fastcharge
 persist.vendor.sec.fastchg_enabled               u:object_r:vendor_fastcharge_prop:s0
 
+# GNSS
+vendor.gnss.psds                                 u:object_r:vendor_gnss_psds_prop:s0
+
 # NFC
 ro.vendor.nfc.                                   u:object_r:vendor_nfc_prop:s0
 

@@ -21,10 +21,14 @@
 /data/vendor/conn(/.*)?                      u:object_r:conn_vendor_data_file:s0
 /data/vendor/secradio(/.*)?                  u:object_r:radio_vendor_data_file:s0
 /data/vendor/gatekeeper(/.*)?                u:object_r:gatekeeper_vendor_data_file:s0
+/data/vendor/gps(/.*)?                       u:object_r:gps_vendor_data_file:s0
 
 # Fingerprint
 /dev/esfp[0-9]                               u:object_r:fp_sensor_device:s0
 /dev/goodix_fp                               u:object_r:fp_sensor_device:s0
+
+# GNSS
+/dev/ttyHS2                                  u:object_r:serial_device:s0
 
 # NFC
 /dev/sec-nfc                                 u:object_r:nfc_device:s0
@@ -111,5 +115,8 @@
 /(vendor|system/vendor)/bin/hw/vendor\.lineage\.livedisplay@2\.0-service.samsung-qcom\.sm8250               u:object_r:hal_lineage_livedisplay_sysfs_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.lineage\.powershare@[0-9]\.[0-9]-service\.samsung                    u:object_r:hal_lineage_powershare_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.lineage\.touch\@[0-9]\.[0-9]-service\.samsung_sm8250                 u:object_r:hal_lineage_touch_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.samsung\.hardware\.gnss@2\.0-service                                 u:object_r:hal_gnss_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.samsung\.hardware\.thermal@1\.0-service                              u:object_r:hal_thermal_default_exec:s0
+/(vendor|system/vendor)/bin/hw/gps\.sh                                                                      u:object_r:gpsd_exec:s0
+/(vendor|system/vendor)/bin/hw/gpsd                                                                         u:object_r:gpsd_exec:s0
 /(vendor|system/vendor)/bin/hw/sehradiomanager                                                              u:object_r:sehradiomanager_exec:s0
