@@ -331,6 +331,10 @@ endif
 PRODUCT_PACKAGES += \
     android.hardware.sensors-service.samsung-multihal
 
+# Thermal
+PRODUCT_PACKAGES += \
+    android.hardware.thermal-service.qti
+
 # Tether
 ifneq ($(TARGET_IS_WIFI-ONLY),true)
 PRODUCT_PACKAGES += \
