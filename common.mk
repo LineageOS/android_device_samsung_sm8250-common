@@ -220,6 +220,9 @@ PRODUCT_PACKAGES += \
 
 $(call soong_config_set,samsungVars,target_keymaster4_library,//vendor/samsung/sm8250-common:libskeymaster4device)
 
+# Kernel
+PRODUCT_ENABLE_UFFD_GC := true
+
 # Lineage Health
 PRODUCT_PACKAGES += \
     vendor.lineage.health-service.default
