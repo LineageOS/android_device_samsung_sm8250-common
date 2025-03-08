@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "141aff8d_7419a2db",
+        "filename": "overlay/frameworks/base/packages/SystemUI/res/values/config.xml",
+        "patchSetId": 64
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 33569
+      },
+      "writtenOn": "2025-03-08T23:01:38Z",
+      "side": 1,
+      "message": "Considering tablets don\u0027t support AOD maybe we should decommonize these two as well?",
+      "range": {
+        "startLine": 24,
+        "startChar": 16,
+        "endLine": 24,
+        "endChar": 44
+      },
+      "revId": "1d09dd30f5cdad3430103683c55c14eada115028",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
