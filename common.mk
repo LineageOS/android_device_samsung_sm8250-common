@@ -390,7 +390,6 @@ PRODUCT_PACKAGES += \
     libxml2 \
     librilutils \
     librmnetctl \
-    libsecril-client \
     secril_config_svc \
     sehradiomanager
 
