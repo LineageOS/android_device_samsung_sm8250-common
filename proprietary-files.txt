@@ -535,6 +535,7 @@ vendor/lib64/libqcci_legacy.so
 vendor/lib64/libqmi_csvt_srvc.so
 vendor/lib64/libril_sem.so
 vendor/lib64/libsec-ril.so
+vendor/lib64/libsecril-client.so
 vendor/lib64/libsystem_health_mon.so
 vendor/lib64/libvkmanager_vendor.so
 vendor/lib64/libxml.so
