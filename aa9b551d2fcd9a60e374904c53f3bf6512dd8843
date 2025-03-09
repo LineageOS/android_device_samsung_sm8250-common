@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "18559146_e0c976f8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-03-09T01:35:59Z",
+      "side": 1,
+      "message": "Can you validate on r8q? Okay on gts7lwifi.",
+      "revId": "aa9b551d2fcd9a60e374904c53f3bf6512dd8843",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
