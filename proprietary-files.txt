@@ -483,7 +483,6 @@ vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
 
 # RIL
 vendor/bin/adpl
-vendor/bin/hw/rild
 vendor/bin/ks
 vendor/bin/mdm_helper
 vendor/bin/mdm_helper_proxy
@@ -517,30 +516,47 @@ vendor/lib/libqcci_legacy.so
 vendor/lib/libqmi_csvt_srvc.so
 vendor/lib/libsystem_health_mon.so
 vendor/lib/libxml.so
-vendor/lib64/libSemDataProps.so
-vendor/lib64/libSemTelephonyProps.so
 vendor/lib64/libconfigdb.so
 vendor/lib64/libdsi_netctrl.so
 vendor/lib64/libengmode_client.so
 vendor/lib64/libmdmimgload.so
-vendor/lib64/libnetmgr.so
-vendor/lib64/libnetmgr_common.so
-vendor/lib64/libnlnetmgr.so
 vendor/lib64/libpdmapper.so
 vendor/lib64/libpdnotifier.so
 vendor/lib64/libqcci_legacy.so
 vendor/lib64/libqmi_csvt_srvc.so
-vendor/lib64/libril_sem.so
-vendor/lib64/libsec-ril.so
 vendor/lib64/libsystem_health_mon.so
 vendor/lib64/libvkmanager_vendor.so
 vendor/lib64/libxml.so
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.0.so
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.1.so
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.2.so
-vendor/lib64/vendor.samsung.hardware.radio.bridge@2.0.so
-vendor/lib64/vendor.samsung.hardware.radio.bridge@2.1.so
-vendor/lib64/vendor.samsung.hardware.radio.channel@2.0.so
+
+# RIL - from dm2qxxx-user 14 UP1A.231005.007 S9160ZHS5CYA1 release-keys
+vendor/bin/hw/rild|b4e84db4ab705dd2689424d65ba06f74156e3ada
+vendor/etc/vintf/manifest/vendor.samsung.hardware.radio.exclude.qcom.xml|e96ef9c0fe2f383b8b1cadbdc9f95a3cc83d09eb
+vendor/etc/vintf/manifest/vendor.samsung.hardware.radio_manifest_2_33.xml|e9cdde9d05c5cce32f76bbb164437f43b3288157
+vendor/etc/vintf/manifest/vendor.samsung.hardware.sehradio_manifest_2_33.xml|ebbe359a9b2d78cb88debe79d9183c039afb7c01
+vendor/lib64/libSemDataProps.so|07d2fb4ecc1280056dc14b93c5c612b77f2902e3
+vendor/lib64/libSemTelephonyProps.so|5c7ffb25462b4623998a294aa7dff8729945e36f
+vendor/lib64/libnetmgr.so|bcc70fca8c603ebf2b9c6e87906d4263a0b413b7
+vendor/lib64/libnetmgr_common.so|602f2edadd7ebbc6436898ba160cde3571b456c0
+vendor/lib64/libnetmgr_datapath_proxy.so|bb39793db6a940c3859c61672e672d9aeeed311d
+vendor/lib64/libnetmgrmodemproxy.so|2ed0d9e5d52eca398a529ff389c7773fb84d9ce1
+vendor/lib64/libnetmgrportutils.so|563a7a7e75a3f12ecfed4645bd302dd9921d2303
+vendor/lib64/libnetmgr_sscm3.so|1123d54b9a0afaa74b0cccc4d6431d3e46c66876
+vendor/lib64/libnetmgr_utils.so|a17673e0c2af399988a968eafdc0208933ab26fb
+vendor/lib64/libnetmgrxfrmutils.so|ef639590f41739ad70180484533e592fa76a5d2c
+vendor/lib64/libnlnetmgr.so|c53116f943cd4b557a27571695ef4db6442814c5
+vendor/lib64/libril_sem.so|8f20c6dd8d2b8537b50052b7bbf416d1843f4677
+vendor/lib64/libsec-ril.so|e83188fdf6fdcf7cf87ce34ea8ad3b195080fabb
+vendor/lib64/libsemnativecarrierfeature.so|67b1e1c16c6f87631c715ea17eac4b5a07cde05e
+vendor/lib64/libshsc.so|dc602c76de5e853d84306bb00ee5ea3f603be19a
+vendor/lib64/vendor.samsung.hardware.radio-V1-ndk.so|47690b36bf2846efd407f65ebb1d13086509c6e1
+vendor/lib64/vendor.samsung.hardware.radio.bridge-V1-ndk.so|1e546c9440e9373543e8df15b16fd6b07aa084da
+vendor/lib64/vendor.samsung.hardware.radio.channel-V1-ndk.so|adfd9e42d88a1d3daf9c1112b060cf4f5eb7ea1b
+vendor/lib64/vendor.samsung.hardware.radio.data-V1-ndk.so|b062f04d2d5a8ea1e21fc6602c534b042532ec07
+vendor/lib64/vendor.samsung.hardware.radio.messaging-V1-ndk.so|05cb51696937cbb16b2bb4b23478b50465b21a48
+vendor/lib64/vendor.samsung.hardware.radio.sim-V1-ndk.so|86303fe6ba1625fee3998d463b2679c03eb41416
 
 # SCVE
 vendor/lib64/libscveCommon.so
@@ -557,7 +573,6 @@ vendor/lib/libfloatingfeature.so
 vendor/lib/libsecnativefeature.so
 vendor/lib64/libfloatingfeature.so
 vendor/lib64/libsecnativefeature.so
-vendor/lib64/libsemnativecarrierfeature.so
 
 # Sensors
 vendor/bin/factory.ssc

@@ -10,10 +10,5 @@ vendor.samsung.hardware.gnss::ISehGnss                                          
 # NFC
 vendor.samsung.hardware.nfc::ISehNfc                                                        u:object_r:hal_nfc_hwservice:s0
 
-# RIL
-vendor.samsung.hardware.radio.bridge::ISehBridge                                            u:object_r:hal_telephony_hwservice:s0
-vendor.samsung.hardware.radio::ISehRadio                                                    u:object_r:hal_telephony_hwservice:s0
-vendor.samsung.hardware.radio.channel::ISehChannel                                          u:object_r:hal_telephony_hwservice:s0
-
 # Thermal
 vendor.samsung.hardware.thermal::ISehThermal                                                u:object_r:hal_thermal_samsung_hwservice:s0
