@@ -213,6 +213,8 @@ PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.0-service.samsung
 
+$(call soong_config_set,samsungVars,target_keymaster4_library,"//vendor/samsung/sm8250-common:libskeymaster4device")
+
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light-service.samsung
