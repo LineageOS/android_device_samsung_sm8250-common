@@ -640,6 +640,7 @@ vendor/lib/mediadrm/libwvdrmengine.so
 vendor/lib64/liboemcrypto.so
 
 # WiFi
+vendor/bin/hw/macloader
 vendor/bin/cnss-daemon
 
 # WiFi (firmware)
