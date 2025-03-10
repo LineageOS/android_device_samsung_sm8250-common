@@ -42,5 +42,7 @@ vendor.sensor.file.permission                    u:object_r:vendor_sensors_prop:
 # Tee
 vendor.sys.qseecomd.enable                       u:object_r:vendor_qseecomd_prop:s0
 
-# wifi
+# WiFi
+ro.vendor.wifi.                                  u:object_r:vendor_wifi_prop:s0
 vendor.wifi.                                     u:object_r:vendor_wifi_prop:s0
+vendor.qcom.wifi.                                u:object_r:vendor_wifi_prop:s0
