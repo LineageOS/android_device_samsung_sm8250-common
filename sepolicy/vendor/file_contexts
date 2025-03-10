@@ -120,3 +120,6 @@
 /(vendor|system/vendor)/bin/hw/gps\.sh                                                                      u:object_r:gpsd_exec:s0
 /(vendor|system/vendor)/bin/hw/gpsd                                                                         u:object_r:gpsd_exec:s0
 /(vendor|system/vendor)/bin/hw/sehradiomanager                                                              u:object_r:sehradiomanager_exec:s0
+
+# WiFi
+/(vendor|system/vendor)/bin/hw/macloader       u:object_r:macloader_exec:s0
