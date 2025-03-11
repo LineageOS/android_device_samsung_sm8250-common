@@ -1,0 +1,25 @@
+type argosd, domain;
+type argosd_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(argosd)
+
+allow argosd proc_net:file r_file_perms;
+allow argosd proc:dir r_dir_perms;
+allow argosd proc:file r_file_perms;
+
+allow argosd radio_qos_device:chr_file rw_file_perms;
+
+allow argosd sysfs_android_usb:dir r_dir_perms;
+allow argosd sysfs_android_usb:file r_file_perms;
+
+allow argosd vendor_sysfs_devicetree_soc:dir r_dir_perms;
+allow argosd vendor_sysfs_devicetree_soc:file r_file_perms;
+
+allow argosd vendor_sysfs_mmc_host:dir r_dir_perms;
+allow argosd vendor_sysfs_mmc_host:file r_file_perms;
+
+allow argosd vendor_sysfs_scsi_host:dir r_dir_perms;
+allow argosd vendor_sysfs_scsi_host:file r_file_perms;
+
+allow argosd sysfs:dir r_dir_perms;
+allow argosd sysfs:file r_file_perms;
