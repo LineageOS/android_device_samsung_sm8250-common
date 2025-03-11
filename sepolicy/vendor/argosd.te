@@ -1,0 +1,25 @@
+type argosd, domain;
+type argosd_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(argosd)
+
+allow argosd proc_net:file { read getattr open };
+allow argosd proc:dir { ioctl read getattr lock open watch watch_reads search };
+allow argosd proc:file { ioctl read getattr lock map open watch watch_reads };
+
+allow argosd radio_device:chr_file { ioctl read write getattr lock append map open watch watch_reads };
+
+allow argosd sysfs_android_usb:dir { ioctl read getattr lock open watch watch_reads search };
+allow argosd sysfs_android_usb:file { ioctl read getattr lock map open watch watch_reads };
+
+allow argosd vendor_sysfs_devicetree_soc:dir { open read search };
+allow argosd vendor_sysfs_devicetree_soc:file { getattr open read };
+
+allow argosd vendor_sysfs_mmc_host:dir { ioctl read getattr lock open watch watch_reads search };
+allow argosd vendor_sysfs_mmc_host:file { ioctl read getattr lock map open watch watch_reads };
+
+allow argosd vendor_sysfs_scsi_host:dir { ioctl read getattr lock open watch watch_reads search };
+allow argosd vendor_sysfs_scsi_host:file { ioctl read getattr lock map open watch watch_reads };
+
+allow argosd sysfs:dir { ioctl read getattr lock open watch watch_reads search };
+allow argosd sysfs:file { ioctl read getattr lock map open watch watch_reads };
