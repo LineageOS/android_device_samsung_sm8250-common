@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "12984675_0737af86",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 13
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-03-14T22:39:16Z",
+      "side": 1,
+      "message": "I\u0027ll merge this once I get gts7xlwifi and test it from clean flash. For the time being, it seems okay.",
+      "revId": "2f4a38aa3476b4b9f88a8e8b36661e186f8dca16",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
