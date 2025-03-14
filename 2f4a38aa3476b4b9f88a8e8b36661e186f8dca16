@@ -16,6 +16,24 @@
       "message": "I\u0027ll merge this once I get gts7xlwifi and test it from clean flash. For the time being, it seems okay.",
       "revId": "2f4a38aa3476b4b9f88a8e8b36661e186f8dca16",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "920b102e_1c3e6c7b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 13
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-03-14T22:42:59Z",
+      "side": 1,
+      "message": "Forgot to mention, but my changes related to sysfs_batteryinfo fixed offline charger.",
+      "parentUuid": "12984675_0737af86",
+      "revId": "2f4a38aa3476b4b9f88a8e8b36661e186f8dca16",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
