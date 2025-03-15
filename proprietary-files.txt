@@ -546,7 +546,7 @@ vendor/lib64/libnetmgr_utils.so|a17673e0c2af399988a968eafdc0208933ab26fb
 vendor/lib64/libnetmgrxfrmutils.so|ef639590f41739ad70180484533e592fa76a5d2c
 vendor/lib64/libnlnetmgr.so|c53116f943cd4b557a27571695ef4db6442814c5
 vendor/lib64/libril_sem.so|8f20c6dd8d2b8537b50052b7bbf416d1843f4677
-vendor/lib64/libsec-ril.so|703b5c064d049143175c97b798674498cc6e8228
+vendor/lib64/libsec-ril.so|e83188fdf6fdcf7cf87ce34ea8ad3b195080fabb
 vendor/lib64/libsemnativecarrierfeature.so|67b1e1c16c6f87631c715ea17eac4b5a07cde05e
 vendor/lib64/libshsc.so|dc602c76de5e853d84306bb00ee5ea3f603be19a
 vendor/lib64/vendor.samsung.hardware.radio-V1-ndk.so|47690b36bf2846efd407f65ebb1d13086509c6e1
