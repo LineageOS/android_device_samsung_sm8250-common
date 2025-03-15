@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1a2b55fb_de46752e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-03-15T08:55:09Z",
+      "side": 1,
+      "message": "bgcngm@analog:/mnt/android-dumps/samsung/dm2q/AP_S9160ZHS5CYA1_S9160ZHS5CYA1_MQB91556102_REV00_user_low_ship_MULTI_CERT_meta_OS14/raw/vendor$ sha1sum lib64/libsec-ril.so \n703b5c064d049143175c97b798674498cc6e8228  lib64/libsec-ril.so\n\nWhere are you taking this blob from?",
+      "revId": "cdcaaaca4c4b4087895cbcda1d3830740e500318",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
