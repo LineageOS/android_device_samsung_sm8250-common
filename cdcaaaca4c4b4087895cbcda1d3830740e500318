@@ -33,6 +33,23 @@
       "message": "Yea, definitely not proper. If you\u0027re patching the lib, document it.",
       "revId": "cdcaaaca4c4b4087895cbcda1d3830740e500318",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "45d035bd_448bd756",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-03-15T09:00:08Z",
+      "side": 1,
+      "message": "Ah, it\u0027s being patched. But the commit message is wrong.",
+      "revId": "cdcaaaca4c4b4087895cbcda1d3830740e500318",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
