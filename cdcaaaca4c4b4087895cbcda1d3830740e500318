@@ -67,6 +67,24 @@
       "message": "Luk told you to check this out: https://review.lineageos.org/c/LineageOS/android_hardware_samsung/+/417430",
       "revId": "cdcaaaca4c4b4087895cbcda1d3830740e500318",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9b1b81b8_e9b352b2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33569
+      },
+      "writtenOn": "2025-03-15T10:01:17Z",
+      "side": 1,
+      "message": "Alright, thanks.",
+      "parentUuid": "08bb10c8_276a20e5",
+      "revId": "cdcaaaca4c4b4087895cbcda1d3830740e500318",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
