@@ -38,7 +38,7 @@
 system                                                  /system                ext4    ro                                                                                                     wait,logical,first_stage_mount
 system_ext                                              /system_ext            ext4    ro                                                                                                     wait,logical,first_stage_mount
 product                                                 /product               ext4    ro                                                                                                     wait,logical,first_stage_mount
-vendor                                                  /vendor                erofs   ro                                                                                                     wait,logical,first_stage_mount
+vendor                                                  /vendor                ext4    ro                                                                                                     wait,logical,first_stage_mount
 odm                                                     /odm                   ext4    ro                                                                                                     wait,logical,first_stage_mount
 /dev/block/platform/soc/1d84000.ufshc/by-name/metadata  /metadata              ext4    noatime,nosuid,nodev,noauto_da_alloc,discard,journal_checksum,data=ordered,errors=panic,sync	          wait,first_stage_mount,formattable,check
 
