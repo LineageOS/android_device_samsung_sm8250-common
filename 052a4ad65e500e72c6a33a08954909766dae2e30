@@ -70,6 +70,24 @@
       "parentUuid": "a866867d_3c2165d1",
       "revId": "052a4ad65e500e72c6a33a08954909766dae2e30",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1e0ffc97_aafa80fa",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33569
+      },
+      "writtenOn": "2025-03-18T15:54:03Z",
+      "side": 1,
+      "message": "I am against this idea. Many users applies modifications without realizing what they actually do and this often results with a non-bootable system, especially after updates. In my opinion, protecting stability of the system after installation is more crucial.",
+      "parentUuid": "a866867d_3c2165d1",
+      "revId": "052a4ad65e500e72c6a33a08954909766dae2e30",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
