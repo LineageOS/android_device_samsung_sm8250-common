@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e1adcaa5_5a45a7a1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33569
+      },
+      "writtenOn": "2025-03-18T08:23:12Z",
+      "side": 1,
+      "message": "Switching to Ext4 for a RO partition seems pointless to me? What is the benefit of this?",
+      "revId": "052a4ad65e500e72c6a33a08954909766dae2e30",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
