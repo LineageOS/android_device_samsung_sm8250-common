@@ -52,6 +52,24 @@
       "parentUuid": "950e1761_2fe6f8cd",
       "revId": "052a4ad65e500e72c6a33a08954909766dae2e30",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f28973bd_6d0af981",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28935
+      },
+      "writtenOn": "2025-03-18T15:49:38Z",
+      "side": 1,
+      "message": "It\u0027s also handy for developers, \nif one only wants to only replace a single HAL or RRO\nwe can build that file and push it directly,\ninstead of rebuilding the entire partition and flashing that.",
+      "parentUuid": "a866867d_3c2165d1",
+      "revId": "052a4ad65e500e72c6a33a08954909766dae2e30",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
