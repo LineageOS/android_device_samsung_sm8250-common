@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2e061c7a_e72ecc04",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 17
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28935
+      },
+      "writtenOn": "2025-03-25T16:26:24Z",
+      "side": 1,
+      "message": "boots on `gts7xl` successfully, no fatal denials",
+      "revId": "40628453f9d9afafafe268652f6a3f9a0cce22b9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
