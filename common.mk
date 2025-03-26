@@ -333,15 +333,6 @@ endif
 PRODUCT_PACKAGES += \
     android.hardware.sensors-service.samsung-multihal
 
-# Telephony
-ifneq ($(TARGET_IS_WIFI-ONLY),true)
-PRODUCT_PACKAGES += \
-    telephony-ext
-
-PRODUCT_BOOT_JARS += \
-    telephony-ext
-endif
-
 # Tether
 ifneq ($(TARGET_IS_WIFI-ONLY),true)
 PRODUCT_PACKAGES += \
