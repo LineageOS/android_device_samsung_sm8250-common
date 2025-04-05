@@ -50,6 +50,24 @@
       "message": "Very good question. Is there any phone with LEDs that can use this tree @ata.kaner03@gmail.com?",
       "revId": "77ef2ab956831836f5cce1a7bcceef1795013986",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8b9608e4_2966f0e4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33569
+      },
+      "writtenOn": "2025-04-05T02:26:52Z",
+      "side": 1,
+      "message": "As far as I know, no. The only use case I can think of is keyboard LEDs for tablets, which is not supported by common and samsung hal.",
+      "parentUuid": "3221d20a_c2ba9229",
+      "revId": "77ef2ab956831836f5cce1a7bcceef1795013986",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
