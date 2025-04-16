@@ -186,7 +186,7 @@ ro.oem_unlock_supported=1
 ro.vendor.extension_library=libqti-perfd-client.so
 
 ## Power HAL
-vendor.powerhal.disp.idle_support=false
+vendor.powerhal.disp.idle_support=true
 
 # RIL
 ro.telephony.default_cdma_sub=0
