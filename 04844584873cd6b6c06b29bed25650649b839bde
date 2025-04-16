@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7d6f5c15_5b3fb4e9",
+        "filename": "init/Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-04-16T19:24:04Z",
+      "side": 1,
+      "message": "If script is placed in init, it doesn\u0027t need to be imported.",
+      "revId": "04844584873cd6b6c06b29bed25650649b839bde",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "76ee9a11_6d43fbbd",
+        "filename": "init/init.qcom.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-04-16T19:24:04Z",
+      "side": 1,
+      "message": "Script is being installed into vendor/etc/init (without hw).",
+      "revId": "04844584873cd6b6c06b29bed25650649b839bde",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
