@@ -237,10 +237,6 @@ on boot
     chmod 664 /sys/module/lpm_levels/parameters/secdebug
     chown system system /sys/power/system_sleep/stats
 
-    # Permissions for PowerShare
-    chown system system /sys/class/power_supply/battery/wc_tx_en
-    chmod 0664 /sys/class/power_supply/battery/wc_tx_en
-
     # Add permission for Display PMIC
     chown system system /sys/class/sec/disp_pmic/enable_fd
     chown system system /sys/class/sec/disp_pmic/power_meter/adc_mode
