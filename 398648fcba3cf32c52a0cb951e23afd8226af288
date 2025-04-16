@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f7262360_56b7fd6a",
+        "filename": "system.prop",
+        "patchSetId": 1
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-04-16T19:19:55Z",
+      "side": 1,
+      "message": "Place before this.",
+      "revId": "398648fcba3cf32c52a0cb951e23afd8226af288",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
