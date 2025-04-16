@@ -1,0 +1,1 @@
+keyboard.orientationAware = 0
