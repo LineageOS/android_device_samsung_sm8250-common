@@ -95,18 +95,24 @@ on early-init
 on init
     # Boot time cpuset and stune
     write /dev/cpuset/top-app/cpus 0-7
-    write /dev/cpuset/foreground/cpus 0-7
-    write /dev/cpuset/background/cpus 0-5
-    write /dev/cpuset/system-background/cpus 0-5
-    write /dev/cpuset/restricted/cpus 2-5
+    write /dev/cpuset/foreground/cpus 0-2,4-7
+    write /dev/cpuset/background/cpus 0-2
+    write /dev/cpuset/system-background/cpus 0-2
+    write /dev/cpuset/restricted/cpus 0-2
+    write /dev/stune/background/schedtune.colocate 0
+    write /dev/stune/foreground/schedtune.sched_boost_no_override 1
     write /dev/stune/foreground/schedtune.prefer_idle 1
     write /dev/stune/foreground/schedtune.prefer_high_cap 1
+    write /dev/stune/foreground/schedtune.colocate 0
     write /dev/stune/foreground/schedtune.boost 100
     write /dev/stune/schedtune.prefer_idle 1
     write /dev/stune/schedtune.prefer_high_cap 1
+    write /dev/stune/schedtune.colocate 0
     write /dev/stune/schedtune.boost 100
+    write /dev/stune/top-app/schedtune.sched_boost_no_override 1
     write /dev/stune/top-app/schedtune.prefer_idle 1
     write /dev/stune/top-app/schedtune.prefer_high_cap 1
+    write /dev/stune/top-app/schedtune.colocate 1
     write /dev/stune/top-app/schedtune.boost 100
 
     # Boot time fs tuning
