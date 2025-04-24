@@ -315,7 +315,7 @@ PRODUCT_COPY_FILES += \
 # PowerShare
 ifneq ($(TARGET_IS_TABLET),true)
 PRODUCT_PACKAGES += \
-    vendor.lineage.powershare@1.0-service.samsung
+    vendor.lineage.powershare-service.samsung
 endif
 
 # Public libraries
