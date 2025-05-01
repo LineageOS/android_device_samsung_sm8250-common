@@ -309,8 +309,13 @@ PRODUCT_PACKAGES += \
     android.hardware.power-service.pixel-libperfmgr \
     libqti-perfd-client
 
+ifneq ($(TARGET_IS_TABLET),true)
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/power/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
+else
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/power/powerhint_tablet.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
+endif
 
 # PowerShare
 ifneq ($(TARGET_IS_TABLET),true)
