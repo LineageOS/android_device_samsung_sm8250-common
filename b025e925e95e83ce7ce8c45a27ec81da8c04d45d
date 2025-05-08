@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a603f92f_40bc7f08",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-05-08T08:39:10Z",
+      "side": 1,
+      "message": "Virtual +v, based on comments on hw/samsung change.",
+      "revId": "b025e925e95e83ce7ce8c45a27ec81da8c04d45d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
