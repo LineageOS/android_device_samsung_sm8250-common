@@ -135,17 +135,6 @@ AUDIO_FEATURE_ENABLED_PROXY_DEVICE := true
 AUDIO_FEATURE_ENABLED_SSR := false
 BOARD_SUPPORTS_SOUND_TRIGGER := true
 
-# HIDL
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
-    hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml \
-    hardware/samsung/vintf/samsung_framework_compatibility_matrix.xml \
-    vendor/lineage/config/device_framework_matrix.xml
-DEVICE_MANIFEST_FILE += $(COMMON_PATH)/configs/manifest.xml
-ifneq ($(TARGET_IS_WIFI-ONLY),true)
-DEVICE_MANIFEST_FILE += $(COMMON_PATH)/configs/network_manifest.xml
-endif
-DEVICE_MATRIX_FILE := hardware/qcom-caf/common/compatibility_matrix.xml
-
 # Media
 TARGET_USES_ION := true
 
