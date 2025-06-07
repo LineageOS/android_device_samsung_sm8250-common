@@ -1,28 +1,16 @@
 /*
- * Copyright (C) 2019 The LineageOS Project
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
+ * SPDX-FileCopyrightText: 2025 The LineageOS Project
+ * SPDX-License-Identifier: Apache-2.0
  */
 
 #include <fstream>
 
 #include "GloveMode.h"
 
+namespace aidl {
 namespace vendor {
 namespace lineage {
 namespace touch {
-namespace V1_0 {
-namespace samsung {
 
 bool GloveMode::isSupported() {
     std::ifstream file(TSP_CMD_LIST_NODE);
@@ -36,26 +24,26 @@ bool GloveMode::isSupported() {
     return false;
 }
 
-// Methods from ::vendor::lineage::touch::V1_0::IGloveMode follow.
-Return<bool> GloveMode::isEnabled() {
+ndk::ScopedAStatus GloveMode::getEnabled(bool* _aidl_return) {
     std::ifstream file(TSP_CMD_RESULT_NODE);
     if (file.is_open()) {
         std::string line;
         getline(file, line);
-        if (!line.compare("glove_mode,1:OK")) return true;
+        *_aidl_return = !line.compare("glove_mode,1:OK");
         file.close();
     }
-    return false;
+
+    return ndk::ScopedAStatus::ok();
 }
 
-Return<bool> GloveMode::setEnabled(bool enabled) {
+ndk::ScopedAStatus GloveMode::setEnabled(bool enabled) {
     std::ofstream file(TSP_CMD_NODE);
     file << "glove_mode," << (enabled ? "1" : "0");
-    return true;
+
+    return ndk::ScopedAStatus::ok();
 }
 
-}  // namespace samsung
-}  // namespace V1_0
 }  // namespace touch
 }  // namespace lineage
 }  // namespace vendor
+}  // namespace aidl
