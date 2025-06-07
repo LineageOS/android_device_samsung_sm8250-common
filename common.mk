@@ -345,10 +345,8 @@ PRODUCT_PACKAGES += \
 endif
 
 # Touch features
-ifneq ($(TARGET_IS_TABLET),true)
 PRODUCT_PACKAGES += \
     vendor.lineage.touch@1.0-service.samsung_sm8250
-endif
 
 # Vibrator
 PRODUCT_PACKAGES += \
