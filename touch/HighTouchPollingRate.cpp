@@ -1,61 +1,46 @@
 /*
- * Copyright (C) 2019-2024 The LineageOS Project
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
+ * SPDX-FileCopyrightText: 2025 The LineageOS Project
+ * SPDX-License-Identifier: Apache-2.0
  */
 
-#include <fstream>
+#define LOG_TAG "vendor.lineage.touch-service.samsung_sm8250"
 
 #include "HighTouchPollingRate.h"
 
+#include <android-base/file.h>
+#include <android-base/logging.h>
+#include <android-base/strings.h>
+
+using ::android::base::ReadFileToString;
+using ::android::base::Trim;
+using ::android::base::WriteStringToFile;
+
+namespace aidl {
 namespace vendor {
 namespace lineage {
 namespace touch {
-namespace V1_0 {
-namespace samsung {
 
-bool HighTouchPollingRate::isSupported() {
-    std::ifstream file(TSP_CMD_LIST_NODE);
-    if (file.is_open()) {
-        std::string line;
-        while (getline(file, line)) {
-            if (!line.compare("set_game_mode")) return true;
-        }
-        file.close();
+ndk::ScopedAStatus HighTouchPollingRate::getEnabled(bool* _aidl_return) {
+    std::string buf;
+    if (!ReadFileToString(TSP_CMD_RESULT_NODE, &buf)) {
+        LOG(ERROR) << "Failed to read current HighTouchPollingRate state";
+        return ndk::ScopedAStatus::fromExceptionCode(EX_UNSUPPORTED_OPERATION);
     }
-    return false;
+
+    *_aidl_return = Trim(buf) == "set_game_mode,1:OK";
+    return ndk::ScopedAStatus::ok();
 }
 
-// Methods from ::vendor::lineage::touch::V1_0::IHighTouchPollingRate follow.
-Return<bool> HighTouchPollingRate::isEnabled() {
-    std::ifstream file(TSP_CMD_RESULT_NODE);
-    if (file.is_open()) {
-        std::string line;
-        getline(file, line);
-        if (!line.compare("set_game_mode,1:OK")) return true;
-        file.close();
+ndk::ScopedAStatus HighTouchPollingRate::setEnabled(bool enabled) {
+    if (!WriteStringToFile(enabled ? "set_game_mode,1" : "set_game_mode,0", TSP_CMD_NODE)) {
+        LOG(ERROR) << "Failed to write HighTouchPollingRate state";
+        return ndk::ScopedAStatus::fromExceptionCode(EX_UNSUPPORTED_OPERATION);
     }
-    return false;
+
+    return ndk::ScopedAStatus::ok();
 }
 
-Return<bool> HighTouchPollingRate::setEnabled(bool enabled) {
-    std::ofstream file(TSP_CMD_NODE);
-    file << "set_game_mode," << (enabled ? "1" : "0");
-    return true;
-}
-
-}  // namespace samsung
-}  // namespace V1_0
 }  // namespace touch
 }  // namespace lineage
 }  // namespace vendor
+}  // namespace aidl
