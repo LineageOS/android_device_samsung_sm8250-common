@@ -346,7 +346,7 @@ endif
 
 # Touch features
 PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.samsung_sm8250
+    vendor.lineage.touch-service.samsung_sm8250
 
 # Vibrator
 PRODUCT_PACKAGES += \
