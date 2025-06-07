@@ -34,7 +34,14 @@ const std::map<int32_t, TouchscreenGesture::GestureInfo> TouchscreenGesture::kGe
 
 bool TouchscreenGesture::isSupported() {
     std::ifstream file(kTspPath);
-    return file.good();
+    if (file.is_open()) {
+        std::string line;
+        while (getline(file, line)) {
+            if (!line.compare("singletap_enable")) return true;
+        }
+        file.close();
+    }
+    return false;
 }
 
 // Methods from ::vendor::lineage::touch::V1_0::ITouchscreenGesture follow.
