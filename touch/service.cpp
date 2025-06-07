@@ -1,101 +1,48 @@
 /*
- * Copyright (C) 2019-2024 The LineageOS Project
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
+ * SPDX-FileCopyrightText: 2025 The LineageOS Project
+ * SPDX-License-Identifier: Apache-2.0
  */
 
-#define LOG_TAG "vendor.lineage.touch@1.0-service.samsung_sm8250"
-
-#include <android-base/logging.h>
-#include <binder/ProcessState.h>
-#include <hidl/HidlTransportSupport.h>
+#define LOG_TAG "vendor.lineage.touch-service.samsung_sm8250"
 
 #include "GloveMode.h"
 #include "HighTouchPollingRate.h"
 #include "TouchscreenGesture.h"
 
-using android::hardware::configureRpcThreadpool;
-using android::hardware::joinRpcThreadpool;
-using android::sp;
-using android::status_t;
-using android::OK;
+#include <android-base/logging.h>
+#include <android/binder_manager.h>
+#include <android/binder_process.h>
 
-using ::vendor::lineage::touch::V1_0::samsung::GloveMode;
-using ::vendor::lineage::touch::V1_0::samsung::HighTouchPollingRate;
-using ::vendor::lineage::touch::V1_0::samsung::TouchscreenGesture;
+using aidl::vendor::lineage::touch::GloveMode;
+using aidl::vendor::lineage::touch::HighTouchPollingRate;
+using aidl::vendor::lineage::touch::TouchscreenGesture;
 
 int main() {
-    sp<GloveMode> gloveMode;
-    sp<HighTouchPollingRate> highTouchPollingRate;
-    sp<TouchscreenGesture> touchscreenGesture;
-    status_t status;
+    binder_status_t status = STATUS_OK;
 
-    LOG(INFO) << "Touch HAL service is starting.";
+    ABinderProcess_setThreadPoolMaxThreadCount(0);
 
-    gloveMode = new GloveMode();
-    if (gloveMode == nullptr) {
-        LOG(ERROR) << "Can not create an instance of Touch HAL GloveMode Iface, exiting.";
-        goto shutdown;
+    std::shared_ptr<GloveMode> gm = ndk::SharedRefBase::make<GloveMode>();
+    if (gm->isSupported()) {
+        const std::string gm_instance = std::string(GloveMode::descriptor) + "/default";
+        status = AServiceManager_addService(gm->asBinder().get(), gm_instance.c_str());
+        CHECK_EQ(status, STATUS_OK) << "Failed to add service " << gm_instance << " " << status;
     }
 
-    highTouchPollingRate = new HighTouchPollingRate();
-    if (highTouchPollingRate == nullptr) {
-        LOG(ERROR) << "Can not create an instance of Touch HAL HighTouchPollingRate Iface, "
-                   << "exiting.";
-        goto shutdown;
+    std::shared_ptr<HighTouchPollingRate> htpr = ndk::SharedRefBase::make<HighTouchPollingRate>();
+    if (htpr->isSupported()) {
+        const std::string htpr_instance = std::string(HighTouchPollingRate::descriptor) + "/default";
+        status = AServiceManager_addService(htpr->asBinder().get(), htpr_instance.c_str());
+        CHECK_EQ(status, STATUS_OK) << "Failed to add service " << htpr_instance << " " << status;
     }
 
-    touchscreenGesture = new TouchscreenGesture();
-    if (touchscreenGesture == nullptr) {
-        LOG(ERROR) << "Can not create an instance of Touch HAL TouchscreenGesture Iface, exiting.";
-        goto shutdown;
+    std::shared_ptr<TouchscreenGesture> tg = ndk::SharedRefBase::make<TouchscreenGesture>();
+    if (tg->isSupported()) {
+        const std::string tg_instance = std::string(TouchscreenGesture::descriptor) + "/default";
+        status = AServiceManager_addService(tg->asBinder().get(), tg_instance.c_str());
+        CHECK_EQ(status, STATUS_OK) << "Failed to add service " << tg_instance << " " << status;
     }
 
-    configureRpcThreadpool(1, true /*callerWillJoin*/);
-
-    if (gloveMode->isSupported()) {
-        status = gloveMode->registerAsService();
-        if (status != OK) {
-            LOG(ERROR) << "Could not register service for Touch HAL GloveMode Iface (" << status
-                       << ")";
-            goto shutdown;
-        }
-    }
-
-    if (highTouchPollingRate->isSupported()) {
-        status = highTouchPollingRate->registerAsService();
-        if (status != OK) {
-            LOG(ERROR) << "Could not register service for Touch HAL HighTouchPollingRate Iface ("
-                       << status << ")";
-            goto shutdown;
-        }
-    }
-
-    if (touchscreenGesture->isSupported()) {
-        status = touchscreenGesture->registerAsService();
-        if (status != OK) {
-            LOG(ERROR) << "Could not register service for Touch HAL TouchscreenGesture Iface ("
-                       << status << ")";
-            goto shutdown;
-        }
-    }
-
-    LOG(INFO) << "Touch HAL service is ready.";
-    joinRpcThreadpool();
-// Should not pass this line
-
-shutdown:
-    // In normal operation, we don't expect the thread pool to shutdown
-    LOG(ERROR) << "Touch HAL service is shutting down.";
-    return 1;
+    ABinderProcess_joinThreadPool();
+    return EXIT_FAILURE;  // should not reach
 }
