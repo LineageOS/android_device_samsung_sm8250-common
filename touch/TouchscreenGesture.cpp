@@ -24,8 +24,6 @@ namespace touch {
 namespace V1_0 {
 namespace samsung {
 
-static constexpr const char* kTspPath = TSP_CMD_NODE;
-
 const std::map<int32_t, TouchscreenGesture::GestureInfo> TouchscreenGesture::kGestureInfoMap = {
     // clang-format off
     {0, {0x1c7, "Single Tap"}},
@@ -33,7 +31,7 @@ const std::map<int32_t, TouchscreenGesture::GestureInfo> TouchscreenGesture::kGe
 };
 
 bool TouchscreenGesture::isSupported() {
-    std::ifstream file(kTspPath);
+    std::ifstream file(TSP_CMD_LIST_NODE);
     if (file.is_open()) {
         std::string line;
         while (getline(file, line)) {
@@ -58,7 +56,7 @@ Return<void> TouchscreenGesture::getSupportedGestures(getSupportedGestures_cb re
 
 Return<bool> TouchscreenGesture::setGestureEnabled(
     const ::vendor::lineage::touch::V1_0::Gesture&, bool enabled) {
-    std::fstream file(kTspPath);
+    std::offstream file(TSP_CMD_NODE);
 
     file << "singletap_enable," << (enabled ? "1" : "0");
 
