@@ -75,7 +75,6 @@ BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 TARGET_KERNEL_SOURCE := kernel/samsung/sm8250
 TARGET_KERNEL_CONFIG := \
     vendor/kona-perf_defconfig \
-    vendor/debugfs.config \
     vendor/samsung/kona-sec-common.config
 
 # Additional root folders
