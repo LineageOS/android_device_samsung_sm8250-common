@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2019-2023 The LineageOS Project
+ * Copyright (C) 2019 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -31,7 +31,7 @@ namespace livedisplay {
 namespace V2_0 {
 namespace samsung {
 
-static constexpr const char* kBacklightPath = "/sys/class/lcd/panel/alpm";
+static constexpr const char* kBacklightPath = "/sys/class/lcd/panel/power_reduce";
 
 bool AdaptiveBacklight::isSupported() {
     std::fstream backlight(kBacklightPath, backlight.in | backlight.out);
@@ -51,7 +51,7 @@ Return<bool> AdaptiveBacklight::isEnabled() {
 }
 
 Return<bool> AdaptiveBacklight::setEnabled(bool enabled) {
-    return WriteStringToFile(enabled ? "2" : "0", kBacklightPath, true);
+    return WriteStringToFile(enabled ? "1" : "0", kBacklightPath, true);
 }
 
 }  // namespace samsung
