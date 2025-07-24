@@ -19,7 +19,6 @@ cc_binary {
     vintf_fragments: ["vendor.lineage.livedisplay@2.0-service.samsung-qcom.sm8250.xml"],
     relative_install_path: "hw",
     srcs: [
-        "AdaptiveBacklight.cpp",
         "DisplayColorCalibration.cpp",
         "DisplayModes.cpp",
         "SunlightEnhancement.cpp",
