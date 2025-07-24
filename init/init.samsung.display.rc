@@ -493,3 +493,6 @@ on init
 # debug information for dumpstate
 	chown system system /dev/sec_display_debug
 	chmod 0660 /dev/sec_display_debug
+
+on boot
+    write /sys/class/lcd/panel/alpm 4
