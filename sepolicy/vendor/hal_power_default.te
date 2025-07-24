@@ -1,3 +1,4 @@
+allow hal_power_default sysfs_batteryinfo:file { open write };
 allow hal_power_default sysfs_devices_system_cpu:file write;
 allow hal_power_default vendor_latency_device:chr_file { open write };
 allow hal_power_default { vendor_sysfs_touchscreen vendor_sysfs_touchscreen_writable }:dir search;
