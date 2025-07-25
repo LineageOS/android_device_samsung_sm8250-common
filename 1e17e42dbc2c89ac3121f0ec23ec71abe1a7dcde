@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f54ae209_f0f517b6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33569
+      },
+      "writtenOn": "2025-07-25T12:36:21Z",
+      "side": 1,
+      "message": "Are you fine with all these perms?",
+      "revId": "1e17e42dbc2c89ac3121f0ec23ec71abe1a7dcde",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
