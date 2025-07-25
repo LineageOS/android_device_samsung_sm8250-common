@@ -16,6 +16,24 @@
       "message": "Are you fine with all these perms?",
       "revId": "1e17e42dbc2c89ac3121f0ec23ec71abe1a7dcde",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3b2cf5d3_04eced45",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-07-25T13:02:11Z",
+      "side": 1,
+      "message": "I don\u0027t mind and I guess that these perms are stock for all sm8250 devices.",
+      "parentUuid": "f54ae209_f0f517b6",
+      "revId": "1e17e42dbc2c89ac3121f0ec23ec71abe1a7dcde",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
