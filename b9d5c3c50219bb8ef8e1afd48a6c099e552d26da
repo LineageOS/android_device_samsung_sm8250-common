@@ -34,6 +34,24 @@
       "parentUuid": "62c65662_9157bed8",
       "revId": "b9d5c3c50219bb8ef8e1afd48a6c099e552d26da",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "39fc932a_6be84a5c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-07-26T09:34:45Z",
+      "side": 1,
+      "message": "No, AoD brightness if perfectly fine of gtsxl.",
+      "parentUuid": "591ff842_f0ad805a",
+      "revId": "b9d5c3c50219bb8ef8e1afd48a6c099e552d26da",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
