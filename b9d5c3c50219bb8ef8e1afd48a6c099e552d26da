@@ -52,6 +52,24 @@
       "parentUuid": "591ff842_f0ad805a",
       "revId": "b9d5c3c50219bb8ef8e1afd48a6c099e552d26da",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e5ea48ac_401efeb5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33569
+      },
+      "writtenOn": "2025-07-27T12:47:51Z",
+      "side": 1,
+      "message": "Then I\u0027m moving this to device specific tree.",
+      "parentUuid": "39fc932a_6be84a5c",
+      "revId": "b9d5c3c50219bb8ef8e1afd48a6c099e552d26da",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
