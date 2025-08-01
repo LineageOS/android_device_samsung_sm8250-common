@@ -66,6 +66,13 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "init.samsung.camera.rc",
+    src: "init.samsung.camera.rc",
+    sub_dir: "init/hw",
+    soc_specific: true,
+}
+
+prebuilt_etc {
     name: "init.samsung.display.rc",
     src: "init.samsung.display.rc",
     sub_dir: "init/hw",

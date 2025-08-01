@@ -28,6 +28,7 @@
 #
 
 import /vendor/etc/init/hw/init.samsung.bsp.rc
+import /vendor/etc/init/hw/init.samsung.camera.rc
 import /vendor/etc/init/hw/init.samsung.display.rc
 import /vendor/etc/init/hw/init.samsung.eif.rc
 

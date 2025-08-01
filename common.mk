@@ -48,6 +48,7 @@ PRODUCT_PACKAGES += \
     init.qcom.recovery.rc \
     init.ramplus.rc \
     init.samsung.bsp.rc \
+    init.samsung.camera.rc \
     init.samsung.display.rc \
     init.samsung.eif.rc \
     init.samsung.rc \

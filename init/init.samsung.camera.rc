@@ -1,0 +1,259 @@
+on boot
+    # Camera::Rear Start
+    # Camera::Rear1
+    chown system system /sys/class/camera/rear/companion_ic_check
+    chown system system /sys/class/camera/rear/isp_core
+    chown system system /sys/class/camera/rear/rear_camfw
+    chown system system /sys/class/camera/rear/rear_camfw_full
+    chown system system /sys/class/camera/rear/rear_camfw_load
+    chown system system /sys/class/camera/rear/rear_camtype
+    chown system system /sys/class/camera/rear/rear_companionfw_full
+    chown system system /sys/class/camera/rear/rear_calcheck
+    chown system system /sys/class/camera/rear/rear_fwcheck
+    chown system system /sys/class/camera/rear/rear_checkfw_user
+    chown system system /sys/class/camera/rear/rear_checkfw_factory
+    chown system system /sys/class/camera/rear/rear_moduleinfo
+    chown system system /sys/class/camera/rear/rear_afcal
+    chown system system /sys/class/camera/rear/rear_caminfo
+    chown system system /sys/class/camera/rear/rear_sensorid_exif
+    chown system system /sys/class/camera/rear/rear_moduleid
+    chown system system /sys/class/camera/rear/rear_mtf_exif
+    chown system system /sys/class/camera/rear/rear_mtf2_exif
+    chown system system /sys/class/camera/rear/rear_paf_offset_mid
+    chown system system /sys/class/camera/rear/rear_paf_offset_far
+    chown system system /sys/class/camera/rear/rear_paf_cal_check
+    chown system system /sys/class/camera/rear/rear_f2_paf_offset_mid
+    chown system system /sys/class/camera/rear/rear_f2_paf_offset_far
+    chown system system /sys/class/camera/rear/rear_f2_paf_cal_check
+    chown system system /sys/class/camera/rear/rear_dualcal
+    chown system system /sys/class/camera/rear/rear_dualcal_size
+    chown system system /sys/class/camera/rear/rear_hwparam
+    chown system system /sys/class/camera/rear/ssrm_camera_info
+    chown system system /sys/class/camera/rear/rear_frs_test
+    chown system system /sys/class/camera/rear/cam_ln_test
+    chown system system /sys/class/camera/rear/supported_cameraIds
+    chown system system /sys/class/camera/rear/rear_aperture_halltest
+    chown system system /sys/class/camera/rear/rear_tofcal
+    chown system system /sys/class/camera/rear/rear_tofcal_extra
+    chown system system /sys/class/camera/rear/rear_tofcal_size
+    chown system system /sys/class/camera/rear/rear_tofcal_uid
+    chown system system /sys/class/camera/rear/rear_tof_dual_cal
+    chown system system /sys/class/camera/rear/rear_actuator_power
+    chown system system /sys/class/camera/rear/rear_af_hall
+
+    # Camera::Rear2
+    chown system system /sys/class/camera/rear/rear2_camfw
+    chown system system /sys/class/camera/rear/rear2_camfw_full
+    chown system system /sys/class/camera/rear/rear2_camfw_load
+    chown system system /sys/class/camera/rear/rear2_camtype
+    chown system system /sys/class/camera/rear/rear2_companionfw_full
+    chown system system /sys/class/camera/rear/rear2_calcheck
+    chown system system /sys/class/camera/rear/rear2_fwcheck
+    chown system system /sys/class/camera/rear/rear2_checkfw_user
+    chown system system /sys/class/camera/rear/rear2_checkfw_factory
+    chown system system /sys/class/camera/rear/rear2_moduleinfo
+    chown system system /sys/class/camera/rear/rear2_afcal
+    chown system system /sys/class/camera/rear/rear2_caminfo
+    chown system system /sys/class/camera/rear/rear2_sensorid_exif
+    chown system system /sys/class/camera/rear/rear2_moduleid
+    chown system system /sys/class/camera/rear/rear2_mtf_exif
+    chown system system /sys/class/camera/rear/rear2_mtf2_exif
+    chown system system /sys/class/camera/rear/rear2_paf_offset_mid
+    chown system system /sys/class/camera/rear/rear2_paf_offset_far
+    chown system system /sys/class/camera/rear/rear2_paf_cal_check
+    chown system system /sys/class/camera/rear/rear2_f2_paf_offset_mid
+    chown system system /sys/class/camera/rear/rear2_f2_paf_offset_far
+    chown system system /sys/class/camera/rear/rear2_f2_paf_cal_check
+    chown system system /sys/class/camera/rear/rear2_dualcal
+    chown system system /sys/class/camera/rear/rear2_dualcal_size
+    chown system system /sys/class/camera/rear/rear2_hwparam
+    chown system system /sys/class/camera/rear/rear2_tilt
+    chown system system /sys/class/camera/rear/rear2_tof_tilt
+
+    # Camera::Rear3
+    chown system system /sys/class/camera/rear/rear3_camfw
+    chown system system /sys/class/camera/rear/rear3_camfw_full
+    chown system system /sys/class/camera/rear/rear3_camfw_load
+    chown system system /sys/class/camera/rear/rear3_camtype
+    chown system system /sys/class/camera/rear/rear3_companionfw_full
+    chown system system /sys/class/camera/rear/rear3_calcheck
+    chown system system /sys/class/camera/rear/rear3_fwcheck
+    chown system system /sys/class/camera/rear/rear3_checkfw_user
+    chown system system /sys/class/camera/rear/rear3_checkfw_factory
+    chown system system /sys/class/camera/rear/rear3_moduleinfo
+    chown system system /sys/class/camera/rear/rear3_afcal
+    chown system system /sys/class/camera/rear/rear3_caminfo
+    chown system system /sys/class/camera/rear/rear3_sensorid_exif
+    chown system system /sys/class/camera/rear/rear3_moduleid
+    chown system system /sys/class/camera/rear/rear3_mtf_exif
+    chown system system /sys/class/camera/rear/rear3_mtf2_exif
+    chown system system /sys/class/camera/rear/rear3_paf_offset_mid
+    chown system system /sys/class/camera/rear/rear3_paf_offset_far
+    chown system system /sys/class/camera/rear/rear3_paf_cal_check
+    chown system system /sys/class/camera/rear/rear3_f2_paf_offset_mid
+    chown system system /sys/class/camera/rear/rear3_f2_paf_offset_far
+    chown system system /sys/class/camera/rear/rear3_f2_paf_cal_check
+    chown system system /sys/class/camera/rear/rear3_dualcal
+    chown system system /sys/class/camera/rear/rear3_dualcal_size
+    chown system system /sys/class/camera/rear/rear3_hwparam
+    chown system system /sys/class/camera/rear/rear3_tilt
+    chown system system /sys/class/camera/rear/rear3_af_hall
+
+    # Camera::Rear4
+    chown system system /sys/class/camera/rear/rear4_camfw
+    chown system system /sys/class/camera/rear/rear4_camfw_full
+    chown system system /sys/class/camera/rear/rear4_camfw_load
+    chown system system /sys/class/camera/rear/rear4_camtype
+    chown system system /sys/class/camera/rear/rear4_companionfw_full
+    chown system system /sys/class/camera/rear/rear4_calcheck
+    chown system system /sys/class/camera/rear/rear4_fwcheck
+    chown system system /sys/class/camera/rear/rear4_checkfw_user
+    chown system system /sys/class/camera/rear/rear4_checkfw_factory
+    chown system system /sys/class/camera/rear/rear4_moduleinfo
+    chown system system /sys/class/camera/rear/rear4_afcal
+    chown system system /sys/class/camera/rear/rear4_caminfo
+    chown system system /sys/class/camera/rear/rear4_sensorid_exif
+    chown system system /sys/class/camera/rear/rear4_moduleid
+    chown system system /sys/class/camera/rear/rear4_mtf_exif
+    chown system system /sys/class/camera/rear/rear4_mtf2_exif
+    chown system system /sys/class/camera/rear/rear4_paf_offset_mid
+    chown system system /sys/class/camera/rear/rear4_paf_offset_far
+    chown system system /sys/class/camera/rear/rear4_paf_cal_check
+    chown system system /sys/class/camera/rear/rear4_f2_paf_offset_mid
+    chown system system /sys/class/camera/rear/rear4_f2_paf_offset_far
+    chown system system /sys/class/camera/rear/rear4_f2_paf_cal_check
+    chown system system /sys/class/camera/rear/rear4_dualcal
+    chown system system /sys/class/camera/rear/rear4_dualcal_size
+    chown system system /sys/class/camera/rear/rear4_hwparam
+    chown system system /sys/class/camera/rear/rear4_tilt
+
+    # Camera::Rear End
+
+    # Camera::Front Start
+    # Camera::Front1
+    chown system system /sys/class/camera/front/front_camfw
+    chown system system /sys/class/camera/front/front_camtype
+    chown system system /sys/class/camera/front/front_caminfo
+    chown system system /sys/class/camera/front/front_camfw_full
+    chown system system /sys/class/camera/front/front_camfw_load
+    chown system system /sys/class/camera/front/front_checkfw_user
+    chown system system /sys/class/camera/front/front_checkfw_factory
+    chown system system /sys/class/camera/front/front_moduleinfo
+    chown system system /sys/class/camera/front/front_afcal
+    chown system system /sys/class/camera/front/front_sensorid_exif
+    chown system system /sys/class/camera/front/front_moduleid
+    chown system system /sys/class/camera/front/front_mtf_exif
+    chown system system /sys/class/camera/front/front_hwparam
+    chown system system /sys/class/camera/front/front_mipi_clock
+    chown system system /sys/class/camera/front/front_paf_cal_check
+    chown system system /sys/class/camera/front/front_tofcal
+    chown system system /sys/class/camera/front/front_tofcal_extra
+    chown system system /sys/class/camera/front/front_tofcal_size
+    chown system system /sys/class/camera/front/front_tofcal_uid
+
+    # Camera::Front2
+    chown system system /sys/class/camera/front/front2_camfw
+    chown system system /sys/class/camera/front/front2_camtype
+    chown system system /sys/class/camera/front/front2_caminfo
+    chown system system /sys/class/camera/front/front2_camfw_full
+    chown system system /sys/class/camera/front/front2_checkfw_user
+    chown system system /sys/class/camera/front/front2_checkfw_factory
+    chown system system /sys/class/camera/front/front2_moduleinfo
+    chown system system /sys/class/camera/front/front2_moduleid
+    chown system system /sys/class/camera/front/front2_mtf_exif
+    chown system system /sys/class/camera/front/front2_hwparam
+    chown system system /sys/class/camera/front/front2_dualcal
+    chown system system /sys/class/camera/front/front2_dualcal_size
+    chown system system /sys/class/camera/front/front2_tilt
+    chown system system /sys/class/camera/front/front2_sensorid_exif
+
+    # Camera::Front3
+    chown system system /sys/class/camera/front/front3_camfw
+    chown system system /sys/class/camera/front/front3_camtype
+    chown system system /sys/class/camera/front/front3_caminfo
+    chown system system /sys/class/camera/front/front3_camfw_full
+    chown system system /sys/class/camera/front/front3_camfw_load
+    chown system system /sys/class/camera/front/front3_checkfw_user
+    chown system system /sys/class/camera/front/front3_checkfw_factory
+    chown system system /sys/class/camera/front/front3_moduleinfo
+    chown system system /sys/class/camera/front/front3_afcal
+    chown system system /sys/class/camera/front/front3_moduleid
+    chown system system /sys/class/camera/front/front3_mtf_exif
+    chown system system /sys/class/camera/front/front3_hwparam
+
+    # Camera::Front End
+
+    # Camera::Secure
+    chown system system /sys/class/camera/secure/iris_camfw
+    chown system system /sys/class/camera/secure/iris_camfw_full
+    chown system system /sys/class/camera/secure/iris_checkfw_factory
+    chown system system /sys/class/camera/secure/iris_checkfw_user
+    chown system system /sys/class/camera/secure/iris_caminfo
+    chown system system /sys/class/camera/secure/iris_hwparam
+
+    # Camera::Flash
+    chown system system /sys/class/camera/flash/rear_flash
+    chown system system /sys/class/camera/flash/rear_flash2
+    chown system system /sys/class/leds/led:switch_0/brightness
+    chmod 0664 /sys/class/leds/led:switch_0/brightness
+    chown system system /sys/class/leds/led:torch_0/brightness
+    chmod 0664 /sys/class/leds/led:torch_0/brightness
+
+    # Camera::Ois
+    chown system system /sys/class/camera/ois/selftest
+    chown system system /sys/class/camera/ois/calibrationtest
+    chown system system /sys/class/camera/ois/ois_noise_stdev
+    chown system system /sys/class/camera/ois/ois_power
+    chown system system /sys/class/camera/ois/ois_rawdata
+    chown system system /sys/class/camera/ois/oisfw
+    chown system system /sys/class/camera/ois/ois_diff
+    chown system system /sys/class/camera/ois/ois_exif
+    chown system system /sys/class/camera/ois/autotest
+    chown system system /sys/class/camera/ois/autotest_2nd
+    chown system system /sys/class/camera/ois/ois_gain_rear
+    chown system system /sys/class/camera/ois/ois_gain_rear3
+    chown system system /sys/class/camera/ois/ois_supperssion_ratio_rear
+    chown system system /sys/class/camera/ois/ois_supperssion_ratio_rear3
+    chown system system /sys/class/camera/ois/ois_hall_position
+    chown system system /sys/class/camera/ois/reset_check
+    chown system system /sys/class/camera/ois/ois_set_mode
+    chown system system /sys/class/camera/ois/check_cross_talk
+    chown system system /sys/class/camera/ois/check_ois_valid
+    chown system system /sys/class/camera/ois/rear3_read_cross_talk
+    chown system system /sys/class/camera/ois/ois_ext_clk
+    chown system system /sys/class/camera/ois/check_hall_cal
+
+    # Camera::Ssm
+    chown system system /sys/class/camera/ssm/ssm_frame_id
+    chown system system /sys/class/camera/ssm/ssm_flicker_max_r
+    chown system system /sys/class/camera/ssm/ssm_flicker_max_g
+    chown system system /sys/class/camera/ssm/ssm_flicker_max_b
+    chown system system /sys/class/camera/ssm/ssm_flicker_coeff
+
+    # Camera::Af
+    chown system system /sys/class/camera/af/af_position
+
+    # Camera::Boost
+    chown cameraserver cameraserver /sys/kernel/mm/vmscan/mem_boost_mode
+
+    # Camera::Dual
+    chown system system /sys/class/camera/dual/fallback
+
+    # Camera::Adaptive mipi
+    chown system system /sys/class/camera/test/adaptive_test
+
+    #Camera SVC
+    chown system system /sys/devices/svc/Camera/SVC_rear_module
+    chown system system /sys/devices/svc/Camera/SVC_rear_module2
+    chown system system /sys/devices/svc/Camera/SVC_rear_module3
+    chown system system /sys/devices/svc/Camera/SVC_rear_module4
+    chown system system /sys/devices/svc/Camera/SVC_front_module
+    chown system system /sys/devices/svc/Camera/SVC_front_module2
+    chown system system /sys/devices/svc/Camera/SVC_upper_module
+
+    #Camera SETCAL
+    mkdir /mnt/vendor/efs/camera
+    chown system system /mnt/vendor/efs/camera
+    chmod 0775 /mnt/vendor/efs/camera
+
+# Camera End
