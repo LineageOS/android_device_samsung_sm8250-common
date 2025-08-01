@@ -59,6 +59,13 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "init.samsung.battery.rc",
+    src: "init.samsung.battery.rc",
+    sub_dir: "init/hw",
+    soc_specific: true,
+}
+
+prebuilt_etc {
     name: "init.samsung.bsp.rc",
     src: "init.samsung.bsp.rc",
     sub_dir: "init/hw",
