@@ -23,4 +23,6 @@ allow hal_camera_default spu_file:dir search;
 
 allow hal_camera_default hal_system_suspend_service:service_manager find;
 
+allow hal_camera_default sysfs_oem_memory:file { getattr open read write };
+
 set_prop(hal_camera_default, sec_camera_prop)

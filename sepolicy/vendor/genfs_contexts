@@ -17,6 +17,7 @@ genfscon sysfs /devices/platform/soc/980000.i2c/i2c-5/5-0066/max77705-fuelgauge/
 genfscon sysfs /devices/virtual/camera                           u:object_r:vendor_sysfs_camera:s0
 genfscon sysfs /devices/virtual/camera/flash/rear_flash          u:object_r:vendor_sysfs_camera_writable:s0
 genfscon sysfs /devices/virtual/camera/rear/ssrm_camera_info     u:object_r:vendor_sysfs_camera_writable:s0
+genfscon sysfs /devices/virtual/camera/rear/supported_cameraIds  u:object_r:vendor_sysfs_camera_writable:s0
 
 # Display
 genfscon sysfs /devices/virtual/lcd/panel                        u:object_r:vendor_sysfs_display:s0
@@ -34,6 +35,11 @@ genfscon proc /bus/input/devices                                 u:object_r:proc
 
 genfscon sysfs /class/input                                      u:object_r:vendor_sysfs_input:s0
 genfscon sysfs /devices/virtual/input                            u:object_r:vendor_sysfs_input:s0
+
+# Memory
+genfscon sysfs /kernel/mm/vmscan/disable_mem_boost               u:object_r:sysfs_oem_memory:s0
+genfscon sysfs /kernel/mm/vmscan/mem_boost_mode                  u:object_r:sysfs_oem_memory:s0
+genfscon sysfs /kernel/mm/vmscan/am_app_launch                   u:object_r:sysfs_oem_memory:s0
 
 # Misc
 genfscon proc /last_kmsg                                         u:object_r:proc_last_kmsg:s0

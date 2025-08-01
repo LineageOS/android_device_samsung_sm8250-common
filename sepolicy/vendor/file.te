@@ -41,6 +41,9 @@ type vendor_sysfs_input, fs_type, sysfs_type;
 # Last kmsg
 type proc_last_kmsg, fs_type, proc_type;
 
+# Memory
+type sysfs_oem_memory, fs_type, sysfs_type;
+
 # Radio
 type proc_simslot_count, fs_type, proc_type;
 
