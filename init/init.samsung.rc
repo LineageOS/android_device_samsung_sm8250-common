@@ -138,12 +138,6 @@ on early-boot
     chown system system /sys/class/sec/tsp2/input/enabled
     chmod 0660 /sys/class/sec/tsp2/input/enabled
 
-# Camera
-    chown system camera /sys/class/camera/flash/rear_flash
-    chmod 0664 /sys/class/camera/flash/rear_flash
-    chown system camera /sys/class/camera/rear/ssrm_camera_info
-    chmod 0664 /sys/class/camera/rear/ssrm_camera_info
-
 # Permission for Wacom
     chown system radio /sys/class/sec/sec_epen/cmd
     chown system system /sys/class/sec/sec_epen/input/enabled
