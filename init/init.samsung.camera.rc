@@ -28,7 +28,8 @@ on boot
     chown system system /sys/class/camera/rear/rear_dualcal
     chown system system /sys/class/camera/rear/rear_dualcal_size
     chown system system /sys/class/camera/rear/rear_hwparam
-    chown system system /sys/class/camera/rear/ssrm_camera_info
+    chown system camera /sys/class/camera/rear/ssrm_camera_info
+    chmod 0664 /sys/class/camera/rear/ssrm_camera_info
     chown system system /sys/class/camera/rear/rear_frs_test
     chown system system /sys/class/camera/rear/cam_ln_test
     chown system system /sys/class/camera/rear/supported_cameraIds
@@ -192,8 +193,10 @@ on boot
     chown system system /sys/class/camera/secure/iris_hwparam
 
     # Camera::Flash
-    chown system system /sys/class/camera/flash/rear_flash
-    chown system system /sys/class/camera/flash/rear_flash2
+    chown system camera /sys/class/camera/flash/rear_flash
+    chmod 0664 /sys/class/camera/flash/rear_flash
+    chown system camera /sys/class/camera/flash/rear_flash2
+    chmod 0664 /sys/class/camera/flash/rear_flash2
     chown system system /sys/class/leds/led:switch_0/brightness
     chmod 0664 /sys/class/leds/led:switch_0/brightness
     chown system system /sys/class/leds/led:torch_0/brightness
