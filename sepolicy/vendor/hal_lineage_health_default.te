@@ -1,1 +1,4 @@
+allow hal_lineage_health_default sysfs_sec_fastcharge:dir search;
+allow hal_lineage_health_default sysfs_sec_fastcharge_writable:file rw_file_perms;
+
 rw_dir_file(hal_lineage_health_default, sysfs_batteryinfo)

@@ -2,9 +2,6 @@
 vendor.bluetooth_fw_ver                          u:object_r:vendor_bluetooth_prop:s0
 vendor.bluetooth_nv_ver                          u:object_r:vendor_bluetooth_prop:s0
 
-# Fastcharge
-persist.vendor.sec.fastchg_enabled               u:object_r:vendor_fastcharge_prop:s0
-
 # GNSS
 vendor.gnss.psds                                 u:object_r:vendor_gnss_psds_prop:s0
 

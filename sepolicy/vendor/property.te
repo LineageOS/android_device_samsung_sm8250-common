@@ -1,6 +1,3 @@
-# Fastcharge
-vendor_internal_prop(vendor_fastcharge_prop)
-
 # GNSS
 vendor_internal_prop(vendor_gnss_psds_prop)
 
