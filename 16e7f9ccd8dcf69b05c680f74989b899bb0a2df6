@@ -16,6 +16,24 @@
       "message": "Try it out if you have a USB meter.",
       "revId": "16e7f9ccd8dcf69b05c680f74989b899bb0a2df6",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "10ad7909_844cb30d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-08-14T23:53:52Z",
+      "side": 1,
+      "message": "Ehh, no need. I managed to test it myself and it works.\n\n\u003e  [ 1360.454272] muic-max77705:max77705_muic_show_afc_disable AFC DISABLE\n\u003e  [ 1372.096135] sec_bat_check_input_voltage: battery-\u003einput_voltage : 5.0V, 9000mW, 9000mW)\n\u003e  [ 1382.470531] muic-max77705:max77705_muic_show_afc_disable AFC ENABLE\n\u003e  [ 1388.949290] sec_bat_check_input_voltage: battery-\u003einput_voltage : 9.0V, 14850mW, 14850mW)",
+      "parentUuid": "6a73dbc5_45baecb6",
+      "revId": "16e7f9ccd8dcf69b05c680f74989b899bb0a2df6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
