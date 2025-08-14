@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6a73dbc5_45baecb6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-08-14T23:19:19Z",
+      "side": 1,
+      "message": "Try it out if you have a USB meter.",
+      "revId": "16e7f9ccd8dcf69b05c680f74989b899bb0a2df6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
