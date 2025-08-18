@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6445d618_403e3eab",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-08-18T19:49:55Z",
+      "side": 1,
+      "message": "@ata.kaner03@gmail.com can you fast-forward to lineage-23.0, please?",
+      "revId": "8daca538b7547e2c532f5a79ee668263fe6080a4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
