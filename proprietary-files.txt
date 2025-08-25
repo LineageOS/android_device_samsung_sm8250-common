@@ -60,7 +60,11 @@ vendor/lib/libsecaudioinfo.so
 vendor/lib/libspatializerparamstorage.so
 vendor/lib/libspeakercalibration.so
 vendor/lib/libsurround_3mic_proc.so
+vendor/lib/spatializer-aidl-V1-cpp.so
 vendor/lib/vendor.qti.hardware.audiohalext@1.0.so
+vendor/lib64/libsecaudiocoreutils.so
+vendor/lib64/libspatializerparamstorage.so
+vendor/lib64/spatializer-aidl-V1-cpp.so
 
 # Audio FX modules
 vendor/lib/soundfx/libasphere.so
@@ -70,6 +74,8 @@ vendor/lib/soundfx/libqcreverb.so
 vendor/lib/soundfx/libqcvirt.so
 vendor/lib/soundfx/libshoebox.so
 vendor/lib/soundfx/libswdap.so
+vendor/lib/soundfx/libswspatializer.so
+vendor/lib64/soundfx/libswspatializer.so
 
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
