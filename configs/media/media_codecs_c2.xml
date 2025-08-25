@@ -468,4 +468,7 @@
             <Limit name="performance-point-7680x4320" value="30" />
         </MediaCodec>
     </Encoders>
+
+    <!-- Allow MediaCodecsXmlParser to parse Dolby codecs -->
+    <Include href="media_codecs_dolby_audio_dax3.xml" />
 </Included>
