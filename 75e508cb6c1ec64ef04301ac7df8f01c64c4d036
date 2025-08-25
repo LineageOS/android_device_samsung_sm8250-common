@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "61ba9f8a_5d866a3d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33569
+      },
+      "writtenOn": "2025-08-25T13:14:31Z",
+      "side": 1,
+      "message": "Codec works but switching songs crashing the c2 hal. Also pinned blobs must be pulled from a newer firmware version.",
+      "revId": "75e508cb6c1ec64ef04301ac7df8f01c64c4d036",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
