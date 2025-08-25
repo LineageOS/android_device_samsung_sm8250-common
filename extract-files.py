@@ -34,16 +34,24 @@ lib_fixups: lib_fixups_user_type = {
 }
 
 blob_fixups: blob_fixups_user_type = {
+    'vendor/bin/hw/samsung.software.media.c2@1.0-service': blob_fixup()
+        .replace_needed('libavservices_minijail_vendor.so', 'libavservices_minijail.so'),
+    'vendor/etc/vintf/manifest/sec_c2_manifest_default0.xml': blob_fixup()
+        .regex_replace('default', 'default0'),
     ('vendor/lib/mediadrm/libwvdrmengine.so', 'vendor/lib/libwvhidl.so'): blob_fixup()
         .add_needed('libcrypto_shim.so'),
     'vendor/lib64/libarcsoft_multi_frame_video_hdr.so': blob_fixup()
         .clear_symbol_version('remote_handle_close')
         .clear_symbol_version('remote_handle_invoke')
         .clear_symbol_version('remote_handle_open'),
+    'vendor/lib64/libcodec2_vndk-v30.so': blob_fixup()
+        .add_needed('libui_shim.so'),
     ('vendor/lib64/libhypermotion_core.so', 'vendor/lib64/libsensorlistener.so', 'vendor/lib64/libvdis_core.so'): blob_fixup()
         .add_needed('libshim_sensorndkbridge.so'),
     ('vendor/lib64/hw/gatekeeper.mdfpp.so', 'vendor/lib64/libkeymaster_helper.so', 'vendor/lib64/libskeymaster4device.so'): blob_fixup()
         .replace_needed('libcrypto.so', 'libcrypto-v33.so'),
+    'vendor/lib64/libSecC2ComponentStore.so': blob_fixup()
+        .replace_needed('libcodec2_vndk.so', 'libcodec2_vndk-v30.so'),
     'vendor/lib64/libsec-ril.so': blob_fixup()
         .binary_regex_replace(b'ril.dds.call.ongoing', b'vendor.calls.slot_id')
         .sig_replace('60 0E 40 F9 E1 03 15 AA 82 0C 80 52 E3 03 14 AA', '60 0E 40 F9 E1 03 15 AA 82 0C 80 52 30 08 0D D2'),
