@@ -254,6 +254,13 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media/media_codecs_performance_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_c2.xml \
     $(LOCAL_PATH)/configs/media/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/video_system_specs.json
 
+PRODUCT_PACKAGES += \
+    android.software.media.c2-service.samsung
+
+$(call soong_config_set,SamsungCodec2Vars,c2_instance_type,legacy_default0)
+$(call soong_config_set,SamsungCodec2Vars,target_componentstore_library,//vendor/samsung/sm8250-common:libSecC2ComponentStore)
+$(call soong_config_set,SamsungCodec2Vars,uses_legacy_component_store,true)
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \

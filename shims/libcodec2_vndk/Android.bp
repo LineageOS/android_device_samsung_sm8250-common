@@ -1,0 +1,17 @@
+//
+// Copyright (C) 2025 The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+cc_library_shared {
+    name: "libshim_codec2_vndk",
+    srcs: ["C2Buffer.cpp"],
+    shared_libs: [
+        "libcodec2_vndk",
+    ],
+    include_dirs: [
+        "frameworks/av/media/codec2/core/include",
+        "hardware/libhardware/include",
+    ],
+    vendor: true,
+}
