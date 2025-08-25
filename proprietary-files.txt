@@ -408,6 +408,18 @@ vendor/lib/libqcodec2_platform.so|fccd9c509fbfda6a72299d90d8d680885a1238ec
 vendor/lib/libqcodec2_utils.so|485acb30246d20a1cfb0c91a9b3e185338d41d17
 vendor/lib/libqcodec2_v4l2codec.so|67057e81477e4b3432997b9d269e3db39c50e421
 
+# Media - from dm3qxxx-user 15 AP3A.240905.015.A2 S918BXXU8DYD9 release-keys
+vendor/lib64/libSecC2ComponentStore.so|29f3f863c6f02bad6066975f208fa36f2677e86a
+
+# Media
+vendor/etc/dax3_media_codecs_dolby_audio.xml:vendor/etc/media_codecs_dolby_audio_dax3.xml
+vendor/etc/media_codecs_dolby_audio.xml
+vendor/lib64/libcodec2_soft_ac4dec.so
+vendor/lib64/libcodec2_soft_eac3dec.so
+vendor/lib64/libdeccfg.so
+vendor/lib64/libprofileparamstorage.so
+vendor/lib64/libstagefright_foundation_vendor.so
+
 # NPU
 vendor/bin/npu_launcher
 vendor/lib64/libnpu.so
