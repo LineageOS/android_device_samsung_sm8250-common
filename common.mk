@@ -249,6 +249,12 @@ PRODUCT_PACKAGES += \
 endif
 
 # Media
+PRODUCT_PACKAGES += \
+    samsung.software.media.c2@1.0-service
+
+$(call soong_config_set,samsungVars,c2_instance_type,default0)
+$(call soong_config_set,samsungVars,target_componentstore_library,//vendor/samsung/sm8250-common:libSecC2ComponentStore)
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media/media_codecs_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_c2.xml \
     $(LOCAL_PATH)/configs/media/media_codecs_performance_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_c2.xml \
