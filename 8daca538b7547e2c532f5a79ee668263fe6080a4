@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0910a8fe_6cead27a",
+        "filename": "shims/libcodec2_vndk/C2Buffer.cpp",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-08-28T20:50:48Z",
+      "side": 0,
+      "message": "Run this through clang-format",
+      "revId": "8daca538b7547e2c532f5a79ee668263fe6080a4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
