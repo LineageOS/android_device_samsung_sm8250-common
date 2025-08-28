@@ -16,6 +16,24 @@
       "message": "Run this through clang-format",
       "revId": "8daca538b7547e2c532f5a79ee668263fe6080a4",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "05fd491a_0ebe0d03",
+        "filename": "shims/libcodec2_vndk/C2Buffer.cpp",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33569
+      },
+      "writtenOn": "2025-08-28T21:19:37Z",
+      "side": 0,
+      "message": "Done",
+      "parentUuid": "0910a8fe_6cead27a",
+      "revId": "8daca538b7547e2c532f5a79ee668263fe6080a4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
