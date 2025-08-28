@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "aa3beac4_9c14f9c8",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 127,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-08-28T16:26:47Z",
+      "side": 1,
+      "message": "Alphabetize while at it, since you\u0027re also moving DYNAMIC_LOG?",
+      "revId": "d02ffdf5964a1efa609db463c6c571d82e193856",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
