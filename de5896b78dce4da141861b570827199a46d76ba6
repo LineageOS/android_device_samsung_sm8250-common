@@ -16,6 +16,23 @@
       "message": "Are we fine with this?",
       "revId": "de5896b78dce4da141861b570827199a46d76ba6",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ba8a4be6_fced5656",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-08-29T09:51:28Z",
+      "side": 1,
+      "message": "Fine for me.",
+      "revId": "de5896b78dce4da141861b570827199a46d76ba6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
