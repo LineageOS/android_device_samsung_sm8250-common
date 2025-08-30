@@ -50,6 +50,24 @@
       "message": "No. Only SM8250 ships 2 different Gatekeeper. S22 and onwards ships default Gatekeeper service.",
       "revId": "8ae5e3d0740bf21a0708df257eabbefa91dfe3f8",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bf387f7f_9ddf1a31",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-08-30T11:31:54Z",
+      "side": 1,
+      "message": "Ack.",
+      "parentUuid": "8f62af48_6b4f50bb",
+      "revId": "8ae5e3d0740bf21a0708df257eabbefa91dfe3f8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
