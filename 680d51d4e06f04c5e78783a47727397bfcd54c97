@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "80475cfe_a760a5d4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33569
+      },
+      "writtenOn": "2025-08-30T03:28:44Z",
+      "side": 1,
+      "message": "A bringup mistake from Samsung SM7325 trees",
+      "revId": "680d51d4e06f04c5e78783a47727397bfcd54c97",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
