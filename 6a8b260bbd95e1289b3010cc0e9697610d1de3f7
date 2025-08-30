@@ -16,6 +16,24 @@
       "message": "Still needed?",
       "revId": "6a8b260bbd95e1289b3010cc0e9697610d1de3f7",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b233c718_25d99f20",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 2
+      },
+      "lineNbr": 303,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-08-30T10:57:19Z",
+      "side": 1,
+      "message": "Nevermind, just saw the follow-ups.",
+      "parentUuid": "744fabe3_925c8b49",
+      "revId": "6a8b260bbd95e1289b3010cc0e9697610d1de3f7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
