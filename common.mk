@@ -191,6 +191,10 @@ PRODUCT_PACKAGES += \
     FlipFlap
 endif
 
+# Gatekeeper
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0-service-mdfpp
+
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health-service.samsung \
