@@ -16,6 +16,23 @@
       "message": "We can drop the custom implementation and register it as mdfpp manually. I just wanted to write every change Samsung did while reversing.",
       "revId": "8ae5e3d0740bf21a0708df257eabbefa91dfe3f8",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "10560844_492190cf",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-08-30T11:06:13Z",
+      "side": 1,
+      "message": "No other QCOM based Samsung device use it so to put in hw/samsung?",
+      "revId": "8ae5e3d0740bf21a0708df257eabbefa91dfe3f8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
