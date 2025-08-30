@@ -33,6 +33,23 @@
       "message": "No other QCOM based Samsung device use it so to put in hw/samsung?",
       "revId": "8ae5e3d0740bf21a0708df257eabbefa91dfe3f8",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8f62af48_6b4f50bb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33569
+      },
+      "writtenOn": "2025-08-30T11:12:36Z",
+      "side": 1,
+      "message": "No. Only SM8250 ships 2 different Gatekeeper. S22 and onwards ships default Gatekeeper service.",
+      "revId": "8ae5e3d0740bf21a0708df257eabbefa91dfe3f8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
