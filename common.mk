@@ -231,7 +231,7 @@ $(call soong_config_set,lineage_health,fast_charge_value_fast_charge,0)
 # LiveDisplay
 ifneq ($(TARGET_IS_TABLET),true)
 PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service.samsung-qcom.sm8250
+    vendor.lineage.livedisplay@2.0-service.samsung-qcom
 endif
 
 # Media
