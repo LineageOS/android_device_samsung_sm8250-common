@@ -1,0 +1,2 @@
+allow hal_lineage_livedisplay_qti { vendor_sysfs_display vendor_sysfs_mdnie }:dir search;
+allow hal_lineage_livedisplay_qti { vendor_sysfs_display vendor_sysfs_mdnie }:file rw_file_perms;
