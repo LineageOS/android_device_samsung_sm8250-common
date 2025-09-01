@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8e516619_a7da050c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-09-01T11:25:49Z",
+      "side": 1,
+      "message": "These are the only color modes supported (as seen on S7 and S7+) and matches OneUI:\n\n----------Color Modes---------\ncolor modes supported: \nmode: 0 RIs { 0 dynamic_range [ 0 ] } \nmode: 7 RIs { 0 dynamic_range [ 0 ] 256 dynamic_range [ 0 ] } \nmode: 9 RIs { 0 dynamic_range [ 0 ] 260 dynamic_range [ 1 ] 261 dynamic_range [ 1 ] 262 dynamic_range [ 1 ] 263 dynamic_range [ 1 ] 264 dynamic_range [ 1 ] } \ncurrent mode: 7\ncurrent render_intent: 0\ncurrent dynamic_range: SDR",
+      "revId": "d79d5eb0b542b2a13f0dc26c923fc6f2add9fc97",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
