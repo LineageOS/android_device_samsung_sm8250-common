@@ -230,7 +230,7 @@ $(call soong_config_set,lineage_health,fast_charge_value_fast_charge,0)
 
 # LiveDisplay
 PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service.samsung-qcom
+    vendor.lineage.livedisplay-service.samsung-qcom
 
 # Media
 PRODUCT_COPY_FILES += \
