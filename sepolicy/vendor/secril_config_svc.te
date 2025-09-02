@@ -13,4 +13,5 @@ allow secril_config_svc imei_efs_file:file create_file_perms;
 allow secril_config_svc proc_simslot_count:file r_file_perms;
 
 set_prop(secril_config_svc, radio_prop)
+set_prop(secril_config_svc, telephony_config_prop)
 set_prop(secril_config_svc, vendor_radio_prop)
