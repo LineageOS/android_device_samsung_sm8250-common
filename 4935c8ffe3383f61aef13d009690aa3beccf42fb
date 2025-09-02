@@ -16,6 +16,23 @@
       "message": "How about labeling this across LineageOS? It seems like most OEMs do this in their sources. Dunno why it isn\u0027t labeled by AOSP.",
       "revId": "4935c8ffe3383f61aef13d009690aa3beccf42fb",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b55f6fc5_a8c7a423",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33569
+      },
+      "writtenOn": "2025-09-02T19:25:02Z",
+      "side": 1,
+      "message": "Nevermind.",
+      "revId": "4935c8ffe3383f61aef13d009690aa3beccf42fb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
