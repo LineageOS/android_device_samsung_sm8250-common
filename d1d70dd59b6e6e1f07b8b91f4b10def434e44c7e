@@ -16,6 +16,23 @@
       "message": "Fine on S7/S7+.",
       "revId": "d1d70dd59b6e6e1f07b8b91f4b10def434e44c7e",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9f21b736_475ce641",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33569
+      },
+      "writtenOn": "2025-10-13T04:30:27Z",
+      "side": 1,
+      "message": "Let\u0027s wait for October SPL. It\u0027ll be the last update for Samsung SM8250.",
+      "revId": "d1d70dd59b6e6e1f07b8b91f4b10def434e44c7e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
