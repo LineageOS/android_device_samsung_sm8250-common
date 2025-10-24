@@ -1,4 +1,4 @@
-# Common proprietary files - from Samsung package version G780GXXSGEYH1 (T), unless pinned
+# Common proprietary files - from Samsung package version G780GXXSHEYJ1 (T), unless pinned
 
 # ADSP
 vendor/bin/adsprpcd
