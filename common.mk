@@ -121,7 +121,7 @@ PRODUCT_PACKAGES += \
     audio.bluetooth.default
 
 # Camera
-$(call soong_config_set,samsungCameraVars,needs_sec_reserved_field,true)
+$(call soong_config_set_bool,samsungCameraVars,needs_sec_reserved_field,true)
 
 ifneq ($(TARGET_IS_TABLET),true)
 PRODUCT_COPY_FILES += \
