@@ -1,7 +1,4 @@
 allow tee sec_efs_file:dir create_dir_perms;
 allow tee sec_efs_file:file create_file_perms;
 
-allow tee vendor_gatekeeper_data_file:dir create_dir_perms;
-allow tee vendor_gatekeeper_data_file:file create_file_perms;
-
 set_prop(tee, vendor_qseecomd_prop)
