@@ -28,7 +28,6 @@
 # Data files
 /data/vendor/biometrics(/.*)?                u:object_r:vendor_biometrics_data_file:s0
 /data/vendor/conn(/.*)?                      u:object_r:vendor_convergence_data_file:s0
-/data/vendor/gatekeeper(/.*)?                u:object_r:vendor_gatekeeper_data_file:s0
 /data/vendor/gps(/.*)?                       u:object_r:vendor_gnss_data_file:s0
 /data/vendor/keymaster(/.*)?                 u:object_r:vendor_keymaster_data_file:s0
 /data/vendor/log/audiopcm(/.*)?              u:object_r:vendor_audiopcm_data_file:s0

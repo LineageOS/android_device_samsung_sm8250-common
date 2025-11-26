@@ -28,9 +28,6 @@ type sysfs_sec_fastcharge_writable, fs_type, sysfs_type;
 # Fingerprint
 type vendor_biometrics_data_file, file_type, data_file_type;
 
-# Gatekeeper
-type vendor_gatekeeper_data_file, file_type, data_file_type;
-
 # GNSS
 type vendor_gnss_data_file, file_type, data_file_type;
 
