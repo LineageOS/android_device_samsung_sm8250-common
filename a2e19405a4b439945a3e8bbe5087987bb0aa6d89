@@ -16,6 +16,23 @@
       "message": "Fine when you think it\u0027s ready to merge.",
       "revId": "a2e19405a4b439945a3e8bbe5087987bb0aa6d89",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "29ee0585_8fb38d69",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2025-11-29T14:35:39Z",
+      "side": 1,
+      "message": "Common sepolicy is merged, virtual cr/v",
+      "revId": "a2e19405a4b439945a3e8bbe5087987bb0aa6d89",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
