@@ -40,6 +40,8 @@ blob_fixups: blob_fixups_user_type = {
         .clear_symbol_version('remote_handle_close')
         .clear_symbol_version('remote_handle_invoke')
         .clear_symbol_version('remote_handle_open'),
+    'vendor/lib64/libdpps.so': blob_fixup()
+        .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
     ('vendor/lib64/libhypermotion_core.so', 'vendor/lib64/libsensorlistener.so', 'vendor/lib64/libvdis_core.so'): blob_fixup()
         .add_needed('libshim_sensorndkbridge.so'),
     ('vendor/lib64/hw/gatekeeper.mdfpp.so', 'vendor/lib64/libkeymaster_helper.so', 'vendor/lib64/libskeymaster4device.so'): blob_fixup()
