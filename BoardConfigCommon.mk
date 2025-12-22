@@ -66,7 +66,8 @@ BOARD_KERNEL_CMDLINE := \
     msm_rtb.filter=0x237 \
     printk.devkmsg=on \
     service_locator.enable=1 \
-    swiotlb=2048
+    swiotlb=2048 \
+    androidboot.selinux=permissive
 BOARD_KERNEL_BASE          := 0x00000000
 BOARD_KERNEL_PAGESIZE      := 4096
 
