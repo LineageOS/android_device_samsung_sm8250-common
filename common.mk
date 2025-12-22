@@ -183,7 +183,8 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint-service.samsung
+    android.hardware.biometrics.fingerprint-service.samsung \
+    SamsungBiometrics
 
 # FlipFlap
 ifneq ($(TARGET_IS_TABLET),true)

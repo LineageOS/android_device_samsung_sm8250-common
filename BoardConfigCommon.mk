@@ -58,6 +58,7 @@ BOARD_INCLUDE_DTB_IN_BOOTIMG   := true
 BOARD_KERNEL_CMDLINE := \
     androidboot.hardware=qcom \
     androidboot.memcg=1 \
+    androidboot.selinux=permissive \
     androidboot.usbcontroller=a600000.dwc3 \
     console=null \
     firmware_class.path=/vendor/firmware_mnt/image \
