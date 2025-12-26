@@ -22,6 +22,30 @@
       },
       "revId": "9ec747258dde4ec9cac0dfe2bac7ae286becb546",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2f0889ce_892a09aa",
+        "filename": "sepolicy/vendor/file_contexts",
+        "patchSetId": 2
+      },
+      "lineNbr": 109,
+      "author": {
+        "id": 33569
+      },
+      "writtenOn": "2025-12-26T21:16:55Z",
+      "side": 1,
+      "message": "They weren\u0027t when I did this change. I wouldn\u0027t label if they were. Gonna check to be sure but I\u0027m sure we didn\u0027t label them.",
+      "parentUuid": "6cdd8d10_83784432",
+      "range": {
+        "startLine": 108,
+        "startChar": 0,
+        "endLine": 109,
+        "endChar": 157
+      },
+      "revId": "9ec747258dde4ec9cac0dfe2bac7ae286becb546",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": []
