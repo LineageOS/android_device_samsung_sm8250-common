@@ -51,6 +51,24 @@
       "message": "Should be fine, regardless.",
       "revId": "56cdbaa73bd4fabe057f5ff16c67ffd165ac6690",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "032c6c6a_435df00e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-12-26T22:28:27Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5c55cf1a_c0c7a796",
+      "revId": "56cdbaa73bd4fabe057f5ff16c67ffd165ac6690",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
