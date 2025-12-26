@@ -1,4 +1,28 @@
 {
-  "comments": [],
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6cdd8d10_83784432",
+        "filename": "sepolicy/vendor/file_contexts",
+        "patchSetId": 2
+      },
+      "lineNbr": 109,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-12-26T20:39:33Z",
+      "side": 1,
+      "message": "Aren\u0027t these labeled in QCOM sepolicy?",
+      "range": {
+        "startLine": 108,
+        "startChar": 0,
+        "endLine": 109,
+        "endChar": 157
+      },
+      "revId": "9ec747258dde4ec9cac0dfe2bac7ae286becb546",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ],
   "submitRequirementResults": []
 }
