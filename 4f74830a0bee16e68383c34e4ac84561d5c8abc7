@@ -16,6 +16,24 @@
       "message": "Isn\u0027t it lagging? Pick https://review.lineageos.org/q/I5875a99167e80ddd5b79fc245f988d8a6ac167be instead.",
       "revId": "4f74830a0bee16e68383c34e4ac84561d5c8abc7",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1e079acc_8817f4d3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28935
+      },
+      "writtenOn": "2026-01-01T22:16:30Z",
+      "side": 1,
+      "message": "It\u0027s not lagging at all for me on gts7xl.",
+      "parentUuid": "4ee8457c_4ef3229a",
+      "revId": "4f74830a0bee16e68383c34e4ac84561d5c8abc7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
