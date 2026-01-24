@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c99da1a7_5dd3ee1b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33569
+      },
+      "writtenOn": "2026-01-24T05:47:10Z",
+      "side": 1,
+      "message": "There is a tiny warning needs to be fixed in kernel before merging.",
+      "revId": "3424e873042b417e2dad9df2951695ce1bfbfa11",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
