@@ -16,6 +16,24 @@
       "message": "I am not sure about this as direct replacement for Samsung\u0027s stock HAL.",
       "revId": "5c1a29a1ffa0a5a97da4bc613a71ad21fc65fab9",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ce0a7d1c_6bb1e180",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33569
+      },
+      "writtenOn": "2026-02-11T21:58:16Z",
+      "side": 1,
+      "message": "Stock hal doesn\u0027t do any OEM specific operations though. We\u0027re not calling OEM functions like sehGetTemperature.\n\nAny suggestions for replacement? Kanging AIDL is not an option due to Audio HAL dependencies.",
+      "parentUuid": "f7a8d5a2_495062f8",
+      "revId": "5c1a29a1ffa0a5a97da4bc613a71ad21fc65fab9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
