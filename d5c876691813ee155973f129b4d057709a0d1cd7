@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3ddb3294_1dbc85cb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 36296
+      },
+      "writtenOn": "2026-02-22T13:59:40Z",
+      "side": 1,
+      "message": "There\u0027s another appearance of the HAL that could be removed in this commit\n\nsepolicy/vendor/hwservice_contexts\n```\nvendor.samsung.hardware.thermal::ISehThermal\n```",
+      "revId": "d5c876691813ee155973f129b4d057709a0d1cd7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
