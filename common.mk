@@ -215,6 +215,12 @@ endif
 PRODUCT_ENABLE_UFFD_GC := true
 PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
 
+# Keylayout
+ifeq ($(TARGET_IS_TABLET),true)
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/keylayout/Vendor_04e8_Product_a035.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/Vendor_04e8_Product_a035.kl
+endif
+
 # Keymaster
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.0-service.samsung
