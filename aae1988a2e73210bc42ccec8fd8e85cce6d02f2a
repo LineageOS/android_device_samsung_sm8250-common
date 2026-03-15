@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2f61e41c_d5385f68",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 36786
+      },
+      "writtenOn": "2026-03-15T13:08:39Z",
+      "side": 1,
+      "message": "Verified on Tab S7 (gts7xl) running LineageOS 23.2.\n\nTested on live system via /data/system/devices/keylayout/ (confirmed via dumpsys input). I have not built the full tree with this change, but verified the mapping works perfectly on-device.\n\nDeX Key (0xed) now triggers native Windowing; fixes the SystemUI crash.\n\nStripped non-existent keys to match physical EF-DT870 layout.",
+      "revId": "aae1988a2e73210bc42ccec8fd8e85cce6d02f2a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
