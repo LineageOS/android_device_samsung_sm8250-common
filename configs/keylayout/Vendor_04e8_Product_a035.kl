@@ -118,7 +118,8 @@ key 95    NUMPAD_COMMA
 key 96    NUMPAD_ENTER
 key 97    CTRL_RIGHT
 key 98    NUMPAD_DIVIDE
-key 99    SYSRQ
+# DeX
+key 99    WINDOW
 key 100   ALT_RIGHT
 # key 101 "KEY_LINEFEED"
 key 102   MOVE_HOME
@@ -432,6 +433,9 @@ key 656   MACRO_1
 key 657   MACRO_2
 key 658   MACRO_3
 key 659   MACRO_4
+
+# Fn+DeX on EF-DT730
+key 701   WINDOW
 
 # Keys defined by HID usages
 key usage 0x0100AA ACCESSIBILITY             FALLBACK_USAGE_MAPPING
