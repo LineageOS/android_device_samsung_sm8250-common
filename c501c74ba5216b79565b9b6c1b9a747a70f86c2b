@@ -68,6 +68,41 @@
       "parentUuid": "6db1f4aa_ca8baf5b",
       "revId": "c501c74ba5216b79565b9b6c1b9a747a70f86c2b",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "02a11375_7e49306c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 36786
+      },
+      "writtenOn": "2026-03-21T18:08:08Z",
+      "side": 1,
+      "message": "After looking up your Book Cover Keyboard Slim (EF-DT730) that it has a dedicated function row that my Book Cover Keyboard (EF-DT870) that I have doesn\u0027t. Does both share the same vendor and product id ?",
+      "parentUuid": "8f037c28_03d3de8f",
+      "revId": "c501c74ba5216b79565b9b6c1b9a747a70f86c2b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "155c0962_ed4a36cc",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 36786
+      },
+      "writtenOn": "2026-03-21T18:08:08Z",
+      "side": 1,
+      "message": "After looking up your Book Cover Keyboard Slim (EF-DT730) that it has a dedicated function row that my Book Cover Keyboard (EF-DT870) that I have doesn\u0027t. Does both share the same vendor and product id ?",
+      "revId": "c501c74ba5216b79565b9b6c1b9a747a70f86c2b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
