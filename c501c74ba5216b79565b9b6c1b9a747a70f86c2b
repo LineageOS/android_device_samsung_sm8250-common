@@ -50,6 +50,24 @@
       "message": "A user reported having the same issue on gitlab : https://gitlab.com/LineageOS/issues/android/-/work_items/10043",
       "revId": "c501c74ba5216b79565b9b6c1b9a747a70f86c2b",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8f037c28_03d3de8f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-03-21T16:29:30Z",
+      "side": 1,
+      "message": "For some reason this causes my function keys to stop working on S7+. I have the  Book Cover Keyboard Slim (EF-DT730).",
+      "parentUuid": "6db1f4aa_ca8baf5b",
+      "revId": "c501c74ba5216b79565b9b6c1b9a747a70f86c2b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
