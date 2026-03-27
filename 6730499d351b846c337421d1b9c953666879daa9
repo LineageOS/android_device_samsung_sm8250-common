@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "47e5f366_2c9224cb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 36786
+      },
+      "writtenOn": "2026-03-27T18:47:11Z",
+      "side": 1,
+      "message": "I looked at the EF-DT730/970 layout and realized that when I stripped down the generic layout to clean it up for my EF-DT870, I removed the standard Media/System scancodes and HID usages that your dedicated function row relies on. I have restored them in Patchset 4. Please let me know if it\u0027s now running as it should.",
+      "revId": "6730499d351b846c337421d1b9c953666879daa9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
