@@ -543,11 +543,11 @@ vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.0.so
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.1.so
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.2.so
 
-# RIL-SEC - from dm2qxxx-user 14 UP1A.231005.007 S9160ZHS5CYA1 release-keys
+# RIL-SEC - from dm1qxxx-user 16 BP2A.250605.031.A3 S911BXXS9EZCI release-keys
 vendor/bin/hw/rild|b4e84db4ab705dd2689424d65ba06f74156e3ada
-vendor/etc/vintf/manifest/vendor.samsung.hardware.radio.exclude.qcom.xml|e96ef9c0fe2f383b8b1cadbdc9f95a3cc83d09eb
-vendor/lib64/libSemDataProps.so|07d2fb4ecc1280056dc14b93c5c612b77f2902e3
-vendor/lib64/libSemTelephonyProps.so|5c7ffb25462b4623998a294aa7dff8729945e36f
+vendor/etc/vintf/manifest/vendor.samsung.hardware.radio.exclude.qcom.xml|c940eab2f65cf92ca18104bf74e852bfa12b8580
+vendor/lib64/libVendorSemDataProps.so|7f0a343c1f8a4c800951d6eb82ec4a23e0f1ed2f
+vendor/lib64/libVendorSemTelephonyProps.so|0a595526494f12e7a8d2b1ee4429ea8ade8b2644
 vendor/lib64/libnetmgr.so|bcc70fca8c603ebf2b9c6e87906d4263a0b413b7
 vendor/lib64/libnetmgr_common.so|602f2edadd7ebbc6436898ba160cde3571b456c0
 vendor/lib64/libnetmgr_datapath_proxy.so|bb39793db6a940c3859c61672e672d9aeeed311d
@@ -557,9 +557,9 @@ vendor/lib64/libnetmgrmodemproxy.so|2ed0d9e5d52eca398a529ff389c7773fb84d9ce1
 vendor/lib64/libnetmgrportutils.so|563a7a7e75a3f12ecfed4645bd302dd9921d2303
 vendor/lib64/libnetmgrxfrmutils.so|ef639590f41739ad70180484533e592fa76a5d2c
 vendor/lib64/libnlnetmgr.so|c53116f943cd4b557a27571695ef4db6442814c5
-vendor/lib64/libril_sem.so|8f20c6dd8d2b8537b50052b7bbf416d1843f4677
-vendor/lib64/libsec-ril.so|703b5c064d049143175c97b798674498cc6e8228|e83188fdf6fdcf7cf87ce34ea8ad3b195080fabb
-vendor/lib64/libsemnativecarrierfeature.so|67b1e1c16c6f87631c715ea17eac4b5a07cde05e
+vendor/lib64/libril_sem.so|86bcd2e51991ee8353f257769cc9eb27cd6dc810
+vendor/lib64/libsec-ril.so|d166ecfe6b862ae58c196afa6b7ddc6457ae89a8|3345fcd7df56f3a76ebc10ef0f1385a399a574c2
+vendor/lib64/libsemnativecarrierfeature.so|e7829686630cb468ea43acdeb40bc010b9195f11
 vendor/lib64/libshsc.so|dc602c76de5e853d84306bb00ee5ea3f603be19a
 vendor/lib64/vendor.samsung.hardware.radio-V1-ndk.so|47690b36bf2846efd407f65ebb1d13086509c6e1
 vendor/lib64/vendor.samsung.hardware.radio.bridge-V1-ndk.so|1e546c9440e9373543e8df15b16fd6b07aa084da
