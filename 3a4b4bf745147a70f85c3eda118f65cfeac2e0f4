@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8482bd02_2745a1af",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-07-28T17:26:11Z",
+      "side": 1,
+      "message": "Meh...\n\n\u003e  error: vendor/samsung/gts7xlwifi/Android.bp:1943:1: \"com.qti.chi.override\" depends on undefined module \"vendor.samsung.hardware.thermal@1.0\".",
+      "revId": "3a4b4bf745147a70f85c3eda118f65cfeac2e0f4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
