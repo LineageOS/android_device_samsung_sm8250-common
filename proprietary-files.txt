@@ -81,6 +81,10 @@ vendor/lib/soundfx/libshoebox.so
 vendor/lib/soundfx/libswdap.so
 vendor/lib/soundfx/libswspatializer.so
 
+# Audio (SoundBooster)
+vendor/etc/SoundBoosterParam.txt
+vendor/lib/lib_SoundBooster_ver1050.so
+
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc

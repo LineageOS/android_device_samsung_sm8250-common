@@ -43,6 +43,7 @@
         <library name="shoebox" path="libshoebox.so"/>
         <library name="dap" path="libswdap.so"/>
         <library name="offload" path="libaudioeffectoffload.so"/>
+        <library name="soundbooster_plus" path="libsamsungSoundbooster_plus.so"/>
         <library name="spatializer" path="libswspatializer.so"/>
     </libraries>
     <effects>
@@ -95,6 +96,7 @@
             <libsw library="dap" uuid="6ab06da4-c516-4611-8166-452799218539"/>
             <libhw library="offload" uuid="a0c30891-8246-4aef-b8ad-d53e26da0253"/>
         </effectProxy>
+        <effect name="soundbooster_plus" library="soundbooster_plus" uuid="50de45f0-5d4c-11e5-a837-0800200c9a66"/>
         <effect name="spatializer" library="spatializer" uuid="ccd4cf09-a79d-46c2-9aae-06a1698d6c8f"/>
     </effects>
     <preprocess>
