@@ -95,9 +95,11 @@ PRODUCT_PACKAGES += \
     libqcomvisualizer \
     libqcomvoiceprocessing \
     libreverbwrapper \
+    libsamsungSoundbooster_plus \
     libvisualizer \
     libvolumelistener \
-    SamsungDAP
+    SamsungDAP \
+    SoundBoosterStage
 
 TARGET_EXCLUDES_AUDIOFX := true
 
