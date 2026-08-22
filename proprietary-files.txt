@@ -33,10 +33,12 @@ vendor/lib64/com.qualcomm.qti.ant@1.0.so
 system_ext/etc/permissions/audiosphere.xml
 system_ext/framework/audiosphere.jar
 vendor/etc/dolby/dax-default.xml
+vendor/etc/SoundBoosterParam.txt
 vendor/etc/audio_tuning_mixer.txt
 vendor/lib/hw/audio.primary.kona.so
 vendor/lib/hw/vendor.qti.hardware.audiohalext@1.0-impl.so
 vendor/lib/lib_SoundAlive_SRC384_ver320.so
+vendor/lib/lib_SoundBooster_ver1050.so
 vendor/lib/lib_soundaliveresampler.so
 vendor/lib/liba2dpoffload.so
 vendor/lib/libacdb-fts.so
