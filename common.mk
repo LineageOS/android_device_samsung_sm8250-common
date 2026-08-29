@@ -208,7 +208,6 @@ endif
 $(call soong_config_set_bool,libion,legacy_impl,true)
 
 # Kernel
-PRODUCT_ENABLE_UFFD_GC := true
 PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
 
 # Keymaster
