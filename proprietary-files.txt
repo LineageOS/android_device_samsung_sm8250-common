@@ -366,9 +366,7 @@ vendor/firmware/ipa_uc.elf
 vendor/firmware/ipa_uc.mdt
 
 # Keymaster
-vendor/bin/hw/android.hardware.keymaster@4.0-strongbox-service-qti
 vendor/bin/sec_nvm
-vendor/etc/init/android.hardware.keymaster@4.0-strongbox-service-qti.rc
 vendor/lib64/libkeymaster_helper.so
 vendor/lib64/libkeymasterdeviceutils.so
 vendor/lib64/libkeymasterutils.so
