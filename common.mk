@@ -197,6 +197,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml
 
+# IMS
+ifneq ($(TARGET_IS_TABLET),true)
+$(call inherit-product, hardware/lineage/generic-ims/ims.mk)
+endif
+
 # Input configs
 ifeq ($(TARGET_IS_TABLET),true)
 PRODUCT_COPY_FILES += \
