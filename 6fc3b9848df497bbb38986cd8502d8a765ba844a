@@ -122,6 +122,23 @@
       "parentUuid": "460fe9c2_8d53346e",
       "revId": "6fc3b9848df497bbb38986cd8502d8a765ba844a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "219886ee_b3271cf4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-10-13T23:51:50Z",
+      "side": 1,
+      "message": "For some reason the kernel now boots fine with latest clang. Verified on gts7lwifi and gts7xlwifi.",
+      "revId": "6fc3b9848df497bbb38986cd8502d8a765ba844a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
