@@ -16,6 +16,23 @@
       "message": "Is this a random CR? Last time I checked it the device failed to boot.",
       "revId": "6fc3b9848df497bbb38986cd8502d8a765ba844a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e6242999_8193d4bf",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32837
+      },
+      "writtenOn": "2026-10-13T15:15:58Z",
+      "side": 1,
+      "message": "https://github.com/LineageOS/android_vendor_lineage/commit/3d3e74fb5adc2698e8ba0ce7482767fc0a385274",
+      "revId": "6fc3b9848df497bbb38986cd8502d8a765ba844a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
