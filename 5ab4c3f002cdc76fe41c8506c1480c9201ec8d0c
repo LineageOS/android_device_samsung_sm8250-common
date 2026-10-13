@@ -75,6 +75,30 @@
       },
       "revId": "5ab4c3f002cdc76fe41c8506c1480c9201ec8d0c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5c28f816_939754e1",
+        "filename": "shims/libcodec2_vndk/C2Buffer.cpp",
+        "patchSetId": 12
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 32837
+      },
+      "writtenOn": "2026-10-13T00:40:27Z",
+      "side": 1,
+      "message": "reg\t\nx0\tthis\nx1\tallocator\nx2\tlocalId\nw3\tVER_HIDL",
+      "parentUuid": "8346e991_b88f5943",
+      "range": {
+        "startLine": 6,
+        "startChar": 0,
+        "endLine": 6,
+        "endChar": 25
+      },
+      "revId": "5ab4c3f002cdc76fe41c8506c1480c9201ec8d0c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
