@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "995ee6a4_2eaba9e8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-10-13T07:13:21Z",
+      "side": 1,
+      "message": "Is this a random CR? Last time I checked it the device failed to boot.",
+      "revId": "6fc3b9848df497bbb38986cd8502d8a765ba844a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
