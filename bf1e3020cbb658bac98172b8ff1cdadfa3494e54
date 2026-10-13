@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6ad8b380_c733dbe1",
+        "filename": "audio/configs/audio_effects.xml",
+        "patchSetId": 9
+      },
+      "lineNbr": 99,
+      "author": {
+        "id": 32837
+      },
+      "writtenOn": "2026-10-13T02:50:55Z",
+      "side": 1,
+      "message": "Audio Policy?\n\u003cmixPorts\u003e + \u003croutes\u003e\nexample: https://github.com/Spanish-or-Vanish/android_device_xiaomi_sm8350-common/commit/f5abe4a589d54d8363b0f3458e09e3c069cf6384",
+      "range": {
+        "startLine": 99,
+        "startChar": 0,
+        "endLine": 99,
+        "endChar": 102
+      },
+      "revId": "bf1e3020cbb658bac98172b8ff1cdadfa3494e54",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
