@@ -68,6 +68,24 @@
       "message": "Gave my +1 based on similar reverts for OnePlus SM8250, Nubia TP1803, and OnePlus SM8350.\n\nI\u0027d roll kernel back to when Clang workaround was introduced, remove version pin, and rebuild those older sources with new Clang. If it boots, we\u0027ll know regression came later and can use git bisect to find culprit.",
       "revId": "6fc3b9848df497bbb38986cd8502d8a765ba844a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bfa5494b_98e86803",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-10-13T16:14:01Z",
+      "side": 1,
+      "message": "I already said that the new clang doesn\u0027t boot. I just can\u0027t find what is the culprit. Also a git bisect is unfeasible here.",
+      "parentUuid": "fb8cf544_0639558a",
+      "revId": "6fc3b9848df497bbb38986cd8502d8a765ba844a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
