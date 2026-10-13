@@ -86,6 +86,24 @@
       "parentUuid": "fb8cf544_0639558a",
       "revId": "6fc3b9848df497bbb38986cd8502d8a765ba844a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "460fe9c2_8d53346e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32837
+      },
+      "writtenOn": "2026-10-13T16:37:14Z",
+      "side": 1,
+      "message": "I\u0027m not suggesting a git bisect right away. Let\u0027s assume Clang 22.0.1 was broken and 22.0.2 contains the fix.\n\nI\u0027d take an older kernel revision that was 100% confirmed working with Clang before 22.0.1, remove the version pin, and rebuild those exact sources with the fixed Clang 22.0.2.\n\nIf it boots while the current kernel doesn\u0027t, that points to a regression introduced by later kernel changes. Then we can use git bisect to find the culprit.\n\nThe idea is simply to establish a known-good baseline before digging any deeper.",
+      "parentUuid": "bfa5494b_98e86803",
+      "revId": "6fc3b9848df497bbb38986cd8502d8a765ba844a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
