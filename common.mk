@@ -200,6 +200,9 @@ PRODUCT_COPY_FILES += \
 # IMS
 ifneq ($(TARGET_IS_TABLET),true)
 $(call inherit-product, hardware/lineage/generic-ims/ims.mk)
+
+PRODUCT_PACKAGES += \
+    CarrierSettingsOverlayCommon
 endif
 
 # Input configs
