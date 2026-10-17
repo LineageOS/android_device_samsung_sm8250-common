@@ -21,6 +21,10 @@
                     <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
                              samplingRates="48000" channelMasks="AUDIO_CHANNEL_OUT_STEREO"/>
                 </mixPort>
+                <mixPort name="spatializer" role="source" flags="AUDIO_OUTPUT_FLAG_SPATIALIZER">
+                    <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
+                             samplingRates="48000" channelMasks="AUDIO_CHANNEL_OUT_STEREO"/>
+                </mixPort>
                 <mixPort name="deep_buffer" role="source"
                         flags="AUDIO_OUTPUT_FLAG_DEEP_BUFFER">
                     <profile name="" format="AUDIO_FORMAT_PCM_8_24_BIT"
@@ -173,7 +177,7 @@
                 <route type="mix" sink="Earpiece"
                        sources="primary output,deep_buffer,fast,compressed_offload"/>
                 <route type="mix" sink="Speaker"
-                       sources="primary output,deep_buffer,fast,raw,compressed_offload,mmap_no_irq_out"/>
+                       sources="primary output,deep_buffer,fast,raw,compressed_offload,mmap_no_irq_out,spatializer"/>
                 <route type="mix" sink="HDMI"
                        sources="primary output,deep_buffer,fast,raw,direct_pcm,compressed_offload"/>
                 <route type="mix" sink="BT SCO"
