@@ -36,7 +36,6 @@ vendor/etc/dolby/dax-default.xml
 vendor/etc/audio_tuning_mixer.txt
 vendor/lib/hw/audio.primary.kona.so
 vendor/lib/hw/vendor.qti.hardware.audiohalext@1.0-impl.so
-vendor/lib/lib_SamsungRec_07020.so
 vendor/lib/lib_SoundAlive_SRC384_ver320.so
 vendor/lib/lib_soundaliveresampler.so
 vendor/lib/liba2dpoffload.so
@@ -60,7 +59,7 @@ vendor/lib/libhdmipassthru.so
 vendor/lib/libhfp.so
 vendor/lib/libprofileparamstorage.so
 vendor/lib/libqtigef.so
-vendor/lib/librecordalive.so
+vendor/lib/librecordalive.so;DUMMY_SHARED_LIB
 vendor/lib/libsamsungVoipResampler.so
 vendor/lib/libsecaudiocoreutils.so
 vendor/lib/libsecaudioinfo.so
