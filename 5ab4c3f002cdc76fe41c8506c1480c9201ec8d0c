@@ -123,6 +123,30 @@
       },
       "revId": "5ab4c3f002cdc76fe41c8506c1480c9201ec8d0c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b7c8cc79_bbdc8b02",
+        "filename": "shims/libcodec2_vndk/C2Buffer.cpp",
+        "patchSetId": 12
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-10-17T09:30:49Z",
+      "side": 1,
+      "message": "https://review.lineageos.org/c/LineageOS/android_hardware_lineage_compat/+/509027/1/libcodec2/C2Buffer.cpp",
+      "parentUuid": "0a4eaacb_903e9d3f",
+      "range": {
+        "startLine": 6,
+        "startChar": 0,
+        "endLine": 6,
+        "endChar": 25
+      },
+      "revId": "5ab4c3f002cdc76fe41c8506c1480c9201ec8d0c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
