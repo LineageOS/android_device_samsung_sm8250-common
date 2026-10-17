@@ -173,6 +173,13 @@ std::tuple<Result, sp<IStreamOut>> Device::openOutputStreamCore(int32_t ioHandle
     if (CoreUtils::audioOutputFlagsToHal(flags, &halFlags) != NO_ERROR) {
         return {Result::INVALID_ARGUMENTS, nullptr};
     }
+    // HIDL versions before 7.1 represent spatializer outputs as FAST | DEEP_BUFFER.
+    // The Samsung HAL prioritizes FAST, whose short buffers cannot sustain the
+    // software spatializer. Select its buffered PCM path instead.
+    if ((halFlags & (AUDIO_OUTPUT_FLAG_FAST | AUDIO_OUTPUT_FLAG_DEEP_BUFFER)) ==
+            (AUDIO_OUTPUT_FLAG_FAST | AUDIO_OUTPUT_FLAG_DEEP_BUFFER)) {
+        halFlags = static_cast<audio_output_flags_t>(halFlags & ~AUDIO_OUTPUT_FLAG_FAST);
+    }
     ALOGV("open_output_stream handle: %d devices: %x flags: %#x "
           "srate: %d format %#x channels %x address %s",
           ioHandle, halDevice, halFlags, halConfig.sample_rate, halConfig.format,
