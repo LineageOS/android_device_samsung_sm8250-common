@@ -22,6 +22,30 @@
       },
       "revId": "bf1e3020cbb658bac98172b8ff1cdadfa3494e54",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "04ef6ef8_4f9c2cd0",
+        "filename": "audio/configs/audio_effects.xml",
+        "patchSetId": 9
+      },
+      "lineNbr": 99,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-10-17T16:01:50Z",
+      "side": 1,
+      "message": "https://review.lineageos.org/c/LineageOS/android_device_samsung_sm8250-common/+/509051/",
+      "parentUuid": "6ad8b380_c733dbe1",
+      "range": {
+        "startLine": 99,
+        "startChar": 0,
+        "endLine": 99,
+        "endChar": 102
+      },
+      "revId": "bf1e3020cbb658bac98172b8ff1cdadfa3494e54",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
