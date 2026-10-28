@@ -20,7 +20,6 @@
 /(vendor|system/vendor)/bin/hw/gps\.sh            u:object_r:gpsd_exec:s0
 /(vendor|system/vendor)/bin/hw/gpsd               u:object_r:gpsd_exec:s0
 /(vendor|system/vendor)/bin/hw/macloader          u:object_r:macloader_exec:s0
-/(vendor|system/vendor)/bin/hw/sehradiomanager    u:object_r:sehradiomanager_exec:s0
 /(vendor|system/vendor)/bin/argosd                u:object_r:argosd_exec:s0
 /(vendor|system/vendor)/bin/factory\.ssc          u:object_r:factory_ssc_exec:s0
 /(vendor|system/vendor)/bin/secril_config_svc     u:object_r:secril_config_svc_exec:s0
@@ -106,6 +105,7 @@
 /(vendor|system/vendor)/bin/hw/android\.hardware\.keymaster@4\.0-service\.samsung                           u:object_r:hal_keymaster_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.nfc-service\.sec-sku                                          u:object_r:hal_nfc_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.power(@[0-9]\.[0-9])?-service\.pixel-libperfmgr           u:object_r:hal_power_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.radio-service\.samsung                                    u:object_r:rild_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.secure_element-service\.nxp                               u:object_r:hal_secure_element_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.secure_element-service\.thales-sku                            u:object_r:hal_secure_element_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.sensors-service\.samsung-multihal                         u:object_r:hal_sensors_default_exec:s0

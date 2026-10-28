@@ -23,5 +23,8 @@ allow rild proc_qtaguid_stat:file r_file_perms;
 allow rild self:tun_socket { create relabelfrom relabelto };
 allowxperm rild tun_device:chr_file ioctl { 0x54ca 0x54cb };
 
+# Allow rild to select the SIM for CS call audio
+hal_client_domain(rild, hal_audio)
+
 set_prop(rild, vendor_data_ko_prop)
 set_prop(rild, vendor_data_shsusr_prop)

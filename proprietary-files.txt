@@ -551,7 +551,6 @@ vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.1.so
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.2.so
 
 # RIL-SEC - from dm1qxxx-user 16 BP2A.250605.031.A3 S911BXXS9EZCI release-keys
-vendor/bin/hw/rild|b4e84db4ab705dd2689424d65ba06f74156e3ada
 vendor/etc/vintf/manifest/vendor.samsung.hardware.radio.exclude.qcom.xml|c940eab2f65cf92ca18104bf74e852bfa12b8580
 vendor/lib64/libVendorSemDataProps.so|7f0a343c1f8a4c800951d6eb82ec4a23e0f1ed2f
 vendor/lib64/libVendorSemTelephonyProps.so|0a595526494f12e7a8d2b1ee4429ea8ade8b2644
@@ -564,16 +563,11 @@ vendor/lib64/libnetmgrmodemproxy.so|2ed0d9e5d52eca398a529ff389c7773fb84d9ce1
 vendor/lib64/libnetmgrportutils.so|563a7a7e75a3f12ecfed4645bd302dd9921d2303
 vendor/lib64/libnetmgrxfrmutils.so|ef639590f41739ad70180484533e592fa76a5d2c
 vendor/lib64/libnlnetmgr.so|c53116f943cd4b557a27571695ef4db6442814c5
-vendor/lib64/libril_sem.so|86bcd2e51991ee8353f257769cc9eb27cd6dc810
-vendor/lib64/libsec-ril.so|d166ecfe6b862ae58c196afa6b7ddc6457ae89a8|3345fcd7df56f3a76ebc10ef0f1385a399a574c2
+vendor/lib64/libsec-ril.so:vendor/lib64/libsec-ril-impl.so;FIX_SONAME|d166ecfe6b862ae58c196afa6b7ddc6457ae89a8|303018c03a73a36f32d09007e5064a0b0b7d478c
 vendor/lib64/libsemnativecarrierfeature.so|e7829686630cb468ea43acdeb40bc010b9195f11
 vendor/lib64/libshsc.so|dc602c76de5e853d84306bb00ee5ea3f603be19a
 vendor/lib64/vendor.samsung.hardware.radio-V1-ndk.so|47690b36bf2846efd407f65ebb1d13086509c6e1
-vendor/lib64/vendor.samsung.hardware.radio.bridge-V1-ndk.so|1e546c9440e9373543e8df15b16fd6b07aa084da
 vendor/lib64/vendor.samsung.hardware.radio.channel-V1-ndk.so|adfd9e42d88a1d3daf9c1112b060cf4f5eb7ea1b
-vendor/lib64/vendor.samsung.hardware.radio.data-V1-ndk.so|b062f04d2d5a8ea1e21fc6602c534b042532ec07
-vendor/lib64/vendor.samsung.hardware.radio.messaging-V1-ndk.so|05cb51696937cbb16b2bb4b23478b50465b21a48
-vendor/lib64/vendor.samsung.hardware.radio.sim-V1-ndk.so|86303fe6ba1625fee3998d463b2679c03eb41416
 
 # SCVE
 vendor/lib64/libscveCommon.so

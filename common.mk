@@ -325,8 +325,8 @@ PRODUCT_PACKAGES += \
 # RIL
 ifneq ($(TARGET_IS_WIFI-ONLY),true)
 PRODUCT_PACKAGES += \
-    secril_config_svc \
-    sehradiomanager
+    android.hardware.radio-service.samsung \
+    secril_config_svc
 endif
 
 # S Pen
