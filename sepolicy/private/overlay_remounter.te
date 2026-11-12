@@ -1,0 +1,3 @@
+userdebug_or_eng(`
+  allow overlay_remounter cache_file:dir search;
+')
