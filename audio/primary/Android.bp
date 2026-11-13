@@ -1,0 +1,22 @@
+//
+// SPDX-FileCopyrightText: 2026 The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+cc_library_shared {
+    name: "audio.primary.qcom",
+    relative_install_path: "hw",
+    vendor: true,
+    compile_multilib: "32",
+    srcs: ["audio_hw.cpp"],
+    shared_libs: [
+        "libcutils",
+        "libhardware",
+        "liblog",
+        "libtinyalsa",
+    ],
+    header_libs: [
+        "libhardware_headers",
+        "libsystem_headers",
+    ],
+}
