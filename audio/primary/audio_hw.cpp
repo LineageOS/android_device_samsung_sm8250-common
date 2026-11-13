@@ -127,12 +127,11 @@ int adevSetMode(audio_hw_device* dev, audio_mode_t mode) {
 int adevOpenOutputStream(audio_hw_device* dev, audio_io_handle_t handle, audio_devices_t devices,
                          audio_output_flags_t flags, audio_config* config,
                          audio_stream_out** stream_out, const char* address) {
-    // HIDL versions before 7.1 represent spatializer outputs as FAST | DEEP_BUFFER.
-    // The stock HAL prioritizes FAST, whose short buffers cannot sustain the
-    // software spatializer. Select its buffered PCM path instead.
-    if ((flags & (AUDIO_OUTPUT_FLAG_FAST | AUDIO_OUTPUT_FLAG_DEEP_BUFFER)) ==
-        (AUDIO_OUTPUT_FLAG_FAST | AUDIO_OUTPUT_FLAG_DEEP_BUFFER)) {
-        flags = static_cast<audio_output_flags_t>(flags & ~AUDIO_OUTPUT_FLAG_FAST);
+    // The stock HAL doesn't know the spatializer flag and would fall back to the
+    // already opened primary output. Select its buffered PCM path instead.
+    if (flags & AUDIO_OUTPUT_FLAG_SPATIALIZER) {
+        flags = static_cast<audio_output_flags_t>((flags & ~AUDIO_OUTPUT_FLAG_SPATIALIZER) |
+                                                  AUDIO_OUTPUT_FLAG_DEEP_BUFFER);
     }
 
     return gStockOpenOutputStream(dev, handle, devices, flags, config, stream_out, address);
