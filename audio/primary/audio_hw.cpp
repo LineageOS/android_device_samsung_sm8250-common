@@ -26,6 +26,8 @@ constexpr int kSlotPositions90[] = {1, 1, 0, 0};
 constexpr int kSlotPositions180[] = {1, 0, 1, 0};
 constexpr int kSlotPositions270[] = {0, 0, 1, 1};
 
+std::mutex gHookLock;
+
 hw_module_t* gStockModule;
 int (*gStockSetParameters)(audio_hw_device*, const char*);
 int (*gStockSetMode)(audio_hw_device*, audio_mode_t);
@@ -168,12 +170,17 @@ int adevOpen(const hw_module_t* /* module */, const char* name, hw_device_t** de
     // so hook the function pointers in place rather than wrapping the device.
     const auto adev = reinterpret_cast<audio_hw_device*>(*device);
 
-    gStockSetParameters = adev->set_parameters;
-    gStockSetMode = adev->set_mode;
-    gStockOpenOutputStream = adev->open_output_stream;
-    adev->set_parameters = adevSetParameters;
-    adev->set_mode = adevSetMode;
-    adev->open_output_stream = adevOpenOutputStream;
+    {
+        std::lock_guard<std::mutex> lock(gHookLock);
+        if (adev->set_parameters != adevSetParameters) {
+            gStockSetParameters = adev->set_parameters;
+            gStockSetMode = adev->set_mode;
+            gStockOpenOutputStream = adev->open_output_stream;
+            adev->set_parameters = adevSetParameters;
+            adev->set_mode = adevSetMode;
+            adev->open_output_stream = adevOpenOutputStream;
+        }
+    }
 
     return 0;
 }
