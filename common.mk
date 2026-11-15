@@ -74,6 +74,10 @@ PRODUCT_PACKAGES += \
     init.qcom.sh \
     init.qti.dcvs.sh
 
+# Argos QoS
+PRODUCT_PACKAGES += \
+    argosd
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio.service \

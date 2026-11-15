@@ -255,16 +255,6 @@ service factory_ssc /vendor/bin/factory.ssc
     user system
     group system radio inet diag net_admin net_raw sdcard_rw sdcard_r media_rw
 
-# ARGOSD
-service argos-daemon /vendor/bin/argosd
-    class main
-    user system
-    group system radio
-    disabled
-
-on property:sys.boot_completed=1
-    start argos-daemon
-
 on property:sys.boot_completed=1
     setprop ro.factory.sensor.delay.init 1
 
