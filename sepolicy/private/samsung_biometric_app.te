@@ -1,0 +1,8 @@
+typeattribute samsung_biometric_app coredomain, mlstrustedsubject;
+
+app_domain(samsung_biometric_app)
+
+allow samsung_biometric_app system_app_data_file:dir create_dir_perms;
+allow samsung_biometric_app system_app_data_file:file create_file_perms;
+
+allow samsung_biometric_app { app_api_service system_api_service }:service_manager find;

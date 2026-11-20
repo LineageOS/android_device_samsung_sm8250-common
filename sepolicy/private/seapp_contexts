@@ -3,3 +3,6 @@ user=system seinfo=platform name=org.lineageos.settings.device domain=advanced_d
 
 # S Pen
 user=system seinfo=platform isPrivApp=true name=org.lineageos.spenactions domain=spenactions_app type=system_app_data_file
+
+# Samsung Biometrics
+user=system seinfo=platform isPrivApp=true name=org.lineageos.biometricservice domain=samsung_biometric_app type=system_app_data_file
