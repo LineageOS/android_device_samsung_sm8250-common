@@ -11,8 +11,15 @@ allow hal_fingerprint_default sec_efs_file:file r_file_perms;
 
 r_dir_file(hal_fingerprint_default, efs_file)
 
+add_service(hal_fingerprint_default, hal_samsung_fingerprint_service)
+binder_call(hal_fingerprint_default, samsung_biometric_app)
+
 allow hal_fingerprint_default vendor_sysfs_display:dir r_dir_perms;
-allow hal_fingerprint_default vendor_sysfs_display:file r_file_perms;
+allow hal_fingerprint_default vendor_sysfs_display:file rw_file_perms;
+
+allow hal_fingerprint_default vendor_sysfs_fingerprint:dir r_dir_perms;
+allow hal_fingerprint_default vendor_sysfs_fingerprint:file r_file_perms;
 
 allow hal_fingerprint_default vendor_sysfs_touchscreen:dir r_dir_perms;
+allow hal_fingerprint_default vendor_sysfs_touchscreen:file r_file_perms;
 allow hal_fingerprint_default vendor_sysfs_touchscreen_writable:file rw_file_perms;
