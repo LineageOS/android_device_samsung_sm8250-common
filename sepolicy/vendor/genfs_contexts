@@ -27,6 +27,9 @@ genfscon sysfs /devices/virtual/mdnie                            u:object_r:vend
 genfscon sysfs /devices/virtual/sec/switch                       u:object_r:sysfs_sec_fastcharge:s0
 genfscon sysfs /devices/virtual/sec/switch/afc_disable           u:object_r:sysfs_sec_fastcharge_writable:s0
 
+# Fingerprint
+genfscon sysfs /devices/virtual/fingerprint                       u:object_r:vendor_sysfs_fingerprint:s0
+
 # Hall
 genfscon sysfs /devices/virtual/sec/hall_ic/hall_detect          u:object_r:vendor_sysfs_sensors:s0
 
