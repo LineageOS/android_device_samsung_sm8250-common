@@ -1,0 +1,2 @@
+# Samsung Biometrics
+user=system seinfo=platform isPrivApp=true name=org.lineageos.biometricservice domain=samsung_biometric_app type=system_app_data_file
