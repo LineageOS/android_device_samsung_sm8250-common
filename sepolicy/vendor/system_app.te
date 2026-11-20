@@ -1,3 +1,12 @@
+# Display
+allow system_app vendor_sysfs_graphics:dir r_dir_perms;
+allow system_app vendor_sysfs_graphics:lnk_file r_file_perms;
+allow system_app vendor_sysfs_graphics:file r_file_perms;
+
+# Fingerprint
+allow system_app hal_samsung_fingerprint_service:service_manager find;
+binder_call(system_app, hal_fingerprint_default)
+
 # MDNIE
 allow system_app vendor_sysfs_mdnie:dir search;
 allow system_app vendor_sysfs_mdnie:file { getattr open write };

@@ -176,7 +176,8 @@ TARGET_BOARD_FASTBOOT_INFO_FILE := $(LOCAL_PATH)/fastboot-info.txt
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint-service.samsung
+    android.hardware.biometrics.fingerprint-service.samsung \
+    SamsungBiometricService
 
 # FlipFlap
 ifneq ($(TARGET_IS_TABLET),true)
