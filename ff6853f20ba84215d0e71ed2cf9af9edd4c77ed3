@@ -22,6 +22,30 @@
       },
       "revId": "ff6853f20ba84215d0e71ed2cf9af9edd4c77ed3",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7ece2f48_07c46bb5",
+        "filename": "common.mk",
+        "patchSetId": 8
+      },
+      "lineNbr": 184,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-11-21T15:39:15Z",
+      "side": 1,
+      "message": "...and skip the guard, of course.",
+      "parentUuid": "68148c19_05e90e7b",
+      "range": {
+        "startLine": 180,
+        "startChar": 0,
+        "endLine": 184,
+        "endChar": 5
+      },
+      "revId": "ff6853f20ba84215d0e71ed2cf9af9edd4c77ed3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
