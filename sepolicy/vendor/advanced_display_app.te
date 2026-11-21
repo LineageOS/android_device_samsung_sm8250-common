@@ -1,0 +1,3 @@
+# MDNIE
+allow advanced_display_app vendor_sysfs_mdnie:dir search;
+allow advanced_display_app vendor_sysfs_mdnie:file { getattr open write };
