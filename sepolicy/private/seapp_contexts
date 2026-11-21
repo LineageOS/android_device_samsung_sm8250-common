@@ -1,2 +1,5 @@
+# Advanced Display
+user=system seinfo=platform name=org.lineageos.settings.device domain=advanced_display_app type=system_app_data_file
+
 # S Pen
 user=system seinfo=platform isPrivApp=true name=org.lineageos.spenactions domain=spenactions_app type=system_app_data_file
