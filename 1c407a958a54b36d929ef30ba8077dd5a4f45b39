@@ -16,6 +16,24 @@
       "message": "Missed https://github.com/LineageOS/android_device_samsung_universal9830-common/blob/f8db0251719ed30b92ce6765611af5c4d1826ead/device-common.mk#L37 ?",
       "revId": "1c407a958a54b36d929ef30ba8077dd5a4f45b39",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f98c8329_7124b101",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-11-21T17:47:50Z",
+      "side": 1,
+      "message": "I guess I did. Thanks for the heads-up.",
+      "parentUuid": "a2f00906_d70c03a7",
+      "revId": "1c407a958a54b36d929ef30ba8077dd5a4f45b39",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
