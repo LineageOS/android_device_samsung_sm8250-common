@@ -1,0 +1,8 @@
+typeattribute advanced_display_app coredomain, mlstrustedsubject;
+
+app_domain(advanced_display_app)
+
+allow advanced_display_app system_app_data_file:dir create_dir_perms;
+allow advanced_display_app system_app_data_file:file create_file_perms;
+
+allow advanced_display_app { app_api_service system_api_service }:service_manager find;
