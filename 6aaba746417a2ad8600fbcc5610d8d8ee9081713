@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "be4e74bf_a09854c4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33569
+      },
+      "writtenOn": "2026-11-21T13:54:19Z",
+      "side": 1,
+      "message": "seapp_contexts must be used for the sepol.",
+      "revId": "6aaba746417a2ad8600fbcc5610d8d8ee9081713",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
