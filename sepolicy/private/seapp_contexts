@@ -1,0 +1,2 @@
+# S Pen
+user=system seinfo=platform isPrivApp=true name=org.lineageos.spenactions domain=spenactions_app type=system_app_data_file

@@ -1,0 +1,8 @@
+typeattribute spenactions_app coredomain, mlstrustedsubject;
+
+app_domain(spenactions_app)
+
+allow spenactions_app system_app_data_file:dir create_dir_perms;
+allow spenactions_app system_app_data_file:file create_file_perms;
+
+allow spenactions_app { app_api_service system_api_service }:service_manager find;
